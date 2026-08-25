@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 190" role="img" aria-labelledby="t d">
+<title id="t">PARAMO</title><desc id="d">Planning And Resource Allocation under Multi-scenario Optimization</desc>
+<g transform="translate(10,15)">
+<path d="M15 101 C27 94 39 84 49 72 C60 59 68 45 79 35 C86 29 94 29 101 35 C113 45 119 58 129 71 C139 84 146 93 150 101 Z" fill="#6B875A"/>
+<path d="M58 60 C65 50 72 40 80 34 C87 29 94 30 100 35 C106 40 111 49 116 58 L105 54 L98 58 L91 53 L84 58 L77 53 L70 58 Z" fill="#FFFFFF"/>
+<path d="M89 54 C86 67 87 76 92 83 C96 90 94 97 89 104 C84 111 85 118 92 126 C98 133 105 138 112 143" fill="none" stroke="#43C7C7" stroke-width="5.4" stroke-linecap="round"/>
+<path d="M23 119 L47 111 L70 118 L94 112 L119 120 L140 114" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="#FFFFFF"><circle cx="23" cy="119" r="4.3"/><circle cx="47" cy="111" r="4.3"/><circle cx="70" cy="118" r="4.3"/><circle cx="94" cy="112" r="4.3"/><circle cx="119" cy="120" r="4.3"/><circle cx="140" cy="114" r="4.3"/></g>
+</g>
+<text x="205" y="92" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="800" letter-spacing="8" fill="#FFFFFF">PARAMO</text>
+<text x="210" y="130" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600" fill="#DCE7F2">Planning And Resource Allocation under</text>
+<text x="210" y="160" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600" fill="#DCE7F2">Multi-scenario Optimization</text>
+</svg>

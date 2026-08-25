@@ -1,0 +1,25 @@
+paramo_bus,paramo_bus_name,canonical_substation_id,canonical_substation_name,longitude,latitude,model_zone_legacy,canonical_zone,confidence,zone_confidence,province,canton,demand_mw_2024,bus_type,zone_mismatch
+Node_1,B10_Totoras,2284,Totoras,-78.59942712,-1.298457671,ZNO,ZNX,high,high,Tungurahua,Ambato,408.7702869,2,True
+Node_2,B11_SantaRosa,2262,Santa Rosa,-78.53743192,-0.3636944513,ZNO,ZNX,high,high,Pichincha,Mejía,670.4136083,2,True
+Node_3,B12_Pomasqui,2253,Pomasqui,-78.43940845,-0.05313491056,ZNO,ZNX,high,high,Pichincha,Distrito metropolitano de quito,307.0169153,2,True
+Node_4,B13_Esmeraldas,2242,Esmeraldas,-79.68597739,0.9269574719,ZNX,ZNO,high,high,Esmeraldas,Esmeraldas,283.8682548,2,True
+Node_5,B14_Taday,3497,Taday,-78.75768153,-2.670087162,ZSO,ZSX,high,high,Cañar,Azogues,0,2,True
+Node_6,B15_El_Inga,2479,El Inga,-78.34092378,-0.3064334279,ZNO,ZNX,high,high,Pichincha,Distrito metropolitano de quito,204.3851435,0,True
+Node_7,B15_Inga230,2479,El Inga,-78.34092378,-0.3064334279,ZNO,ZNX,high,high,Pichincha,Distrito metropolitano de quito,0,0,True
+Node_8,B16_Tisaleo,2805,Tisaleo,-78.69188589,-1.343947724,ZNO,ZNX,high,low,Tungurahua,Ambato,0,0,True
+Node_9,B17_Chorrillos230,2600,Chorrillos,-79.98159023,-2.029312423,ZSX,ZSO,high,high,Guayas,Guayaquil,0,0,True
+Node_10,B17_Chorrillos_500,2600,Chorrillos,-79.98159023,-2.029312423,ZSX,ZSO,high,high,Guayas,Guayaquil,0,0,True
+Node_11,B18_SanRafael,2558,San Rafael,-77.51271012,-0.1058304842,ZNO,ZNX,high,high,Napo,El chaco,0,3,True
+Node_12,B1_SantoDomingo,2263,Santo Domingo,-79.12498025,-0.2637966911,ZNX,ZNO,high,high,Santo Domingo De Los Tsáchilas,Santo domingo,283.8682548,2,True
+Node_13,B1_SantoDomingo138,2263,Santo Domingo,-79.12498025,-0.2637966911,ZNX,ZNO,high,high,Santo Domingo De Los Tsáchilas,Santo domingo,0,0,True
+Node_14,B2_Baba,2469,Baba,-79.46801426,-0.6702865934,ZNX,ZSO,high,high,Los Ríos,Buena fe,0,2,True
+Node_15,B3_Quevedo,2257,Quevedo,-79.49252402,-1.047175088,ZNX,ZNO,high,high,Los Ríos,Quevedo,306.5777152,2,True
+Node_16,B4_Pascuales,2251,Pascuales,-79.95124958,-2.053549128,ZSX,ZSO,high,high,Guayas,Guayaquil,766.448147,2,True
+Node_17,B5_Dos_Cerritos,2241,Dos Cerritos,-79.86599958,-2.032888863,ZSX,ZSO,high,high,Guayas,Guayaquil,204.3851435,0,True
+Node_18,B6_Milagro,2246,Milagro,-79.52951938,-2.180210979,ZSX,ZSO,high,high,Guayas,Milagro,408.7702869,2,True
+Node_19,B7_Zhoray,2345,Zhoray,-78.63870718,-2.593814921,ZSO,ZSX,high,high,Cañar,Azogues,204.3851435,2,True
+Node_20,B8_Molino,2247,Molino,-78.51045035,-2.575570842,ZSO,ZSX,high,high,Morona Santiago,Santiago,204.3851435,2,True
+Node_21,B9_Riobamba,2258,Riobamba,-78.69232494,-1.653511268,ZNO,ZNX,high,high,Chimborazo,Riobamba,408.7702869,0,True
+Node_22,B22_Zamora,2517,Cumbaratza,-78.86303943,-3.979161015,ZSO,ZSX,high,high,Zamora Chinchipe,Zamora,113.5551936,2,True
+Node_23,B23_Pasaje,2245,Machala,-79.86731212,-3.29059938,ZSX,ZSO,high,high,El Oro,Machala,85.16047644,0,True
+Node_24,B24_Piura,,,,,EXT_PERU,EXT_PERU,pending,,,,0,0,False

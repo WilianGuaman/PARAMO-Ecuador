@@ -1,0 +1,78 @@
+{
+  "version": "1.0.0",
+  "cases": [
+    {
+      "id": "ecuador_24bus",
+      "name": "Ecuador 24-Bus National Planning Case",
+      "short_name": "Ecuador 24-Bus",
+      "role": "national_planning_case",
+      "description": "National long-term expansion-planning application of PARAMO using a 24-bus equivalent of the Ecuadorian power system.",
+      "period": {
+        "start": 2025,
+        "end": 2050
+      },
+      "scenarios": [
+        "REF",
+        "BRIDGE",
+        "NZT"
+      ],
+      "hydrology": [
+        "Baseline",
+        "Adverse"
+      ],
+      "uncertainty": {
+        "Baseline": 100,
+        "Adverse": 5
+      },
+      "capabilities": {
+        "generation": true,
+        "emissions": true,
+        "ens": true,
+        "reservoirs": true,
+        "hydrology_uncertainty": true,
+        "monte_carlo": true,
+        "transmission_cost": true,
+        "line_expansion": false,
+        "line_flows": false,
+        "reconductoring_context": true
+      },
+      "public_scope_note": "The public 24-bus distribution reports transmission investment at aggregate level; corridor-level optimized build/reconductoring and line-flow variables are outside the public dataset."
+    },
+    {
+      "id": "ecuador_6bus",
+      "name": "Ecuador 6-Bus Reduced Planning Case",
+      "short_name": "Ecuador 6-Bus",
+      "role": "reduced_planning_case",
+      "description": "Reduced Ecuador planning case executed with the PARAMO formulation and calibrated hydrology.",
+      "period": {
+        "start": 2025,
+        "end": 2050
+      },
+      "scenarios": [
+        "BAU",
+        "REN100"
+      ],
+      "hydrology": [
+        "Normal",
+        "Extreme"
+      ],
+      "uncertainty": {
+        "Normal": 1,
+        "Extreme": 1
+      },
+      "capabilities": {
+        "generation": true,
+        "emissions": true,
+        "ens": true,
+        "reservoirs": true,
+        "hydrology_uncertainty": false,
+        "monte_carlo": false,
+        "transmission_cost": true,
+        "line_expansion": true,
+        "line_flows": true,
+        "reconductoring_context": false
+      },
+      "public_scope_note": "The public distribution includes corridor utilization, new circuits and transmission CAPEX."
+    }
+  ]
+}

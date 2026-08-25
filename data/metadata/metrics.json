@@ -1,0 +1,115 @@
+{
+  "total_system_cost": {
+    "display_name": "Total system cost",
+    "short_name": "Cost",
+    "unit": "MUSD",
+    "family": "economy",
+    "aggregation": "discounted planning-horizon total",
+    "preferred_chart": "bar"
+  },
+  "capex": {
+    "display_name": "Capital expenditure",
+    "short_name": "CAPEX",
+    "unit": "MUSD",
+    "family": "economy",
+    "aggregation": "planning-horizon total",
+    "preferred_chart": "box"
+  },
+  "opex": {
+    "display_name": "Operating expenditure",
+    "short_name": "OPEX",
+    "unit": "MUSD",
+    "family": "economy",
+    "aggregation": "planning-horizon total",
+    "preferred_chart": "bar"
+  },
+  "cumulative_emissions": {
+    "display_name": "Cumulative CO₂ emissions",
+    "short_name": "CO₂",
+    "unit": "MtCO2",
+    "family": "decarbonization",
+    "aggregation": "sum over planning horizon",
+    "preferred_chart": "bar"
+  },
+  "annual_emissions": {
+    "display_name": "Annual CO₂ emissions",
+    "short_name": "Annual CO₂",
+    "unit": "MtCO2/year",
+    "family": "decarbonization",
+    "aggregation": "annual sum",
+    "preferred_chart": "line"
+  },
+  "ens": {
+    "display_name": "Energy not served",
+    "short_name": "ENS",
+    "unit": "GWh",
+    "family": "reliability",
+    "aggregation": "sum over selected period",
+    "preferred_chart": "bar",
+    "quality_note": "National ENS is recalculated from realization-level PNS source tables."
+  },
+  "ens_probability": {
+    "display_name": "Probability of positive ENS",
+    "short_name": "P(ENS > 0)",
+    "unit": "%",
+    "family": "reliability",
+    "aggregation": "share of realizations",
+    "preferred_chart": "indicator"
+  },
+  "installed_capacity": {
+    "display_name": "Installed capacity",
+    "short_name": "Capacity",
+    "unit": "MW",
+    "family": "expansion",
+    "aggregation": "year-end capacity",
+    "preferred_chart": "area"
+  },
+  "annual_generation": {
+    "display_name": "Annual generation",
+    "short_name": "Generation",
+    "unit": "GWh",
+    "family": "operation",
+    "aggregation": "annual sum",
+    "preferred_chart": "stacked_bar"
+  },
+  "imports": {
+    "display_name": "Electricity imports",
+    "short_name": "Imports",
+    "unit": "GWh",
+    "family": "operation",
+    "aggregation": "sum",
+    "preferred_chart": "bar"
+  },
+  "hydro_availability": {
+    "display_name": "Hydropower availability factor",
+    "short_name": "Hydro AF",
+    "unit": "p.u.",
+    "family": "hydrology",
+    "aggregation": "ensemble/statistical summary",
+    "preferred_chart": "band"
+  },
+  "reservoir_storage": {
+    "display_name": "Reservoir storage",
+    "short_name": "Storage",
+    "unit": "hm3",
+    "family": "hydrology",
+    "aggregation": "monthly",
+    "preferred_chart": "line"
+  },
+  "transmission_investment": {
+    "display_name": "Transmission investment",
+    "short_name": "Transmission CAPEX",
+    "unit": "MUSD",
+    "family": "network",
+    "aggregation": "planning-horizon total",
+    "preferred_chart": "bar"
+  },
+  "line_utilization": {
+    "display_name": "Peak corridor utilization",
+    "short_name": "Utilization",
+    "unit": "%",
+    "family": "network",
+    "aggregation": "annual peak",
+    "preferred_chart": "bar"
+  }
+}

@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use PARAMO Ecuador Results Explorer, its figures, or its public results, please cite this repository and the associated scholarly methodology as appropriate."
+title: "PARAMO Ecuador Results Explorer"
+type: software
+authors:
+  - family-names: "Guamán Cuenca"
+    given-names: "Wilian"
+version: "1.0.0"
+date-released: 2026-08-24
+url: "https://wilianguaman.github.io/PARAMO-Ecuador/"
+repository-code: "https://github.com/WilianGuaman/PARAMO-Ecuador"
+license: Apache-2.0
+keywords:
+  - power system planning
+  - generation expansion
+  - transmission expansion
+  - hydrology
+  - uncertainty
+  - Ecuador
+  - PARAMO
+preferred-citation:
+  type: software
+  authors:
+    - family-names: "Guamán Cuenca"
+      given-names: "Wilian"
+  title: "PARAMO Ecuador Results Explorer: Planning And Resource Allocation under Multi-scenario Optimization"
+  version: "1.0.0"
+  year: 2026
+  url: "https://github.com/WilianGuaman/PARAMO-Ecuador"
+references:
+  - type: article
+    authors:
+      - family-names: "Guamán"
+        given-names: "Wilian"
+      - family-names: "Benalcazar"
+        given-names: "Pablo"
+      - family-names: "Cordova-Garcia"
+        given-names: "Jose"
+      - family-names: "Torres"
+        given-names: "Miguel"
+    title: "An integrated framework for the optimal expansion of hydro-dependent power systems under water-resource uncertainty"
+    journal: "Energy Conversion and Management: X"
+    volume: 28
+    year: 2025
+    doi: "10.1016/j.ecmx.2025.101297"

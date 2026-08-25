@@ -1,0 +1,36 @@
+{
+  "id": "ecuador_6bus",
+  "name": "Ecuador 6-Bus Reduced Planning Case",
+  "short_name": "Ecuador 6-Bus",
+  "role": "reduced_planning_case",
+  "description": "Reduced Ecuador planning case executed with the PARAMO formulation and calibrated hydrology.",
+  "period": {
+    "start": 2025,
+    "end": 2050
+  },
+  "scenarios": [
+    "BAU",
+    "REN100"
+  ],
+  "hydrology": [
+    "Normal",
+    "Extreme"
+  ],
+  "uncertainty": {
+    "Normal": 1,
+    "Extreme": 1
+  },
+  "capabilities": {
+    "generation": true,
+    "emissions": true,
+    "ens": true,
+    "reservoirs": true,
+    "hydrology_uncertainty": false,
+    "monte_carlo": false,
+    "transmission_cost": true,
+    "line_expansion": true,
+    "line_flows": true,
+    "reconductoring_context": false
+  },
+  "public_scope_note": "The public distribution includes corridor utilization, new circuits and transmission CAPEX."
+}
