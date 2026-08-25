@@ -22,4 +22,4 @@ Node_20,B8_Molino,2247,Molino,-78.51045035,-2.575570842,ZSO,ZSX,high,high,Morona
 Node_21,B9_Riobamba,2258,Riobamba,-78.69232494,-1.653511268,ZNO,ZNX,high,high,Chimborazo,Riobamba,408.7702869,0,True
 Node_22,B22_Zamora,2517,Cumbaratza,-78.86303943,-3.979161015,ZSO,ZSX,high,high,Zamora Chinchipe,Zamora,113.5551936,2,True
 Node_23,B23_Pasaje,2245,Machala,-79.86731212,-3.29059938,ZSX,ZSO,high,high,El Oro,Machala,85.16047644,0,True
-Node_24,B24_Piura,,,,,EXT_PERU,EXT_PERU,pending,,,,0,0,False
+Node_24,B24_Piura,,Piura (external model bus),-80.63000000,-5.1900000000,EXT_PERU,EXT_PERU,schematic,external,Piura,Piura,0,0,False

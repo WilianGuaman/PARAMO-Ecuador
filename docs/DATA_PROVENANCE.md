@@ -8,3 +8,10 @@ The explorer combines two public information classes:
 Reference geography does not imply that every physical Ecuadorian asset is represented one-to-one in the reduced optimization model. The 24-bus planning representation and the physical reference system are linked through explicit crosswalk fields.
 
 National ENS statistics are recalculated from realization-level PNS source tables because a downstream summary workbook stored the metric at one hundredth of the source value. The public layer therefore uses the realization-level source tables as the authoritative basis for ENS aggregation.
+
+## International systems and 6-bus zone codes
+
+The 24-bus visualization includes Colombia and Peru because both external systems are part of the planning representation. Colombia is represented by the modeled import resource connected at `Node_3 / B12_Pomasqui`; Peru is represented by the external `Node_24 / B24_Piura` and `Line_41`. External display coordinates are identified as schematic model/geographic anchors when they are not verified physical substation coordinates.
+
+The 6-bus source model uses a historical zone-code convention that differs from the canonical Ecuador Power DataHub convention. Public files use the canonical zone codes and retain the original model codes in explicit traceability fields. The mapping is distributed in `data/cases/ecuador_6bus/zone_crosswalk.csv`.
+

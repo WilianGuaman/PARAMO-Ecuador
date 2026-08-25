@@ -251,3 +251,9 @@ ecuador_6bus,transmission.csv,NewCircuits,See methodology and metric registry fo
 ecuador_6bus,transmission.csv,PeakAbsFlow_MW,See methodology and metric registry for semantic interpretation.,,True
 ecuador_6bus,transmission.csv,Utilization,See methodology and metric registry for semantic interpretation.,,True
 ecuador_6bus,transmission.csv,Capex_MUSD,See methodology and metric registry for semantic interpretation.,,True
+ecuador_6bus,zone_crosswalk.csv,model_zone_code,Zone code used in the original 6-bus model result files.,,True
+ecuador_6bus,zone_crosswalk.csv,canonical_zone_code,Canonical Ecuador Power DataHub zone code used by the public dashboard.,,True
+ecuador_6bus,transmission.csv,ModelFromNode,Original 6-bus model source-zone code retained for traceability.,,True
+ecuador_6bus,transmission.csv,ModelToNode,Original 6-bus model destination-zone code retained for traceability.,,True
+geography,international_interconnections.csv,external_system,External power system represented in PARAMO planning geography.,,True
+geography,international_interconnections.csv,modeled_import_capacity_mw,Import capacity represented in the planning data associated with the external system.,MW,True

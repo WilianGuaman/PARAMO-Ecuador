@@ -1,8 +1,8 @@
-from_node,to_node,planning_transfer_limit_mw,thermal_rating_mva,basis,confidence
-ZNX,ZSO,1732.05,1732.05,500-kV proxy / model limit,HIGH
-ZNO,ZSO,664,663.69,Chorrillos-Quevedo circuits; rounded planning limit,HIGH
-ZNO,ZNX,341.8,683.61,Two 230-kV paths physical proxy; one-circuit/N-1 secure planning proxy,MEDIUM_HIGH
-ZNX,ZSX,673.65,673.65,230-kV corridor model proxy,HIGH
-ZSO,ZSX,2355,2355,physical floor / model planning limit,HIGH
-ZNX,Col,460,664,physical line proxy vs CENACE published transfer limit,HIGH
-ZSO,Per,50,332,physical line proxy vs current CENACE network transfer limit,HIGH
+model_from_node,model_to_node,from_node,to_node,planning_transfer_limit_mw,thermal_rating_mva,basis,confidence
+ZNO,ZSX,ZNX,ZSO,1732.05,1732.05,500-kV proxy / model limit,HIGH
+ZNX,ZSX,ZNO,ZSO,664,663.69,Chorrillos-Quevedo circuits; rounded planning limit,HIGH
+ZNX,ZNO,ZNO,ZNX,341.8,683.61,Two 230-kV paths physical proxy; one-circuit/N-1 secure planning proxy,MEDIUM_HIGH
+ZNO,ZSO,ZNX,ZSX,673.65,673.65,230-kV corridor model proxy,HIGH
+ZSX,ZSO,ZSO,ZSX,2355,2355,physical floor / model planning limit,HIGH
+ZNO,COL,ZNX,COL,460,664,physical line proxy vs CENACE published transfer limit,HIGH
+ZSX,PER,ZSO,PER,50,332,physical line proxy vs current CENACE network transfer limit,HIGH

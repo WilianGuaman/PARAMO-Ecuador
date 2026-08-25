@@ -33,5 +33,7 @@
     "line_flows": false,
     "reconductoring_context": true
   },
-  "public_scope_note": "The public 24-bus distribution reports transmission investment at aggregate level; corridor-level optimized build/reconductoring and line-flow variables are outside the public dataset."
+  "public_scope_note": "The public 24-bus distribution reports transmission investment at aggregate level; corridor-level optimized build/reconductoring and line-flow variables are outside the public dataset.",
+  "version": "1.0.1",
+  "geography_note": "The public map includes Ecuador planning nodes and contextual Colombia/Peru interconnection markers. External display anchors are identified separately from verified physical substation coordinates."
 }

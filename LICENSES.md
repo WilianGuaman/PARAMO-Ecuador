@@ -1,11 +1,19 @@
-# Licensing and Attribution
+# Licensing and attribution
 
-| Component | Copyright / attribution | Terms |
-|---|---|---|
-| Dashboard source code (`index.html`, `assets/css`, `assets/js`, public utilities) | © 2026 Wilian Guamán Cuenca | Apache License 2.0 |
-| PARAMO-derived public result tables | © 2026 Wilian Guamán Cuenca | Creative Commons Attribution 4.0 International (CC BY 4.0) |
-| Original repository documentation and PARAMO figures | © 2026 Wilian Guamán Cuenca | CC BY 4.0 |
-| Ecuador Power DataHub reference/crosswalk records and other third-party source data | Attribution and source terms documented in provenance metadata | Original source terms apply |
-| PARAMO optimization model, private GAMS implementation, private InputData, GDX/LST and non-public assets | Not distributed | Not licensed through this repository |
+PARAMO Ecuador Results Explorer separates software, public research results, and third-party reference data.
 
-Reuse of PARAMO-derived public results or figures must provide appropriate attribution and should follow `CITATION.cff` and `docs/CITATION.md`.
+| Component | Terms |
+|---|---|
+| Dashboard source code (`index.html`, `assets/css`, `assets/js`) | Apache License 2.0 |
+| PARAMO-derived public result tables | Creative Commons Attribution 4.0 International (CC BY 4.0) |
+| Original repository documentation and figures | CC BY 4.0 |
+| Ecuador Power DataHub-derived reference geography | Source-specific terms and attribution requirements apply |
+| PARAMO optimization formulation, private GAMS implementation, private InputData workbooks, GDX/LST files and solver logs | Not distributed through this repository |
+
+## Attribution
+
+Public PARAMO-derived results and original figures from this repository must be attributed to **Wilian Guamán Cuenca** and cited using `CITATION.cff` or the citation guide in `docs/CITATION.md`. Where the integrated planning methodology is relevant, cite the associated publication:
+
+Guamán, W., Benalcazar, P., Cordova-Garcia, J., & Torres, M. (2025). *An integrated framework for the optimal expansion of hydro-dependent power systems under water-resource uncertainty*. Energy Conversion and Management: X, 28, 101297. https://doi.org/10.1016/j.ecmx.2025.101297
+
+Third-party datasets retain their original provenance and terms. The public geography layer is contextual and does not imply redistribution rights beyond the source terms documented in `docs/DATA_PROVENANCE.md`.

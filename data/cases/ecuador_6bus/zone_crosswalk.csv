@@ -1,0 +1,7 @@
+model_zone_code,canonical_zone_code,zone_name,scope
+ZNX,ZNO,Noroccidental,Ecuador internal zone
+ZNO,ZNX,Nororiental,Ecuador internal zone
+ZSX,ZSO,Suroccidental,Ecuador internal zone
+ZSO,ZSX,Suroriental,Ecuador internal zone
+COL,COL,Colombia,External system
+PER,PER,Peru,External system
