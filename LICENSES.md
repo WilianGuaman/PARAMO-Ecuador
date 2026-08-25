@@ -5,6 +5,8 @@ PARAMO Ecuador Results Explorer separates software, public research results, and
 | Component | Terms |
 |---|---|
 | Dashboard source code (`index.html`, `assets/css`, `assets/js`) | Apache License 2.0 |
+| Plotly.js (`assets/vendor/plotly-3.3.1.min.js`) | MIT License; Copyright Plotly, Inc. |
+| JSZip (`assets/vendor/jszip-3.10.1.min.js`) | MIT or GPLv3; distributed here under the MIT option |
 | PARAMO-derived public result tables | Creative Commons Attribution 4.0 International (CC BY 4.0) |
 | Original repository documentation and figures | CC BY 4.0 |
 | Ecuador Power DataHub-derived reference geography | Source-specific terms and attribution requirements apply |

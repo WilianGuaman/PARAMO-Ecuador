@@ -1,19 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 620" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 520" role="img" aria-labelledby="title desc">
 <title id="title">PARAMO</title><desc id="desc">Planning And Resource Allocation under Multi-scenario Optimization.</desc>
-<g transform="translate(270 20)">
-<title id="t">PARAMO symbol</title><desc id="d">Geometric Andes, water-resource pathway and power-network nodes.</desc>
-<g fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M18 98 L42 84 L61 66 L76 53 L90 44 L104 53 L121 70 L139 85 L162 98" stroke="#12335C" stroke-width="8"/>
-  <path d="M70 60 L77 53 L90 44 L103 53 L111 62" stroke="#B7D8E8" stroke-width="6"/>
-  <path d="M94 62 L91 79 L100 94 L95 109 L87 124" stroke="#159B9B" stroke-width="7"/>
-  <path d="M87 124 L116 138 L143 124 L160 144" stroke="#12335C" stroke-width="6"/>
-  <circle cx="87" cy="124" r="6.5" fill="#FFFFFF" stroke="#12335C" stroke-width="5"/>
-  <circle cx="116" cy="138" r="6.5" fill="#FFFFFF" stroke="#12335C" stroke-width="5"/>
-  <circle cx="143" cy="124" r="6.5" fill="#FFFFFF" stroke="#12335C" stroke-width="5"/>
-  <circle cx="160" cy="144" r="6.5" fill="#FFFFFF" stroke="#12335C" stroke-width="5"/>
-</g></g>
-<text x="360" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="96" font-weight="800" letter-spacing="6" fill="#12335C">PARAMO</text>
-<text x="360" y="410" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" fill="#12335C">Planning And Resource Allocation</text>
-<text x="360" y="447" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="500" fill="#53657C">under Multi-scenario Optimization</text>
-<text x="360" y="522" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#159B9B">Ecuador Results Explorer</text>
-</svg>
+<g transform="translate(200 30)"><g fill="none" stroke-linecap="square" stroke-linejoin="miter"><path d="M22 92 L110 18 L198 92" stroke="#123A67" stroke-width="9"/><path d="M66 80 L110 43 L154 80" stroke="#92B9D3" stroke-width="5"/><path d="M110 44 L110 94 L92 116 L110 136" stroke="#109C9A" stroke-width="7"/><path d="M110 136 L72 158 M110 136 L148 158 L184 136" stroke="#123A67" stroke-width="6"/><circle cx="72" cy="158" r="8" fill="white" stroke="#123A67" stroke-width="5"/><circle cx="110" cy="136" r="8" fill="white" stroke="#123A67" stroke-width="5"/><circle cx="148" cy="158" r="8" fill="white" stroke="#123A67" stroke-width="5"/><circle cx="184" cy="136" r="8" fill="white" stroke="#123A67" stroke-width="5"/></g></g>
+<text x="310" y="300" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="90" font-weight="800" letter-spacing="5" fill="#123A67">PARAMO</text><text x="310" y="350" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#123A67">Planning And Resource Allocation</text><text x="310" y="388" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="500" fill="#52667C">under Multi-scenario Optimization</text></svg>

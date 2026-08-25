@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/brand/paramo-logo-horizontal.svg" alt="PARAMO — Planning And Resource Allocation under Multi-scenario Optimization" width="880">
+  <a href="https://wilianguaman.github.io/PARAMO-Ecuador/"><img src="assets/brand/paramo-logo-horizontal.png" alt="PARAMO — Planning And Resource Allocation under Multi-scenario Optimization" width="880"></a>
 </p>
 
 <p align="center"><strong>Interactive long-term power-system planning results for Ecuador</strong></p>
@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://wilianguaman.github.io/PARAMO-Ecuador/"><img src="assets/brand/open-dashboard.svg" alt="Open interactive dashboard" width="430"></a>
   &nbsp;&nbsp;
-  <a href="downloads/PARAMO_Ecuador_Public_Results_v1.0.1.zip"><img src="assets/brand/download-data.svg" alt="Download public data" width="320"></a>
+  <a href="downloads/PARAMO_Ecuador_Public_Results_v1.0.3.zip"><img src="assets/brand/download-data.svg" alt="Download public data" width="320"></a>
 </p>
 
 <p align="center">
@@ -50,13 +50,13 @@ Selected national results include:
 
 ## Interactive explorer
 
-The dashboard includes generation expansion, transmission and reconductoring context, hydrology and reservoirs, system operation, emissions, ENS, cost/uncertainty analysis and direct scenario comparison. The 24-bus Baseline ensemble contains **100 Monte Carlo realizations** and the Adverse ensemble contains **5**; the ensemble size is shown explicitly in the interface.
+The dashboard includes generation expansion, transmission and reconductoring context, hydrology and reservoirs, system operation, emissions, ENS, cost/uncertainty analysis and direct scenario comparison. The 24-bus Baseline ensemble contains **100 Monte Carlo realizations** and the Adverse ensemble contains **5**. Mean, P10, P50 and P90 selections are applied to the cumulative indicators available at ensemble level; annual and monthly operational trajectories are identified as representative-realization results.
 
 Every chart supports data/figure export. A selected configuration can be downloaded as a ZIP directly from the browser.
 
 ## Public data
 
-**Complete dataset:** [`PARAMO_Ecuador_Public_Results_v1.0.1.zip`](downloads/PARAMO_Ecuador_Public_Results_v1.0.1.zip)
+**Complete dataset:** [`PARAMO_Ecuador_Public_Results_v1.0.3.zip`](downloads/PARAMO_Ecuador_Public_Results_v1.0.3.zip)
 
 The public distribution contains curated result tables, geography, crosswalks, metric definitions and provenance metadata. It excludes the private optimization implementation, private InputData workbooks, GDX/LST files and solver logs.
 
@@ -71,7 +71,7 @@ Technical documentation:
 
 **PARAMO Ecuador Results Explorer**
 
-> Guamán Cuenca, W. (2026). *PARAMO Ecuador Results Explorer: Planning And Resource Allocation under Multi-scenario Optimization* (Version 1.0.1) [Software and public research results]. GitHub. https://github.com/WilianGuaman/PARAMO-Ecuador
+> Guamán Cuenca, W. (2026). *PARAMO Ecuador Results Explorer: Planning And Resource Allocation under Multi-scenario Optimization* (Version 1.0.3) [Software and public research results]. GitHub. https://github.com/WilianGuaman/PARAMO-Ecuador
 
 **Associated methodology**
 
@@ -93,5 +93,5 @@ Copyright © 2026 **Wilian Guamán Cuenca**. See [`LICENSES.md`](LICENSES.md) fo
 <p align="center">
   <a href="https://wilianguaman.github.io/PARAMO-Ecuador/"><strong>Open Dashboard</strong></a> ·
   <a href="docs/CITATION.md"><strong>Cite PARAMO</strong></a> ·
-  <a href="downloads/PARAMO_Ecuador_Public_Results_v1.0.1.zip"><strong>Download Data</strong></a>
+  <a href="downloads/PARAMO_Ecuador_Public_Results_v1.0.3.zip"><strong>Download Data</strong></a>
 </p>

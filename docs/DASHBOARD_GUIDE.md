@@ -35,3 +35,7 @@ Chart toolbars export the displayed data or figure. **Download selection** creat
 ## Shareable views
 
 The explorer encodes the active case, scenario, hydrology, statistic, year, month and section in the URL. Copying the view link reproduces the selected configuration.
+
+## Statistics
+
+For the 24-bus case, Mean, P10, P50 and P90 apply to cumulative ensemble metrics where those statistics are available. Annual and monthly trajectories are representative-realization outputs and are labelled accordingly. Multivariate performance-space charts use ensemble means, except when Representative realization is explicitly selected.

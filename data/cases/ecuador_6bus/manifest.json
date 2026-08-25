@@ -33,6 +33,6 @@
     "reconductoring_context": false
   },
   "public_scope_note": "The public distribution includes corridor utilization, new circuits and transmission CAPEX.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "zone_code_convention": "Public 6-bus files use canonical Ecuador DataHub zone codes; original model zone codes are retained in explicit ModelFromNode/ModelToNode and model_zone_code fields."
 }

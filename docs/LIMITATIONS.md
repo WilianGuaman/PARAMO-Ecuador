@@ -1,5 +1,7 @@
 # Interpretation boundaries
 
+- P10, P50 and P90 values are marginal statistics for individual metrics. Multivariate cost–CO₂–ENS performance-space plots use ensemble means (or a single representative realization when that mode is selected) rather than combining marginal quantiles as if they represented one common realization.
+- P10/P90 values for the five-realization Adverse ensemble are descriptive summaries and have substantially lower statistical depth than the corresponding W100 Baseline statistics.
 - The Baseline national ensemble contains 100 realizations and the Adverse ensemble contains five; their statistical depth is not equivalent.
 - Detailed national annual/monthly operational trajectories use representative realizations where ensemble-wide time-series exports are not part of the public dataset.
 - The 24-bus public dataset reports transmission investment at aggregate level. Corridor-level optimized line-build/reconductoring decisions and line-flow variables are outside the public distribution.
