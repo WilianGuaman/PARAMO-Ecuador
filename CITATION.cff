@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: "Guamán Cuenca"
     given-names: "Wilian"
-version: "1.0.3"
+version: 1.1.0
 date-released: 2026-08-25
 url: "https://wilianguaman.github.io/PARAMO-Ecuador/"
 repository-code: "https://github.com/WilianGuaman/PARAMO-Ecuador"
@@ -24,7 +24,7 @@ preferred-citation:
     - family-names: "Guamán Cuenca"
       given-names: "Wilian"
   title: "PARAMO Ecuador Results Explorer: Planning And Resource Allocation under Multi-scenario Optimization"
-  version: "1.0.3"
+  version: "1.1.0"
   year: 2026
   url: "https://github.com/WilianGuaman/PARAMO-Ecuador"
 references:

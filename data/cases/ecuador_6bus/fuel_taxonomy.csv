@@ -1,0 +1,11 @@
+PublicFuelCategory,SourceFuelValues,Interpretation
+HYDRO,Water,Hydropower
+PV,PV,Solar photovoltaic
+WIND,Wind,Wind power
+GEOTHERMAL,Geoter,Geothermal
+BIOENERGY,Biomass; Biogas,Biomass and biogas
+DIESEL,Diesel,Diesel-fuelled thermal generation
+FUEL OIL,FuelOil; Residual,Fuel oil and residual-oil thermal generation
+GAS,Gas; GasCC,"Natural gas, including combined-cycle gas"
+IMPORTS,Model class Import,External electricity imports; source-fuel label is not used
+OTHER,Any non-mapped non-import category,Residual public category

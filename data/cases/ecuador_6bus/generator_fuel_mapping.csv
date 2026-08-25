@@ -1,0 +1,331 @@
+Generator,GeneratorName,Status,ModelZone,Technology,Subtype,SourceFuel,PublicFuelCategory,ModelClass,Pgmax_MW,EntryYear,RetirementYear
+E001_Baba,Baba,EXISTING,ZNX,Hydro,Reservoir,Water,HYDRO,ROR,42,2025,2065
+E002_Marcel_Laniado_de_Wind,Marcel Laniado de Wind,EXISTING,ZNX,Hydro,Reservoir,Water,HYDRO,ROR,213,2025,2049
+E003_Mazar,Mazar,EXISTING,ZSO,Hydro,Reservoir,Water,HYDRO,Reservoir,170,2025,2060
+E004_Paute_Molino,Paute Molino,EXISTING,ZSO,Hydro,Reservoir,Water,HYDRO,Reservoir,1100,2025,2051
+E005_Pucara,Pucara,EXISTING,ZNO,Hydro,Reservoir,Water,HYDRO,Reservoir,70.6,2025,2037
+E006_Huascachaca,Huascachaca,EXISTING,ZSO,Wind,Wind,Wind,WIND,VRE,49.98,2025,2051
+E007_Villonaco,Villonaco,EXISTING,ZSO,Wind,Wind,Wind,WIND,VRE,16.5,2025,2050
+E008_El_Inga,El Inga,EXISTING,ZNO,Biogas,Internal combustion engine,Biogas,BIOENERGY,Thermal,5.5,2025,2056
+E009_Catamayo,Catamayo,EXISTING,ZSO,Thermal,Internal combustion engine,Diesel,DIESEL,Thermal,17.17,2025,2050
+E010_Celso_Castellanos,Celso Castellanos,EXISTING,ZNO,Thermal,Internal combustion engine,Diesel,DIESEL,Thermal,7.2,2025,2038
+E011_Central_Colombia,Central Colombia,EXISTING,COL,Thermal,Internal combustion engine,Diesel,IMPORTS,Import,460,2025,9999
+E012_Central_Peru,Central Peru,EXISTING,PER,Thermal,Internal combustion engine,Diesel,IMPORTS,Import,50,2025,9999
+E013_El_Descanso,El Descanso,EXISTING,ZSO,Thermal,Internal combustion engine,Residual,FUEL OIL,Thermal,17.2,2025,2051
+E014_Esmeraldas_II,Esmeraldas II,EXISTING,ZNX,Thermal,Internal combustion engine,Residual,FUEL OIL,Thermal,84,2025,2054
+E015_Generoca,Generoca,EXISTING,ZSX,Thermal,Internal combustion engine,Residual,FUEL OIL,Thermal,34.4,2025,2046
+E016_Gualberto_Hernandez,Gualberto Hernandez,EXISTING,ZNO,Thermal,Internal combustion engine,Residual,FUEL OIL,Thermal,31.2,2025,2051
+E017_Guangopolo,Guangopolo,EXISTING,ZNO,Thermal,Internal combustion engine,Residual,FUEL OIL,Thermal,21.8,2025,2051
+E018_Guangopolo_2,Guangopolo 2,EXISTING,ZNO,Thermal,Internal combustion engine,Residual,FUEL OIL,Thermal,48,2025,2054
+E019_Jaramijo,Jaramijo,EXISTING,ZNX,Thermal,Internal combustion engine,Residual,FUEL OIL,Thermal,128.88,2025,2052
+E020_Jivino_I,Jivino I,EXISTING,ZNO,Thermal,Internal combustion engine,Diesel,DIESEL,Thermal,5.4,2025,2030
+E021_Jivino_II,Jivino II,EXISTING,ZNO,Thermal,Internal combustion engine,Residual,FUEL OIL,Thermal,10,2025,2048
+E022_Jivino_III,Jivino III,EXISTING,ZNO,Thermal,Internal combustion engine,Residual,FUEL OIL,Thermal,42,2025,2048
+E023_La_Propicia,La Propicia,EXISTING,ZNX,Thermal,Internal combustion engine,Residual,FUEL OIL,Thermal,8.5,2025,2051
+E024_Lligua,Lligua,EXISTING,ZNO,Thermal,Internal combustion engine,Diesel,DIESEL,Thermal,3.6,2025,2030
+E025_Macas,Macas,EXISTING,ZSO,Thermal,Internal combustion engine,Diesel,DIESEL,Thermal,4,2025,2054
+E026_Manta_II,Manta II,EXISTING,ZNX,Thermal,Internal combustion engine,Residual,FUEL OIL,Thermal,17.34,2025,2051
+E027_Miraflores,Miraflores,EXISTING,ZNX,Thermal,Internal combustion engine,Diesel,DIESEL,Thermal,39.4,2025,2051
+E028_Pedernales,Pedernales,EXISTING,ZNX,Thermal,Internal combustion engine,Diesel,DIESEL,Thermal,3.9,2025,2051
+E029_Quevedo_II,Quevedo II,EXISTING,ZNX,Thermal,Internal combustion engine,Residual,FUEL OIL,Thermal,40.5,2025,2051
+E030_Santa_Elena_II,Santa Elena II,EXISTING,ZSX,Thermal,Internal combustion engine,FuelOil,FUEL OIL,Thermal,65.03,2025,2051
+E031_Santa_Elena_III,Santa Elena III,EXISTING,ZSX,Thermal,Internal combustion engine,FuelOil,FUEL OIL,Thermal,40,2025,2052
+E032_Selva_Alegre,Selva Alegre,EXISTING,ZNO,Thermal,Internal combustion engine,Residual,FUEL OIL,Thermal,24.3,2025,2051
+E033_Abanico,Abanico,EXISTING,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,37.99,2025,2055
+E034_Agoyan,Agoyan,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,154,2025,2037
+E035_Alao,Alao,EXISTING,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,10.44,2025,2051
+E036_Alazan,Alazan,EXISTING,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,6.23,2025,2067
+E037_Ambi,Ambi,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,7.85,2025,2051
+E038_Calope,Calope,EXISTING,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,15,2025,2050
+E039_Carlos_Mora_Carrion,Carlos Mora Carrion,EXISTING,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,2.4,2025,2050
+E040_Chalpi,Chalpi,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,8.1,2025,2050
+E041_Coca_Codo_Sinclair,Coca Codo Sinclair,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,1476,2025,2066
+E042_Cumbaya,Cumbaya,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,40,2025,2051
+E043_Delsitanisagua,Delsitanisagua,EXISTING,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,180,2025,2068
+E044_Due,Due,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,64.3,2025,2030
+E045_El_Carmen,El Carmen,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,8.2,2025,2050
+E046_Guangopolo_3,Guangopolo 3,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,20.92,2025,2054
+E047_Hidronormandia,Hidronormandia,EXISTING,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,49.58,2025,2061
+E048_Hidrosanbartolo,Hidrosanbartolo,EXISTING,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,49.95,2025,2065
+E049_Illuchi_No_1,Illuchi No.1,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,4,2025,2051
+E050_Illuchi_No_2,Illuchi No.2,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,5.2,2025,2034
+E051_Manduriacu,Manduriacu,EXISTING,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,65,2025,2065
+E052_Minas_San_Francisco,Minas San Francisco,EXISTING,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,270,2025,2069
+E053_Nayon,Nayon,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,29.7,2025,2051
+E054_Ocana,Ocana,EXISTING,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,26.1,2025,2051
+E055_Palmira_Nanegal,Palmira-Nanegal,EXISTING,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,10.36,2025,2030
+E056_Papallacta,Papallacta,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,6.2,2025,2032
+E057_Pasochoa,Pasochoa,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,4.5,2025,2051
+E058_Peninsula,Peninsula,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,2.9,2025,2051
+E059_Perlabi,Perlabi,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,2.46,2025,2038
+E060_Pusuno,Pusuno,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,38.25,2025,2069
+E061_Recuperadora,Recuperadora,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,14.5,2025,2040
+E062_Rio_Blanco,Rio Blanco,EXISTING,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,2.95,2025,2047
+E063_Rio_Verde_Chico,Rio Verde Chico,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,10.2,2025,2069
+E064_Sabanilla,Sabanilla,EXISTING,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,30.6,2025,2030
+E065_San_Francisco,San Francisco,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,212,2025,2057
+E066_San_Jose_de_Minas,San Jose de Minas,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,5.95,2025,2070
+E067_San_Jose_de_Tambo,San Jose de Tambo,EXISTING,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,8,2025,2050
+E068_San_Miguel_de_los_Bancos,San Miguel de los Bancos,EXISTING,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,2.52,2025,2037
+E069_Sarapullo,Sarapullo,EXISTING,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,48.45,2025,2051
+E070_Saucay,Saucay,EXISTING,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,24,2025,2028
+E071_Saymirin,Saymirin,EXISTING,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,15.52,2025,2050
+E072_Sibimbe,Sibimbe,EXISTING,ZSX,Hydro,Run-of-river,Water,HYDRO,ROR,14.2,2025,2056
+E073_Sigchos,Sigchos,EXISTING,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,18.39,2025,2067
+E074_Sopladora,Sopladora,EXISTING,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,486.9,2025,2066
+E075_Topo,Topo,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,27,2025,2067
+E076_Victoria,Victoria,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,10,2025,2066
+E077_Vindobona,Vindobona,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,5.86,2025,2035
+E078_Alvaro_Tinajero,Alvaro Tinajero,EXISTING,ZSX,Thermal,Gas turbine,Diesel,DIESEL,Thermal,64,2025,2051
+E079_Anibal_Santos_Gas,Anibal Santos (Gas),EXISTING,ZSX,Thermal,Gas turbine,Diesel,DIESEL,Thermal,97,2025,2030
+E080_Enrique_Garcia,Enrique Garcia,EXISTING,ZSX,Thermal,Gas turbine,Diesel,DIESEL,Thermal,96,2025,2037
+E081_Gonzalo_Zevallos_Gas,Gonzalo Zevallos (Gas),EXISTING,ZSX,Thermal,Gas turbine,Diesel,DIESEL,Thermal,20,2025,2051
+E082_Santa_Rosa,Santa Rosa,EXISTING,ZNO,Thermal,Gas turbine,Diesel,DIESEL,Thermal,51,2025,2051
+E083_Termogas_Machala_I,Termogas Machala I,EXISTING,ZSX,Thermal,Gas turbine,Gas,GAS,Thermal,130.6,2025,2042
+E084_Termogas_Machala_II,Termogas Machala II,EXISTING,ZSX,Thermal,Gas turbine,Gas,GAS,Thermal,119,2025,2052
+E085_Victoria_II,Victoria II,EXISTING,ZSX,Thermal,Gas turbine,Diesel,DIESEL,Thermal,102,2025,2057
+E086_Ecoelectric,Ecoelectric,EXISTING,ZSX,Biomass,Steam turbine,Biomass,BIOENERGY,Thermal,35.2,2025,2030
+E087_Ecudos_A_G,Ecudos A-G,EXISTING,ZSX,Biomass,Steam turbine,Biomass,BIOENERGY,Thermal,27.6,2025,2030
+E088_San_Carlos,San Carlos,EXISTING,ZSX,Biomass,Steam turbine,Biomass,BIOENERGY,Thermal,73.6,2025,2030
+E089_Anibal_Santos_Vapor,Anibal Santos (Vapor),EXISTING,ZSX,Thermal,Steam turbine,FuelOil,FUEL OIL,Thermal,20,2025,2030
+E090_Esmeraldas_I,Esmeraldas I,EXISTING,ZNX,Thermal,Steam turbine,Residual,FUEL OIL,Thermal,125,2025,2051
+E091_Gonzalo_Zevallos_Vapor,Gonzalo Zevallos (Vapor),EXISTING,ZSX,Thermal,Steam turbine,FuelOil,FUEL OIL,Thermal,140,2025,2051
+E092_Trinitaria,Trinitaria,EXISTING,ZSX,Thermal,Steam turbine,FuelOil,FUEL OIL,Thermal,133,2025,2037
+E093_KPS_Emret_Bey,KPS Emret Bey,EXISTING,ZSX,Thermal,Internal combustion engine,FuelOil,FUEL OIL,Thermal,100,2025,2027
+E094_KPS_Murat_Bey,KPS Murat Bey,EXISTING,ZSX,Thermal,Internal combustion engine,Residual,FUEL OIL,Thermal,100,2025,2029
+E095_KPS_Erin_Sultan,KPS Erin Sultan,EXISTING,ZSX,Thermal,Internal combustion engine,Residual,FUEL OIL,Thermal,100,2025,2027
+E096_Alluriquin,Alluriquin,EXISTING,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,204,2025,2049
+E097_San_Miguel_de_Car,San Miguel de Car,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,2.52,2025,2050
+E098_La_Playa,La Playa,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,1.23,2025,2050
+E099_Payamino,Payamino,EXISTING,ZNO,Thermal,Internal combustion engine,Diesel,DIESEL,Thermal,1.8,2025,2050
+E100_Buenos_Aires,Buenos Aires,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,0.95,2025,2062
+E101_Paragachi,Paragachi,EXISTING,ZNO,Solar PV,Solar PV,PV,PV,VRE,1,2025,2050
+E102_Gualaceo,Gualaceo,EXISTING,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,0.97,2025,2065
+E103_Espejo,Espejo,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,0.4,2025,2064
+E104_Hidrocarolina,Hidrocarolina,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,0.88,2025,2060
+E105_Fabrica_Imbabura,Fábrica Imbabura,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,0.61,2025,2050
+E106_Pichacay,Pichacay,EXISTING,ZSO,Biogas,Internal combustion engine,Biogas,BIOENERGY,Thermal,1.7,2025,2050
+E107_Loreto_Termica,Loreto (Térmica),EXISTING,ZNO,Thermal,Internal combustion engine,Diesel,DIESEL,Thermal,1.8,2025,2053
+E108_Dayuma,Dayuma,EXISTING,ZNO,Thermal,Internal combustion engine,Diesel,DIESEL,Thermal,1.8,2025,2053
+E109_Electrisol,Electrisol,EXISTING,ZNO,Solar PV,Solar PV,PV,PV,VRE,1,2025,2050
+E110_Pastocalle,Pastocalle,EXISTING,ZNO,Solar PV,Solar PV,PV,PV,VRE,1,2025,2050
+E111_Mulalo,Mulaló,EXISTING,ZNO,Solar PV,Solar PV,PV,PV,VRE,1,2025,2050
+E112_Enersol,Enersol,EXISTING,ZNX,Solar PV,Solar PV,PV,PV,VRE,0.49,2025,2050
+E113_El_Laurel,El Laurel,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,1,2025,2070
+E114_Ulba,Ulba,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,1,2025,2073
+E115_Los_Chillos,Los Chillos,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,1.76,2025,2050
+E116_Loreto_Hidraulica,Loreto (Hidráulica),EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,2.2,2025,2052
+E117_Geppert,Geppert,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,1.65,2025,2052
+E118_Atuntaqui,Atuntaqui,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,0.32,2025,2050
+E119_La_Calera,La Calera,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,1.98,2025,2050
+E120_Uravia,Uravia,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,0.98,2025,2059
+E121_Sillunchi_II,Sillunchi II,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,0.3,2025,2050
+E122_Sillunchi_I,Sillunchi I,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,0.09,2025,2050
+E123_Tilivi,Tiliví,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,0.06,2025,2059
+E124_Electrocordova,Electrocórdova,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,0.2,2025,2059
+E125_Corazon,Corazón,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,0.98,2025,2060
+E126_Altgenotec,Altgenotec,EXISTING,ZSX,Solar PV,Solar PV,PV,PV,VRE,0.99,2025,2050
+E127_Genrenotec,Genrenotec,EXISTING,ZSX,Solar PV,Solar PV,PV,PV,VRE,0.99,2025,2050
+E128_Tren_Salinas,Tren Salinas,EXISTING,ZNO,Solar PV,Solar PV,PV,PV,VRE,1,2025,2050
+E129_Salinas,Salinas,EXISTING,ZNO,Solar PV,Solar PV,PV,PV,VRE,2,2025,2050
+E130_Sansau,Sansau,EXISTING,ZSX,Solar PV,Solar PV,PV,PV,VRE,1,2025,2050
+E131_Wildtecsa,Wildtecsa,EXISTING,ZSX,Solar PV,Solar PV,PV,PV,VRE,1,2025,2050
+E132_Sanersol,Sanersol,EXISTING,ZSX,Solar PV,Solar PV,PV,PV,VRE,1,2025,2050
+E133_Saracaysol,Saracaysol,EXISTING,ZSX,Solar PV,Solar PV,PV,PV,VRE,1,2025,2050
+E134_Solchacras,Solchacras,EXISTING,ZSX,Solar PV,Solar PV,PV,PV,VRE,1,2025,2050
+E135_Solhuaqui,Solhuaqui,EXISTING,ZSX,Solar PV,Solar PV,PV,PV,VRE,1,2025,2050
+E136_Solsantonio,Solsantonio,EXISTING,ZSX,Solar PV,Solar PV,PV,PV,VRE,1,2025,2050
+E137_Solsantros,Solsantros,EXISTING,ZSX,Solar PV,Solar PV,PV,PV,VRE,1,2025,2050
+E138_Gonzanergy,Gonzanergy,EXISTING,ZSO,Solar PV,Solar PV,PV,PV,VRE,1,2025,2050
+E139_Lojaenergy,Lojaenergy,EXISTING,ZSO,Solar PV,Solar PV,PV,PV,VRE,0.7,2025,2050
+E140_Surenergy,Surenergy,EXISTING,ZSO,Solar PV,Solar PV,PV,PV,VRE,1,2025,2050
+E141_Renova_Loja,Renova Loja,EXISTING,ZSO,Solar PV,Solar PV,PV,PV,VRE,0.7,2025,2050
+E142_Sabiango_Solar,Sabiango Solar,EXISTING,ZSO,Solar PV,Solar PV,PV,PV,VRE,0.73,2025,2050
+E143_San_Pedro,San Pedro,EXISTING,ZSO,Solar PV,Solar PV,PV,PV,VRE,1,2025,2050
+E144_Brineforcorp,Brineforcorp,EXISTING,ZNX,Solar PV,Solar PV,PV,PV,VRE,1,2025,2050
+E145_Otavalo_II,Otavalo II,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,0.4,2025,2052
+E146_Noroccidente,Noroccidente,EXISTING,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,0.3,2025,2050
+E147_Huayquichuma,Huayquichuma,EXISTING,ZSX,Hydro,Run-of-river,Water,HYDRO,ROR,6.5,2025,2050
+N001_Bloque_1_de_generacion_firme_400_MW,Bloque 1 de generacion firme - 400 MW,CANDIDATE,ZSO,Thermal,Internal combustion engine,FuelOil,FUEL OIL,Thermal,400,2025,2065
+N002_Bloque_2_de_generacion_firme_300_MW,Bloque 2 de generacion firme - 300 MW,CANDIDATE,ZNO,Thermal,Internal combustion engine,FuelOil,FUEL OIL,Thermal,300,2025,2065
+N003_El_Aromo,El Aromo,CANDIDATE,ZNX,Solar PV,Solar PV,PV,PV,VRE,200,2025,2055
+N004_Villonaco_III,Villonaco III,CANDIDATE,ZSO,Wind,Wind,Wind,WIND,VRE,110,2025,2055
+N005_Energyquil,Energyquil,CANDIDATE,ZSX,Thermal,Internal combustion engine,Gas,GAS,Thermal,192.32,2025,2055
+N006_Ambi_Solar_PPS,Ambi Solar PPS,CANDIDATE,ZNO,Solar PV,Solar PV,PV,PV,VRE,60,2026,2056
+N007_Aroma_Santo_Solar,Aroma Santo Solar,CANDIDATE,ZSO,Solar PV,Solar PV,PV,PV,VRE,17.6,2026,2056
+N008_Chorrillos,Chorrillos,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,4,2026,2076
+N009_El_Salto,El Salto,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,30,2026,2076
+N010_Imbabura_Solar,Imbabura Solar,CANDIDATE,ZNO,Solar PV,Solar PV,PV,PV,VRE,60,2026,2056
+N011_Intiyana_Solar,Intiyana Solar,CANDIDATE,ZNO,Solar PV,Solar PV,PV,PV,VRE,60,2026,2056
+N012_Machala_Gas_Tercera_Unidad,Machala Gas Tercera Unidad,CANDIDATE,ZSX,Thermal,Gas turbine,Gas,GAS,Thermal,77,2026,2056
+N013_Mazar_Dudas_Dudas,Mazar-Dudas: Dudas,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,6.82,2026,2076
+N014_Mazar_Dudas_San_Antonio,Mazar-Dudas: San Antonio,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,7.19,2026,2076
+N015_Nanapura,Nanapura,CANDIDATE,ZNO,Solar PV,Solar PV,PV,PV,VRE,60,2026,2056
+N016_Soldados_Yanuncay_Central_Soldados,Soldados Yanuncay: Central Soldados,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,7.2,2026,2076
+N017_Soldados_Yanuncay_Central_Yanuncay,Soldados Yanuncay: Central Yanuncay,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,14.6,2026,2076
+N018_Urcuqui,Urcuqui,CANDIDATE,ZNO,Solar PV,Solar PV,PV,PV,VRE,60,2026,2056
+N019_Yanahurcu,Yanahurcu,CANDIDATE,ZSO,Wind,Wind,Wind,WIND,VRE,45,2026,2056
+N020_Bloque_2_ERNC_Fotovoltaico_170_MW,Bloque 2 ERNC: Fotovoltaico - 170 MW,CANDIDATE,ZSX,Solar PV,Solar PV,PV,PV,VRE,170,2027,2057
+N021_El_Rosario,El Rosario,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,49.5,2027,2077
+N022_Ibarra_Fugua,Ibarra Fugua,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,30,2027,2077
+N023_La_Magdalena,La Magdalena,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,20,2027,2077
+N024_Machala_Gas_Ciclo_Combinado,Machala Gas Ciclo Combinado,CANDIDATE,ZSX,Thermal,Combined cycle,GasCC,GAS,Thermal,110,2027,2057
+N025_Maravilla,Maravilla,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,9,2027,2077
+N026_San_Jacinto,San Jacinto,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,49.9,2027,2077
+N027_Santa_Rosa_2,Santa Rosa 2,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,49.5,2027,2077
+N028_Bloque_1_Reposicion_Parque_Termoelectrico_200_MW,Bloque 1 Reposicion Parque Termoelectrico - 200 MW,CANDIDATE,ZSX,Thermal,Internal combustion engine,FuelOil,FUEL OIL,Thermal,200,2028,2068
+N029_Bloque_2_ERNC_Biomasa_30_MW,Bloque 2 ERNC: Biomasa - 30 MW,CANDIDATE,ZSX,Biomass,Steam turbine,Biomass,BIOENERGY,Thermal,30,2028,2073
+N030_Bloque_2_ERNC_Eolico_300_MW,Bloque 2 ERNC: Eolico - 300 MW,CANDIDATE,ZNO,Wind,Wind,Wind,WIND,VRE,300,2028,2058
+N031_Bloque_2_ERNC_Hidroelectrico_200_MW,Bloque 2 ERNC: Hidroelectrico - 200 MW,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,200,2028,2078
+N032_Bloque_3_ERNC_Eolico_Villonaco_II,Bloque 3 ERNC: Eolico Villonaco II,CANDIDATE,ZSO,Wind,Wind,Wind,WIND,VRE,80,2028,2058
+N033_Bloque_3_ERNC_Fotovoltaico_330_MW,Bloque 3 ERNC: Fotovoltaico - 330 MW,CANDIDATE,ZSO,Solar PV,Solar PV,PV,PV,VRE,330,2028,2058
+N034_Bloque_de_Ciclo_Combinado_I_400_MW,Bloque de Ciclo Combinado I - 400 MW,CANDIDATE,ZNO,Thermal,Combined cycle,GasCC,GAS,Thermal,400,2028,2058
+N035_Quijos,Quijos,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,50,2028,2078
+N036_Bloque_2_Reposicion_Parque_Termoelectrico_200_MW,Bloque 2 Reposicion Parque Termoelectrico - 200 MW,CANDIDATE,ZNO,Thermal,Internal combustion engine,FuelOil,FUEL OIL,Thermal,200,2029,2069
+N037_Chachimbiro,Chachimbiro,CANDIDATE,ZNO,Geothermal,Geothermal,Geoter,GEOTHERMAL,Thermal,50,2029,2059
+N038_Bloque_3_ERNC_Hidroelectrico_250_MW,Bloque 3 ERNC: Hidroelectrico - 250 MW,CANDIDATE,ZSX,Hydro,Run-of-river,Water,HYDRO,ROR,250,2030,2080
+N039_Paute_Cardenillo,Paute - Cardenillo,CANDIDATE,ZSO,Hydro,Reservoir,Water,HYDRO,Reservoir,595.6,2030,2080
+N040_Santiago_G8_Fase_I,"Santiago (G8), Fase I",CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,1200,2031,2081
+N041_Santiago_G8_Fase_II,"Santiago (G8), Fase II",CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,1200,2032,2082
+N042_Bermejo,Bermejo,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,6,2033,2083
+N043_El_Pimo,El Pimo,CANDIDATE,ZSO,Wind,Wind,Wind,WIND,VRE,150,2033,2063
+N044_Hidroalfa,Hidroalfa,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,30,2033,2083
+N045_Hidroriente,Hidroriente,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,99.96,2033,2083
+N046_Ilapo,Ilapo,CANDIDATE,ZSO,Solar PV,Solar PV,PV,PV,VRE,153.3,2033,2063
+N047_La_Ceiba,La Ceiba,CANDIDATE,ZSO,Solar PV,Solar PV,PV,PV,VRE,200,2033,2063
+N048_La_Esperanza,La Esperanza,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,14,2033,2083
+N049_Malchingui,Malchingui,CANDIDATE,ZNO,Solar PV,Solar PV,PV,PV,VRE,105.9,2033,2063
+N050_Matala,Matala,CANDIDATE,ZSO,Solar PV,Solar PV,PV,PV,VRE,100,2033,2063
+N051_Mazar_Flotante,Mazar Flotante,CANDIDATE,ZSO,Solar PV,Solar PV,PV,PV,VRE,200,2033,2063
+N052_Pifo_Pintag,Pifo-Pintag,CANDIDATE,ZNO,Solar PV,Solar PV,PV,PV,VRE,73.2,2033,2063
+N053_San_Antonio_Fotovoltaico,San Antonio Fotovoltaico,CANDIDATE,ZSX,Solar PV,Solar PV,PV,PV,VRE,100,2033,2063
+N054_San_Miguel_de_Ibarra_Ambuqui,San Miguel de Ibarra-Ambuqui,CANDIDATE,ZNO,Solar PV,Solar PV,PV,PV,VRE,126.6,2033,2063
+N055_Tambo_Dos,Tambo Dos,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,23.7,2033,2083
+N056_Tambo_Uno,Tambo Uno,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,19.48,2033,2083
+N057_Tocachi,Tocachi,CANDIDATE,ZNO,Solar PV,Solar PV,PV,PV,VRE,45,2033,2063
+N058_Urcuqui_CELEC_200,Urcuqui CELEC 200,CANDIDATE,ZNO,Solar PV,Solar PV,PV,PV,VRE,200,2033,2063
+N059_Chespi_Palma_Real,Chespí - Palma Real,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,460,2033,2083
+N060_Tigre,Tigre,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,80,2033,2083
+N061_Generic_Biomass_ZNX_1,Generic Biomass ZNX 1,CANDIDATE,ZNX,Biomass,Steam turbine,Biomass,BIOENERGY,Thermal,10,2033,2078
+N062_Generic_Biomass_ZNX_2,Generic Biomass ZNX 2,CANDIDATE,ZNX,Biomass,Steam turbine,Biomass,BIOENERGY,Thermal,10,2033,2078
+N063_Generic_Biomass_ZNX_3,Generic Biomass ZNX 3,CANDIDATE,ZNX,Biomass,Steam turbine,Biomass,BIOENERGY,Thermal,10,2033,2078
+N064_Generic_Biomass_ZSX_4,Generic Biomass ZSX 4,CANDIDATE,ZSX,Biomass,Steam turbine,Biomass,BIOENERGY,Thermal,10,2033,2078
+N065_Generic_Biomass_ZSX_5,Generic Biomass ZSX 5,CANDIDATE,ZSX,Biomass,Steam turbine,Biomass,BIOENERGY,Thermal,10,2033,2078
+N066_Generic_Biomass_ZSX_6,Generic Biomass ZSX 6,CANDIDATE,ZSX,Biomass,Steam turbine,Biomass,BIOENERGY,Thermal,10,2033,2078
+N067_Generic_Biomass_ZSX_7,Generic Biomass ZSX 7,CANDIDATE,ZSX,Biomass,Steam turbine,Biomass,BIOENERGY,Thermal,10,2033,2078
+N068_Generic_Wind_ZNX,Generic Wind ZNX,CANDIDATE,ZNX,Wind,Wind,Wind,WIND,VRE,300,2033,2063
+N069_Generic_Wind_ZNO,Generic Wind ZNO,CANDIDATE,ZNO,Wind,Wind,Wind,WIND,VRE,300,2033,2063
+N070_Generic_Wind_ZSX,Generic Wind ZSX,CANDIDATE,ZSX,Wind,Wind,Wind,WIND,VRE,300,2033,2063
+N071_Generic_Wind_ZSO,Generic Wind ZSO,CANDIDATE,ZSO,Wind,Wind,Wind,WIND,VRE,300,2033,2063
+N072_Chontal,Chontal,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,194,2034,2084
+N073_Caluma_Bajo,Caluma Bajo,CANDIDATE,ZSX,Hydro,Run-of-river,Water,HYDRO,ROR,12,2034,2084
+N074_Llurimaguas,Llurimaguas,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,162,2034,2084
+N075_Tortugo,Tortugo,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,201,2034,2084
+N076_Chacana_Cachiyacu,Chacana-Cachiyacu,CANDIDATE,ZNO,Geothermal,Geothermal,Geoter,GEOTHERMAL,Thermal,83,2036,2066
+N077_Chalupas,Chalupas,CANDIDATE,ZNO,Geothermal,Geothermal,Geoter,GEOTHERMAL,Thermal,283,2036,2066
+N078_La_Union,La Union,CANDIDATE,ZSX,Hydro,Run-of-river,Water,HYDRO,ROR,85,2036,2086
+N079_Tufino_Chiles_Cerro_Negro,Tufiño-Chiles-Cerro Negro,CANDIDATE,ZNO,Geothermal,Geothermal,Geoter,GEOTHERMAL,Thermal,330,2036,2066
+N080_Abitagua,Abitagua,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,165,2036,2086
+N081_Calderon,Calderón,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,147,2036,2086
+N082_Caluma_Alto,Caluma Alto,CANDIDATE,ZSX,Hydro,Run-of-river,Water,HYDRO,ROR,21,2036,2086
+N083_Chanchan,Chanchán,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,7.3,2036,2086
+N084_Chirapi,Chirapi,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,160,2036,2086
+N085_Cubi,Cubí,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,53,2036,2086
+N086_Echeandia_Alto,Echeandia Alto,CANDIDATE,ZSX,Hydro,Run-of-river,Water,HYDRO,ROR,18,2036,2086
+N087_Echeandia_bajo_2,Echeandia bajo 2,CANDIDATE,ZSX,Hydro,Run-of-river,Water,HYDRO,ROR,8.4,2036,2086
+N088_Langoa,Langoa,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,26,2036,2086
+N089_Lligua_Muyo,Lligua-Muyo,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,170,2036,2086
+N090_Parambas,Parambas,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,145,2036,2086
+N091_San_Pedro_Hydro_Annex2,San Pedro Hydro Annex2,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,83.4,2036,2086
+N092_Vacas_Galindo_2,Vacas Galindo 2,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,42,2036,2086
+N093_Victoria_2,Victoria 2,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,25,2036,2086
+N094_Zamora_G9_y_G10,Zamora G9 y G10,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,3180,2036,2086
+N095_Agua_Clara,Agua Clara,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,20,2038,2088
+N096_Bravo_Grande,Bravo Grande,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,10,2038,2088
+N097_Cinto,Cinto,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,45.8,2038,2088
+N098_Corazon,Corazón,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,18,2038,2088
+N099_Cuyes,Cuyes,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,51.3,2038,2088
+N100_Intag_1,Intag 1,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,15.3,2038,2088
+N101_Isimanchi,Isimanchi,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,51.1,2038,2088
+N102_Lachas,Lachas,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,6,2038,2088
+N103_Las_Cidras,Las Cidras,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,77.3,2038,2088
+N104_Los_Bancos,Los Bancos,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,92.2,2038,2088
+N105_Mira,Mira,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,41,2038,2088
+N106_Negro_2,Negro (2),CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,36,2038,2088
+N107_Numbala,Numbalá,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,39.2,2038,2088
+N108_Palanda_2,Palanda 2,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,84.7,2038,2088
+N109_Pamplona,Pamplona,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,40.5,2038,2088
+N110_Pilaton_Santa_Ana,Pilatón-Santa Ana,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,58.5,2038,2088
+N111_Puniyacu,Puniyacu,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,35.6,2038,2088
+N112_Valladolid,Valladolid,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,22.3,2038,2088
+N113_Alambi,Alambi,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,9.5,2040,2090
+N114_Alausi,Alausí,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,7.5,2040,2090
+N115_Alto_Tambo,Alto Tambo,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,60,2040,2090
+N116_Arenal,Arenal,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,40,2040,2090
+N117_Atenas,Atenas,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,14.8,2040,2090
+N118_Balsapamba,Balsapamba,CANDIDATE,ZSX,Hydro,Run-of-river,Water,HYDRO,ROR,8.1,2040,2090
+N119_Bellavista,Bellavista,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,11.6,2040,2090
+N120_Blanco,Blanco,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,15.5,2040,2090
+N121_Blanco_2,Blanco 2,CANDIDATE,ZSX,Hydro,Run-of-river,Water,HYDRO,ROR,8,2040,2090
+N122_Bombuscara,Bombuscara,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,21.6,2040,2090
+N123_Calderon_II,Calderón II,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,38.7,2040,2090
+N124_Casacay,Casacay,CANDIDATE,ZSX,Hydro,Run-of-river,Water,HYDRO,ROR,6.1,2040,2090
+N125_Catachi,Catachi,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,748,2040,2090
+N126_Cebadas,Cebadas,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,6.95,2040,2090
+N127_Cedroyacu,Cedroyacu,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,270,2040,2090
+N128_Chambo,Chambo,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,12.9,2040,2090
+N129_Chaumala,Chaumala,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,40,2040,2090
+N130_Chilma,Chilma,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,23.7,2040,2090
+N131_Chinambi,Chinambi,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,5,2040,2090
+N132_Chingual,Chingual,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,25.6,2040,2090
+N133_Collay,Collay,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,5.8,2040,2090
+N134_Cosanga,Cosanga,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,27,2040,2090
+N135_El_Angel,El Angel,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,19.1,2040,2090
+N136_El_Burro,El Burro,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,10.2,2040,2090
+N137_El_Canaro,El Cañaro,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,5.6,2040,2090
+N138_El_Retorno,El Retorno,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,261,2040,2090
+N139_Gualleturo,Gualleturo,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,27.7,2040,2090
+N140_Guangaje,Guangaje,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,15.2,2040,2090
+N141_Guayabal,Guayabal,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,39.8,2040,2090
+N142_Isinlivi,Isinliví,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,22,2040,2090
+N143_La_Barquilla,La Barquilla,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,40.1,2040,2090
+N144_Las_Juntas,Las Juntas,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,27.7,2040,2090
+N145_Lelia,Lelia,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,62.3,2040,2090
+N146_Lucarqui,Lucarquí,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,8.8,2040,2090
+N147_Mandur,Mandur,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,7.8,2040,2090
+N148_Milpe,Milpe,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,43.7,2040,2090
+N149_Mindo,Mindo,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,15.7,2040,2090
+N150_Mira_2,Mira 2,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,47.8,2040,2090
+N151_Miravalle,Miravalle,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,50,2040,2090
+N152_Misahualli,Misahuallí,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,120,2040,2090
+N153_Misahualli_2,Misahuallí-2,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,21.1,2040,2090
+N154_Palmar,Palmar,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,7.8,2040,2090
+N155_Pangor_I,Pangor I,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,14,2040,2090
+N156_Paquishapa,Paquishapa,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,26,2040,2090
+N157_Pastaza_1_Simon_Bolivar,Pastaza 1 Simón Bolívar,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,40,2040,2090
+N158_Pastaza_2_Kumay,Pastaza 2 - Kumay,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,40,2040,2090
+N159_Plata,Plata,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,14.2,2040,2090
+N160_Puela_2,Puela-2,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,14.8,2040,2090
+N161_Quijos_1,Quijos-1,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,24.2,2040,2090
+N162_Raura,Raura,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,15.8,2040,2090
+N163_Rayo,Rayo,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,7.5,2040,2090
+N164_San_Francisco_II,San Francisco II,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,9.4,2040,2090
+N165_San_Pedro_II,San Pedro II,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,9.5,2040,2090
+N166_Shincata,Shincata,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,14.3,2040,2090
+N167_Sigsipamba,Sigsipamba,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,10.9,2040,2090
+N168_Sucua,Sucúa,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,31.6,2040,2090
+N169_Susudel,Susudel,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,15.8,2040,2090
+N170_Tambo,Tambo,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,15.4,2040,2090
+N171_Tandapi,Tandapi,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,8.9,2040,2090
+N172_Tandayapa,Tandayapa,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,5,2040,2090
+N173_Tiwintza,Tiwintza,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,150,2040,2090
+N174_Tobar_Donoso,Tobar Donoso,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,80,2040,2090
+N175_Tomebamba,Tomebamba,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,6,2040,2090
+N176_Tulipe,Tulipe,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,7.8,2040,2090
+N177_Uchucay,Uchucay,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,8.4,2040,2090
+N178_Udushapa_I,Udushapa I,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,15.2,2040,2090
+N179_Udushapa_II,Udushapa II,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,13.1,2040,2090
+N180_Upano,Upano,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,20,2040,2090
+N181_Verdeyacu_Chico,Verdeyacu Chico,CANDIDATE,ZNO,Hydro,Run-of-river,Water,HYDRO,ROR,1172,2040,2090
+N182_Vivar,Vivar,CANDIDATE,ZSO,Hydro,Run-of-river,Water,HYDRO,ROR,5.9,2040,2090
+N183_Yacuchaqui,Yacuchaqui,CANDIDATE,ZNX,Hydro,Run-of-river,Water,HYDRO,ROR,32.2,2040,2090

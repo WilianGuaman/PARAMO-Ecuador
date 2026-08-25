@@ -14,6 +14,15 @@ Use **Study case** to switch between the Ecuador 24-Bus National Planning Case a
 - Year: 2025–2050.
 - Month: January–December where monthly results are available.
 
+## 6-Bus fuel display
+
+When the Ecuador 6-Bus case is active, the Generation Expansion section provides two reporting views:
+
+- **Fuel detail** — Hydro, solar PV, wind, geothermal, bioenergy, diesel, fuel oil/residual, natural gas, and imports.
+- **Technology aggregation** — the original model reporting classes, including the combined **Fossil thermal** category.
+
+The fuel-resolved view is the default because it preserves the distinction between petroleum-derived fuels and natural gas.
+
 ## Dashboard sections
 
 - Overview

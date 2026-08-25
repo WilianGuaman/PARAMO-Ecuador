@@ -257,3 +257,31 @@ ecuador_6bus,transmission.csv,ModelFromNode,Original 6-bus model source-zone cod
 ecuador_6bus,transmission.csv,ModelToNode,Original 6-bus model destination-zone code retained for traceability.,,True
 geography,international_interconnections.csv,external_system,External power system represented in PARAMO planning geography.,,True
 geography,international_interconnections.csv,modeled_import_capacity_mw,Import capacity represented in the planning data associated with the external system.,MW,True
+ecuador_6bus,generation_by_fuel.csv,Case,Model case,,True
+ecuador_6bus,generation_by_fuel.csv,Year,Planning year,year,True
+ecuador_6bus,generation_by_fuel.csv,FuelCategory,Public fuel/resource category,,True
+ecuador_6bus,generation_by_fuel.csv,Generation_GWh,Annual electricity generation,GWh,True
+ecuador_6bus,generation_by_fuel.csv,Unit,Unit label,,True
+ecuador_6bus,capacity_by_fuel.csv,Case,Model case,,True
+ecuador_6bus,capacity_by_fuel.csv,Year,Planning year,year,True
+ecuador_6bus,capacity_by_fuel.csv,FuelCategory,Public fuel/resource category,,True
+ecuador_6bus,capacity_by_fuel.csv,Capacity_MW,Installed operating capacity,MW,True
+ecuador_6bus,capacity_by_fuel.csv,Unit,Unit label,,True
+ecuador_6bus,new_capacity_by_fuel.csv,Case,Model case,,True
+ecuador_6bus,new_capacity_by_fuel.csv,Year,Planning year,year,True
+ecuador_6bus,new_capacity_by_fuel.csv,FuelCategory,Public fuel/resource category,,True
+ecuador_6bus,new_capacity_by_fuel.csv,NewCapacity_MW,Capacity commissioned in the year,MW,True
+ecuador_6bus,new_capacity_by_fuel.csv,Unit,Unit label,,True
+ecuador_6bus,emissions_by_fuel.csv,Case,Model case,,True
+ecuador_6bus,emissions_by_fuel.csv,Year,Planning year,year,True
+ecuador_6bus,emissions_by_fuel.csv,FuelCategory,Public fuel/resource category,,True
+ecuador_6bus,emissions_by_fuel.csv,CO2_kt,Annual direct model CO2 emissions assigned to fuel category,ktCO2,True
+ecuador_6bus,emissions_by_fuel.csv,Unit,Unit label,,True
+ecuador_6bus,generator_fuel_mapping.csv,Generator,PARAMO generator identifier,,True
+ecuador_6bus,generator_fuel_mapping.csv,GeneratorName,Generator/project name,,True
+ecuador_6bus,generator_fuel_mapping.csv,SourceFuel,Fuel label in 6-bus source trace,,True
+ecuador_6bus,generator_fuel_mapping.csv,PublicFuelCategory,Fuel/resource category used in public explorer,,True
+ecuador_6bus,generator_fuel_mapping.csv,Pgmax_MW,Unit nominal capacity,MW,True
+ecuador_6bus,fuel_taxonomy.csv,PublicFuelCategory,Public category used in explorer,,True
+ecuador_6bus,fuel_taxonomy.csv,SourceFuelValues,Source-trace fuel labels mapped to category,,True
+ecuador_6bus,fuel_taxonomy.csv,Interpretation,Public interpretation,,True

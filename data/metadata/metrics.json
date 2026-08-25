@@ -111,5 +111,32 @@
     "family": "network",
     "aggregation": "annual peak",
     "preferred_chart": "bar"
+  },
+  "installed_capacity_by_fuel": {
+    "display_name": "Installed capacity by fuel/resource",
+    "short_name": "Capacity by fuel",
+    "unit": "MW",
+    "family": "expansion",
+    "aggregation": "year-end capacity by public fuel/resource category",
+    "preferred_chart": "area",
+    "scope": "Ecuador 6-Bus"
+  },
+  "annual_generation_by_fuel": {
+    "display_name": "Annual generation by fuel/resource",
+    "short_name": "Generation by fuel",
+    "unit": "GWh",
+    "family": "operation",
+    "aggregation": "annual generation by public fuel/resource category",
+    "preferred_chart": "stacked_bar",
+    "scope": "Ecuador 6-Bus"
+  },
+  "annual_emissions_by_fuel": {
+    "display_name": "Annual CO2 emissions by fuel",
+    "short_name": "CO2 by fuel",
+    "unit": "ktCO2",
+    "family": "decarbonization",
+    "aggregation": "annual direct model emissions by public fuel category",
+    "preferred_chart": "stacked_bar",
+    "scope": "Ecuador 6-Bus"
   }
 }

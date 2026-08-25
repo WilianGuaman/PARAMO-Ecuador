@@ -1,5 +1,7 @@
 # Licensing and attribution
 
+Copyright © 2026 **Wilian Guamán Cuenca** for the original dashboard code, PARAMO-derived public result tables, original figures and documentation, subject to the component-level terms below.
+
 PARAMO Ecuador Results Explorer separates software, public research results, and third-party reference data.
 
 | Component | Terms |
@@ -19,3 +21,7 @@ Public PARAMO-derived results and original figures from this repository must be 
 Guamán, W., Benalcazar, P., Cordova-Garcia, J., & Torres, M. (2025). *An integrated framework for the optimal expansion of hydro-dependent power systems under water-resource uncertainty*. Energy Conversion and Management: X, 28, 101297. https://doi.org/10.1016/j.ecmx.2025.101297
 
 Third-party datasets retain their original provenance and terms. The public geography layer is contextual and does not imply redistribution rights beyond the source terms documented in `docs/DATA_PROVENANCE.md`.
+
+## Public research data
+
+Unless a file or provenance record states otherwise, PARAMO-derived result tables, original figures and original documentation are licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**. Scholarly reuse should identify **Wilian Guamán Cuenca**, **PARAMO Ecuador Results Explorer**, and the repository URL or persistent archival identifier of the release used.

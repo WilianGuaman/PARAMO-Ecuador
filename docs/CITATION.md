@@ -4,7 +4,7 @@
 
 When using the interactive explorer, public result tables, figures or derived data, cite the repository:
 
-> Guamán Cuenca, W. (2026). *PARAMO Ecuador Results Explorer: Planning And Resource Allocation under Multi-scenario Optimization* (Version 1.0.3) [Software and public research results]. GitHub. https://github.com/WilianGuaman/PARAMO-Ecuador
+> Guamán Cuenca, W. (2026). *PARAMO Ecuador Results Explorer: Planning And Resource Allocation under Multi-scenario Optimization* (Version 1.1.0) [Software and public research results]. GitHub. https://github.com/WilianGuaman/PARAMO-Ecuador
 
 Machine-readable formats are available in the repository root:
 

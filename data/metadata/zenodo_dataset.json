@@ -1,7 +1,7 @@
 {
   "title": "PARAMO Ecuador Public Results Dataset",
   "upload_type": "dataset",
-  "description": "Curated public result tables for the PARAMO Ecuador 24-bus national planning case and Ecuador 6-bus reduced planning case, including cost, emissions, ENS, expansion, hydrology, reservoir and network outputs.",
+  "description": "Curated public result tables for the PARAMO Ecuador 24-bus national planning case and Ecuador 6-bus reduced planning case, including cost, emissions, energy not served, expansion, hydrology, reservoir and network outputs. The 6-bus release includes validated fuel-resolved capacity, additions, generation and CO2 emissions for diesel, fuel oil/residual and natural gas.",
   "creators": [
     {
       "name": "Guamán Cuenca, Wilian"
@@ -9,8 +9,8 @@
   ],
   "access_right": "open",
   "license": "cc-by-4.0",
-  "version": "1.0.0",
-  "publication_date": "2026-08-24",
+  "version": "1.1.0",
+  "publication_date": "2026-08-25",
   "keywords": [
     "power system planning",
     "Monte Carlo",
@@ -23,7 +23,7 @@
   "related_identifiers": [
     {
       "identifier": "10.1016/j.ecmx.2025.101297",
-      "relation": "isSupplementTo",
+      "relation": "references",
       "scheme": "doi"
     }
   ]

@@ -1,7 +1,7 @@
 {
   "title": "PARAMO Ecuador Results Explorer: Planning And Resource Allocation under Multi-scenario Optimization",
   "upload_type": "software",
-  "description": "Interactive research explorer for long-term power-system planning results generated with PARAMO, including Ecuador 24-bus and 6-bus study cases.",
+  "description": "Interactive research explorer for long-term power-system planning results generated with PARAMO, including Ecuador 24-bus and 6-bus study cases, hydrological uncertainty, system expansion, emissions, reliability and fuel-resolved 6-bus results.",
   "creators": [
     {
       "name": "Guamán Cuenca, Wilian"
@@ -9,8 +9,8 @@
   ],
   "access_right": "open",
   "license": "Apache-2.0",
-  "version": "1.0.0",
-  "publication_date": "2026-08-24",
+  "version": "1.1.0",
+  "publication_date": "2026-08-25",
   "keywords": [
     "power system planning",
     "generation expansion",
@@ -23,7 +23,7 @@
   "related_identifiers": [
     {
       "identifier": "10.1016/j.ecmx.2025.101297",
-      "relation": "isSupplementTo",
+      "relation": "references",
       "scheme": "doi"
     }
   ]

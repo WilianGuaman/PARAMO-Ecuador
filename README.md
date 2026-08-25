@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://wilianguaman.github.io/PARAMO-Ecuador/"><img src="assets/brand/open-dashboard.svg" alt="Open interactive dashboard" width="430"></a>
   &nbsp;&nbsp;
-  <a href="downloads/PARAMO_Ecuador_Public_Results_v1.0.3.zip"><img src="assets/brand/download-data.svg" alt="Download public data" width="320"></a>
+  <a href="downloads/PARAMO_Ecuador_Public_Results_v1.1.0.zip"><img src="assets/brand/download-data.svg" alt="Download public data" width="320"></a>
 </p>
 
 <p align="center">
@@ -26,6 +26,10 @@
 |---|---|---|---|---|
 | **Ecuador 24-Bus National Planning Case** | REF · BRIDGE · NZT | Baseline · Adverse | W100 · W5 | Generation expansion, operation, reservoirs, CO₂, ENS, costs, uncertainty and transmission-investment context |
 | **Ecuador 6-Bus Reduced Planning Case** | BAU · REN100 | Normal · Extreme | Single realization | Generation/transmission expansion, corridor utilization, reservoirs, CO₂, ENS and costs |
+
+### 6-Bus fuel-resolved reporting
+
+The reduced case retains the original model category **Fossil thermal** for direct traceability and also provides a fuel-resolved view. Diesel, fuel oil/residual, and natural gas are reported separately using the generator-level source-fuel trace. This distinction applies consistently to installed capacity, capacity additions, annual generation, and CO₂ emissions. The reconstruction reproduces the original `FossilThermal` aggregate for every case and year within listing-output precision.
 
 ## Ecuador planning geography
 
@@ -56,7 +60,7 @@ Every chart supports data/figure export. A selected configuration can be downloa
 
 ## Public data
 
-**Complete dataset:** [`PARAMO_Ecuador_Public_Results_v1.0.3.zip`](downloads/PARAMO_Ecuador_Public_Results_v1.0.3.zip)
+**Complete dataset:** [`PARAMO_Ecuador_Public_Results_v1.1.0.zip`](downloads/PARAMO_Ecuador_Public_Results_v1.1.0.zip)
 
 The public distribution contains curated result tables, geography, crosswalks, metric definitions and provenance metadata. It excludes the private optimization implementation, private InputData workbooks, GDX/LST files and solver logs.
 
@@ -71,7 +75,7 @@ Technical documentation:
 
 **PARAMO Ecuador Results Explorer**
 
-> Guamán Cuenca, W. (2026). *PARAMO Ecuador Results Explorer: Planning And Resource Allocation under Multi-scenario Optimization* (Version 1.0.3) [Software and public research results]. GitHub. https://github.com/WilianGuaman/PARAMO-Ecuador
+> Guamán Cuenca, W. (2026). *PARAMO Ecuador Results Explorer: Planning And Resource Allocation under Multi-scenario Optimization* (Version 1.1.0) [Software and public research results]. GitHub. https://github.com/WilianGuaman/PARAMO-Ecuador
 
 **Associated methodology**
 
@@ -93,5 +97,5 @@ Copyright © 2026 **Wilian Guamán Cuenca**. See [`LICENSES.md`](LICENSES.md) fo
 <p align="center">
   <a href="https://wilianguaman.github.io/PARAMO-Ecuador/"><strong>Open Dashboard</strong></a> ·
   <a href="docs/CITATION.md"><strong>Cite PARAMO</strong></a> ·
-  <a href="downloads/PARAMO_Ecuador_Public_Results_v1.0.3.zip"><strong>Download Data</strong></a>
+  <a href="downloads/PARAMO_Ecuador_Public_Results_v1.1.0.zip"><strong>Download Data</strong></a>
 </p>

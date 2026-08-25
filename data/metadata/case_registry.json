@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
+  "version": "1.1.0",
   "cases": [
     {
       "id": "ecuador_24bus",
@@ -74,9 +74,10 @@
         "transmission_cost": true,
         "line_expansion": true,
         "line_flows": true,
-        "reconductoring_context": false
+        "reconductoring_context": false,
+        "fuel_detail": true
       },
-      "public_scope_note": "The public distribution includes corridor utilization, new circuits and transmission CAPEX.",
+      "public_scope_note": "The public distribution includes corridor utilization, new circuits, transmission CAPEX, and fuel-resolved capacity, generation, additions, and CO2 emissions.",
       "zone_code_convention": "Canonical public zone codes with original model codes retained as traceability fields."
     }
   ]

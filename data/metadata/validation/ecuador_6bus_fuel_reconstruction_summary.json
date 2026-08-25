@@ -1,0 +1,70 @@
+{
+  "unmapped_generators": [],
+  "rows_seen": {
+    "BAU_Normal_gp": 102960,
+    "BAU_Normal_build": 4758,
+    "BAU_Normal_op": 8580,
+    "BAU_Extreme_gp": 102960,
+    "BAU_Extreme_build": 4758,
+    "BAU_Extreme_op": 8580,
+    "REN100_Normal_gp": 102960,
+    "REN100_Normal_build": 4758,
+    "REN100_Normal_op": 8580,
+    "REN100_Extreme_gp": 102960,
+    "REN100_Extreme_build": 4758,
+    "REN100_Extreme_op": 8580
+  },
+  "checks": 416,
+  "failures": 0,
+  "max_abs_diff": 0.0697440000012648,
+  "examples": {
+    "BAU_Normal_2025_generation_GWh": {
+      "HYDRO": 32585.508000000053,
+      "PV": 521.5392000000002,
+      "WIND": 620.0568000000001,
+      "GEOTHERMAL": 0.0,
+      "BIOENERGY": 1022.4647999999999,
+      "DIESEL": 0.0,
+      "FUEL OIL": 4796.8776000000025,
+      "GAS": 531.9288,
+      "IMPORTS": 2237.3496,
+      "OTHER": 0
+    },
+    "BAU_Normal_2050_generation_GWh": {
+      "HYDRO": 77184.29519999995,
+      "PV": 5276.0592000000015,
+      "WIND": 6671.9447999999975,
+      "GEOTHERMAL": 0.0,
+      "BIOENERGY": 26.3592,
+      "DIESEL": 316.66319999999996,
+      "FUEL OIL": 6819.818400000001,
+      "GAS": 3563.2152000000006,
+      "IMPORTS": 1905.8616,
+      "OTHER": 0
+    },
+    "REN100_Normal_2050_generation_GWh": {
+      "HYDRO": 80205.0263999999,
+      "PV": 5276.0592000000015,
+      "WIND": 6671.9447999999975,
+      "GEOTHERMAL": 5460.249599999999,
+      "BIOENERGY": 372.06,
+      "DIESEL": 0.0,
+      "FUEL OIL": 0.0,
+      "GAS": 0.0,
+      "IMPORTS": 1844.856,
+      "OTHER": 0
+    },
+    "BAU_Normal_2025_capacity_MW": {
+      "HYDRO": 5359.5499999999965,
+      "PV": 223.6,
+      "WIND": 176.48,
+      "GEOTHERMAL": 0.0,
+      "BIOENERGY": 143.6,
+      "DIESEL": 516.0699999999999,
+      "FUEL OIL": 1331.15,
+      "GAS": 249.6,
+      "IMPORTS": 510.0,
+      "OTHER": 0
+    }
+  }
+}
