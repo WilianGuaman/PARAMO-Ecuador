@@ -1,11 +1,11 @@
 case_id,scenario,hydrology,label,description
-ecuador_24bus,REF,Baseline,Reference,Reference policy pathway used as the national comparison benchmark.
-ecuador_24bus,REF,Adverse,Reference,Reference policy pathway used as the national comparison benchmark.
+ecuador_24bus,REF,Baseline,Reference,Reference national pathway.
+ecuador_24bus,REF,Adverse,Reference,Reference national pathway under adverse hydrology.
 ecuador_24bus,BRIDGE,Baseline,Bridge Transition,"Transition pathway balancing diversification, cost and adequacy."
-ecuador_24bus,BRIDGE,Adverse,Bridge Transition,"Transition pathway balancing diversification, cost and adequacy."
-ecuador_24bus,NZT,Baseline,Net-Zero Transition,Deep-decarbonization pathway with stronger low-carbon expansion requirements.
-ecuador_24bus,NZT,Adverse,Net-Zero Transition,Deep-decarbonization pathway with stronger low-carbon expansion requirements.
-ecuador_6bus,BAU,Normal,Business as Usual,Business-as-usual planning policy.
-ecuador_6bus,BAU,Extreme,Business as Usual,Business-as-usual planning policy.
-ecuador_6bus,REN100,Normal,100% Renewable Expansion,Renewable-oriented expansion policy used in the reduced planning case.
-ecuador_6bus,REN100,Extreme,100% Renewable Expansion,Renewable-oriented expansion policy used in the reduced planning case.
+ecuador_24bus,BRIDGE,Adverse,Bridge Transition,Bridge pathway under adverse hydrology.
+ecuador_24bus,NZT,Baseline,Net-Zero Transition,Deep-decarbonization national pathway.
+ecuador_24bus,NZT,Adverse,Net-Zero Transition,Net-zero transition under adverse hydrology.
+ecuador_6bus,BAU,Normal,Business as Usual,Business-as-usual planning under normal hydrology.
+ecuador_6bus,BAU,Extreme,Business as Usual,Business-as-usual planning under extreme hydrology.
+ecuador_6bus,REN100,Normal,100% Renewable,Renewable-target pathway under normal hydrology.
+ecuador_6bus,REN100,Extreme,100% Renewable,Renewable-target pathway under extreme hydrology.

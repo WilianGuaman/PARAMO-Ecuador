@@ -1,101 +1,140 @@
 <p align="center">
-  <a href="https://wilianguaman.github.io/PARAMO-Ecuador/"><img src="assets/brand/paramo-logo-horizontal.png" alt="PARAMO — Planning And Resource Allocation under Multi-scenario Optimization" width="880"></a>
+  <img src="assets/brand/paramo-logo-horizontal.svg" alt="PARAMO" width="560">
 </p>
 
-<p align="center"><strong>Interactive long-term power-system planning results for Ecuador</strong></p>
+<p align="center">
+  <strong>PARAMO Ecuador Results Explorer</strong><br>
+  Long-term generation, transmission and hydropower planning under hydrological uncertainty · 2025–2050
+</p>
 
 <p align="center">
-  <a href="https://wilianguaman.github.io/PARAMO-Ecuador/"><img src="assets/brand/open-dashboard.svg" alt="Open interactive dashboard" width="430"></a>
+  <a href="https://wilianguaman.github.io/PARAMO-Ecuador/"><img src="assets/brand/open-dashboard.svg" alt="Open dashboard" width="320"></a>
   &nbsp;&nbsp;
-  <a href="downloads/PARAMO_Ecuador_Public_Results_v1.1.0.zip"><img src="assets/brand/download-data.svg" alt="Download public data" width="320"></a>
+  <a href="https://github.com/WilianGuaman/PARAMO-Ecuador/issues/new?template=data-access-request.yml"><img src="assets/brand/request-data.svg" alt="Request research data" width="320"></a>
 </p>
 
 <p align="center">
-  <a href="https://wilianguaman.github.io/PARAMO-Ecuador/"><img src="assets/readme/paramo-ecuador-hero.png" alt="PARAMO Ecuador Results Explorer" width="100%"></a>
+  <a href="https://github.com/WilianGuaman/PARAMO-Ecuador/issues/new?template=data-access-request.yml"><strong>Request research data</strong></a>
+  &nbsp;·&nbsp;
+  <a href="docs/CITATION.md"><strong>Cite PARAMO</strong></a>
+  &nbsp;·&nbsp;
+  <a href="docs/METHODOLOGY.md"><strong>Methodology</strong></a>
 </p>
 
-# PARAMO Ecuador Results Explorer
+---
 
-**PARAMO — Planning And Resource Allocation under Multi-scenario Optimization** is a long-term power-system planning framework for hydro-dependent systems. This public repository provides interactive results for two Ecuador planning applications, covering expansion, hydrology, operation, decarbonization, reliability, costs and uncertainty.
+## Overview
 
-<p align="center"><a href="https://wilianguaman.github.io/PARAMO-Ecuador/"><strong>▶ OPEN THE INTERACTIVE RESULTS EXPLORER</strong></a></p>
+**PARAMO** — *Planning And Resource Allocation under Multi-scenario Optimization* — is a long-term power-system planning framework for hydro-dependent systems. This repository contains the public Ecuador Results Explorer, not the optimization engine or the private research database.
 
-## Study cases
+The explorer combines two complementary study cases:
 
-| Study case | Planning pathways | Hydrology | Uncertainty | Public result scope |
-|---|---|---|---|---|
-| **Ecuador 24-Bus National Planning Case** | REF · BRIDGE · NZT | Baseline · Adverse | W100 · W5 | Generation expansion, operation, reservoirs, CO₂, ENS, costs, uncertainty and transmission-investment context |
-| **Ecuador 6-Bus Reduced Planning Case** | BAU · REN100 | Normal · Extreme | Single realization | Generation/transmission expansion, corridor utilization, reservoirs, CO₂, ENS and costs |
+| Study case | Policy pathways | Hydrology | Public uncertainty representation |
+|---|---|---|---|
+| **Ecuador 24-Bus** | REF, BRIDGE, NZT | Baseline, Adverse | Aggregate Monte Carlo statistics plus representative trajectories |
+| **Ecuador 6-Bus** | BAU, REN100 | Normal, Extreme | Four validated single-realization planning cases (`W=1`) |
 
-### 6-Bus fuel-resolved reporting
+The 6-bus public results were regenerated from the current PARAMO output layer. All four configurations completed with `ModelStat = 8`, `SolveStat = 1`, MIP gap below 1%, zero base-year endogenous build, and numerical balance residuals within tolerance. See [`docs/VALIDATION.md`](docs/VALIDATION.md).
 
-The reduced case retains the original model category **Fossil thermal** for direct traceability and also provides a fuel-resolved view. Diesel, fuel oil/residual, and natural gas are reported separately using the generator-level source-fuel trace. This distinction applies consistently to installed capacity, capacity additions, annual generation, and CO₂ emissions. The reconstruction reproduces the original `FossilThermal` aggregate for every case and year within listing-output precision.
+## Explorer
 
-## Ecuador planning geography
+The interface is organized around planning questions rather than raw result files:
 
-The map links the reduced PARAMO representation to georeferenced Ecuador Power DataHub records. Internal planning nodes are shown by canonical zone, reference generation assets provide physical context, and **Colombia and Peru are retained as external systems in both study representations**.
+- **Overview** — system cost, cumulative CO₂, ENS, expansion and final renewable share.
+- **Generation Expansion** — capacity, additions and annual generation by technology or fuel/resource.
+- **Transmission & Reconductoring** — 6-bus corridor capacity, expansion/reinforcement state, peak flow, utilization and investment.
+- **Hydrology & Reservoirs** — hydro availability, reservoir operation and selected hydraulic cascades.
+- **System Operation** — monthly energy balance, reserve, curtailment, imports and ENS.
+- **Emissions & Decarbonization** — annual and cumulative carbon outcomes.
+- **Reliability & ENS** — reliability trajectories and cost trade-offs.
+- **Costs & Uncertainty** — cost composition and available uncertainty summaries.
+- **Scenario Comparison** — common indicators for two selected configurations.
 
-<p align="center"><img src="assets/readme/ecuador-network-zones.png" alt="Ecuador planning network, canonical zones, reference plants and international interconnections" width="96%"></p>
+The map distinguishes reduced planning corridors from the georeferenced reference network. Reference plants can be displayed independently. For the 6-bus case, corridor width represents available capacity and corridor color identifies the cumulative expansion state.
 
-The public geography distinguishes verified/canonical coordinates from schematic external-system display anchors. The 6-bus public tables use the canonical zone convention and retain the original model zone codes in traceability fields.
+## Hydropower cascades
 
-## Planning outcomes
+The reduced Ecuador case includes explicit hydraulic relationships used in the explorer:
 
-Cost, CO₂ emissions and energy not served are reported together so that economic, decarbonization and reliability trade-offs remain visible.
+- **Paute:** Mazar → Paute Molino → Sopladora → Cardenillo
+- **Agoyán:** Agoyán → San Francisco
+- **Pucará:** independent reservoir
 
-<p align="center"><img src="assets/readme/planning-results-overview.png" alt="PARAMO planning results comparing total system cost, carbon emissions and energy not served" width="96%"></p>
+The public hydrology view combines reservoir storage/output data with a separate cascade-hydraulics layer for zero-storage run-of-river plants. This avoids treating every hydro plant as a reservoir while preserving the water-transfer information needed to interpret the cascades.
 
-Selected national results include:
+## Public-data policy
 
-- **BRIDGE · Baseline:** mean total system cost of **28.18 billion USD** and cumulative emissions of **43.36 MtCO₂**.
-- **NZT · Baseline:** cumulative emissions of **22.02 MtCO₂**, the lowest of the three national pathways under Baseline hydrology.
-- **Adverse hydrology:** higher costs and emissions across the national pathways, quantifying the consequences of hydro-climatic stress.
-- **Reliability:** ENS is reported by pathway, hydrology, year and uncertainty statistic rather than treated as a secondary indicator.
+This repository intentionally does **not** distribute the full model-result database. GitHub Pages is a static application: any value delivered to the browser is technically accessible. The browser bundle therefore contains only the aggregates and selected diagnostics required by the public visualizations.
 
-## Interactive explorer
+Not distributed through this repository:
 
-The dashboard includes generation expansion, transmission and reconductoring context, hydrology and reservoirs, system operation, emissions, ENS, cost/uncertainty analysis and direct scenario comparison. The 24-bus Baseline ensemble contains **100 Monte Carlo realizations** and the Adverse ensemble contains **5**. Mean, P10, P50 and P90 selections are applied to the cumulative indicators available at ensemble level; annual and monthly operational trajectories are identified as representative-realization results.
+- PARAMO GAMS source/model implementation;
+- InputData workbooks;
+- GDX, LST and solver-log files;
+- the complete Results workbook;
+- full generator-level annual/build outputs;
+- Monte Carlo realization-level result tables.
 
-Every chart supports data/figure export. A selected configuration can be downloaded as a ZIP directly from the browser.
+Additional research data may be requested using the repository data-access form. Requests are reviewed before any non-public material is shared.
 
-## Public data
+**Data access:** [`docs/DATA_ACCESS.md`](docs/DATA_ACCESS.md) · [Open request form](https://github.com/WilianGuaman/PARAMO-Ecuador/issues/new?template=data-access-request.yml)
 
-**Complete dataset:** [`PARAMO_Ecuador_Public_Results_v1.1.0.zip`](downloads/PARAMO_Ecuador_Public_Results_v1.1.0.zip)
+## Public repository structure
 
-The public distribution contains curated result tables, geography, crosswalks, metric definitions and provenance metadata. It excludes the private optimization implementation, private InputData workbooks, GDX/LST files and solver logs.
+```text
+PARAMO-Ecuador/
+├─ index.html                     # GitHub Pages explorer
+├─ assets/
+│  ├─ js/dashboard.js             # visualization logic
+│  ├─ js/dashboard_data.js        # minimal chart-ready public bundle
+│  ├─ css/dashboard.css
+│  ├─ brand/
+│  └─ vendor/plotly-3.3.1.min.js
+├─ data/
+│  ├─ geography/                  # public reference geography
+│  └─ metadata/                   # schemas, validation and release manifest
+├─ docs/
+│  ├─ METHODOLOGY.md
+│  ├─ DATA_PROVENANCE.md
+│  ├─ DATA_ACCESS.md
+│  ├─ VALIDATION.md
+│  ├─ LIMITATIONS.md
+│  └─ CITATION.md
+├─ CITATION.cff
+└─ LICENSES.md
+```
 
-Technical documentation:
+## Reproducibility and provenance
 
-- [`docs/METHODOLOGY.md`](docs/METHODOLOGY.md)
+The dashboard is a publication layer for precomputed PARAMO results. The source result workbooks are audited offline before a public bundle is generated. The public release retains case/scenario metadata, validation summaries and file hashes without exposing the complete research database.
+
 - [`docs/DATA_PROVENANCE.md`](docs/DATA_PROVENANCE.md)
-- [`docs/LIMITATIONS.md`](docs/LIMITATIONS.md)
-- [`data/metadata/data_dictionary.csv`](data/metadata/data_dictionary.csv)
+- [`data/metadata/public_bundle_schema.json`](data/metadata/public_bundle_schema.json)
+- [`data/metadata/validation/ecuador_6bus_v2_validation.json`](data/metadata/validation/ecuador_6bus_v2_validation.json)
+- [`data/metadata/public_release_manifest.csv`](data/metadata/public_release_manifest.csv)
 
 ## Citation
 
-**PARAMO Ecuador Results Explorer**
+**Explorer / software release**
 
-> Guamán Cuenca, W. (2026). *PARAMO Ecuador Results Explorer: Planning And Resource Allocation under Multi-scenario Optimization* (Version 1.1.0) [Software and public research results]. GitHub. https://github.com/WilianGuaman/PARAMO-Ecuador
+> Guamán Cuenca, W. (2026). *PARAMO Ecuador Results Explorer: Planning And Resource Allocation under Multi-scenario Optimization* (Version 2.0.0) [Software and public research results]. GitHub. https://github.com/WilianGuaman/PARAMO-Ecuador
 
-**Associated methodology**
+**Foundational methodology**
 
 > Guamán, W., Benalcazar, P., Cordova-Garcia, J., & Torres, M. (2025). *An integrated framework for the optimal expansion of hydro-dependent power systems under water-resource uncertainty*. **Energy Conversion and Management: X, 28**, 101297. https://doi.org/10.1016/j.ecmx.2025.101297
 
-Machine-readable citation: [`CITATION.cff`](CITATION.cff). Additional formats: [`BibTeX`](docs/citation/CITATION.bib) · [`RIS`](docs/citation/CITATION.ris).
+Machine-readable citation: [`CITATION.cff`](CITATION.cff) · [`BibTeX`](docs/citation/CITATION.bib) · [`RIS`](docs/citation/CITATION.ris)
 
 ## Licensing
 
 | Component | Terms |
 |---|---|
-| Dashboard source code | **Apache License 2.0** |
-| PARAMO-derived public results, original figures and documentation | **CC BY 4.0** |
-| Third-party reference data | Original source terms apply |
-| PARAMO optimization model and non-public model assets | **Not distributed** |
+| Dashboard source code | Apache License 2.0 |
+| PARAMO-derived public visualization data and original documentation | CC BY 4.0 where indicated |
+| Plotly.js | MIT License |
+| Third-party reference geography | Original source terms apply |
+| PARAMO optimization engine and non-public research assets | Not distributed |
 
-Copyright © 2026 **Wilian Guamán Cuenca**. See [`LICENSES.md`](LICENSES.md) for component-level terms and attribution.
+See [`LICENSES.md`](LICENSES.md) for component-level terms and attribution.
 
-<p align="center">
-  <a href="https://wilianguaman.github.io/PARAMO-Ecuador/"><strong>Open Dashboard</strong></a> ·
-  <a href="docs/CITATION.md"><strong>Cite PARAMO</strong></a> ·
-  <a href="downloads/PARAMO_Ecuador_Public_Results_v1.1.0.zip"><strong>Download Data</strong></a>
-</p>
+Copyright © 2026 **Wilian Guamán Cuenca**.

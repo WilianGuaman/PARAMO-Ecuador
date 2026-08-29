@@ -4,17 +4,27 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Python
+# Local build/runtime files
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 .venv/
 venv/
 
-# Private model artifacts must never enter the public repository
+# PARAMO private / solver artifacts must never enter this public repository
+*.gms
 *.gdx
 *.lst
+*.lxi
 *.log
-*.gms
-InputData*.xlsx
+*.xlsx
+*.xlsb
+*.g00
+*.g0?
+*.opt
+
+# Full public-result archives are distributed only through controlled access
+/downloads/
+
+# Generic private-work markers
 *private*

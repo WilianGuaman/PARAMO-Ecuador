@@ -1,42 +1,53 @@
-# Methodology
+# Methodology summary
 
 ## PARAMO
 
-**PARAMO** stands for **Planning And Resource Allocation under Multi-scenario Optimization**. It is a long-term power-system planning framework for hydro-dependent systems, integrating investment and operational decisions under policy and hydrological uncertainty.
+PARAMO — **Planning And Resource Allocation under Multi-scenario Optimization** — is used to evaluate long-term generation and transmission expansion in hydro-dependent power systems. The public explorer reports precomputed outcomes; the optimization implementation is not distributed in this repository.
 
-This repository exposes precomputed public research results. The optimization formulation, GAMS implementation, private InputData workbooks, GDX/LST files and solver logs are outside the public distribution.
+The integrated methodology includes generation expansion, transmission expansion/reconductoring, DC network representation, hydropower availability, reservoir/cascade operation, reserve/adequacy conditions, policy constraints and economic/emissions accounting.
 
-## Ecuador 24-Bus National Planning Case
+The associated methodological publication is:
 
-The national planning case evaluates **REF**, **BRIDGE** and **NZT** over 2025–2050 under two hydrological conditions:
+> Guamán, W., Benalcazar, P., Cordova-Garcia, J., & Torres, M. (2025). *An integrated framework for the optimal expansion of hydro-dependent power systems under water-resource uncertainty*. Energy Conversion and Management: X, 28, 101297. https://doi.org/10.1016/j.ecmx.2025.101297
 
-- **Baseline hydrology:** 100 Monte Carlo realizations.
-- **Adverse hydrology:** 5 realizations.
+## Ecuador 24-Bus national case
 
-The explorer reports ensemble statistics together with representative-realization trajectories. Cost, generation expansion, emissions, energy not served, hydrology and reservoir behavior are presented through a common metric layer.
+The national planning case spans 2025–2050 and compares REF, BRIDGE and NZT pathways under Baseline and Adverse hydrology. The public release retains the audited aggregate statistics from the Baseline W100 and Adverse W5 ensembles together with representative annual/monthly operational trajectories.
 
-## Ecuador 6-Bus Reduced Planning Case
+The visualizer reports generation/capacity, cost, emissions, reliability, hydrology and aggregate transmission-investment indicators. Realization-level source tables are not distributed.
 
-The reduced planning case evaluates **BAU** and **REN100** under **Normal** and **Extreme** hydrology. Its public result layer includes corridor-level outputs such as new circuits, peak absolute flow, utilization and transmission CAPEX.
+## Ecuador 6-Bus reduced case
 
-## Public results layer
+The current reduced case spans 2025–2050 and compares four configurations:
 
-The dashboard separates three information classes:
+| Policy | Hydrology |
+|---|---|
+| BAU | Normal |
+| BAU | Extreme |
+| REN100 | Normal |
+| REN100 | Extreme |
 
-1. **Optimization results** generated with PARAMO.
-2. **Derived indicators** calculated from public result tables.
-3. **Reference-system geography** from the Ecuador Power DataHub used for spatial context and crosswalks.
+The public version uses one active realization (`W=1`) per configuration. The four cases share the same 330-generator, 6-node, 7-corridor model structure. REN100 activates the renewable-policy constraints used by the source model; BAU provides the business-as-usual comparison.
 
-Reference geography must not be interpreted as a statement that every physical plant, substation or transmission asset is represented explicitly as an optimization object.
+The result layer includes:
 
-## Reliability metric
+- total and component costs;
+- annual/monthly energy balance;
+- generation and installed/new capacity;
+- direct CO₂ emissions;
+- ENS, imports, curtailment and reserve indicators;
+- corridor capacity, flow, utilization, reinforcement/new-circuit decisions and CAPEX;
+- reservoir operation and water balance;
+- selected cascade-ROR hydraulics.
 
-Energy not served (ENS) is calculated from realization-level PNS result tables in the national public layer, providing a consistent source for scenario, hydrology and uncertainty comparisons.
+## Hydropower representation
 
-## Foundational publication
+Hydro availability is time- and scenario-dependent. Reservoir plants retain storage-volume and water-balance equations. Zero-storage run-of-river plants in explicit cascades receive upstream water according to the configured total-release or turbine-only relationship.
 
-Guamán, W., Benalcazar, P., Cordova-Garcia, J., & Torres, M. (2025). *An integrated framework for the optimal expansion of hydro-dependent power systems under water-resource uncertainty*. **Energy Conversion and Management: X, 28**, 101297. https://doi.org/10.1016/j.ecmx.2025.101297
+The public visualizer presents these two output classes separately and recombines them only for interpretation of the Paute and Agoyán cascades.
 
-## Fuel-resolved reporting for the 6-Bus case
+## Public reporting transformation
 
-The 6-bus model retains its original `FossilThermal` reporting category. For public interpretation, PARAMO Ecuador additionally reports diesel, fuel oil/residual, and natural gas separately. This refinement changes only the reporting layer; it does not modify or re-solve the optimization cases.
+The public layer is generated after the optimization run. Model outputs are audited, then transformed into aggregate arrays required by the dashboard. Full generator-level and realization-level source tables are kept outside the public repository.
+
+This separation is intentional: publication logic can evolve without changing the mathematical optimization model, while the source run remains auditable through retained validation metadata.

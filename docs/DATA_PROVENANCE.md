@@ -1,29 +1,80 @@
 # Data provenance
 
-The explorer combines two public information classes:
+## Public result layer
 
-1. **PARAMO model results** derived from the national planning-result archives and the calibrated 6-bus result workbook.
-2. **Reference-system geography** derived from Ecuador Power DataHub v0.10.1 crosswalk and canonical layers.
+The explorer combines two classes of information:
 
-Reference geography does not imply that every physical Ecuadorian asset is represented one-to-one in the reduced optimization model. The 24-bus planning representation and the physical reference system are linked through explicit crosswalk fields.
+1. **PARAMO planning results**, transformed offline from validated result archives into a minimum chart-ready browser bundle.
+2. **Reference-system geography**, retained from the public Ecuador planning/geospatial crosswalk used by the previous explorer release.
 
-National ENS statistics are recalculated from realization-level PNS source tables because a downstream summary workbook stored the metric at one hundredth of the source value. The public layer therefore uses the realization-level source tables as the authoritative basis for ENS aggregation.
+The browser bundle is a publication layer. It is not a copy of the complete `Results.xlsx`, GDX database, InputData workbook or solver output.
 
-## International systems and 6-bus zone codes
+## Ecuador 6-Bus — current result source
 
-The 24-bus visualization includes Colombia and Peru because both external systems are part of the planning representation. Colombia is represented by the modeled import resource connected at `Node_3 / B12_Pomasqui`; Peru is represented by the external `Node_24 / B24_Piura` and `Line_41`. External display coordinates are identified as schematic model/geographic anchors when they are not verified physical substation coordinates.
+Version 2.0.0 uses the four-case 6-bus PARAMO run completed on 28 August 2026:
 
-The 6-bus source model uses a historical zone-code convention that differs from the canonical Ecuador Power DataHub convention. Public files use the canonical zone codes and retain the original model codes in explicit traceability fields. The mapping is distributed in `data/cases/ecuador_6bus/zone_crosswalk.csv`.
-## Ecuador 6-Bus fuel taxonomy
+- BAU / Normal;
+- BAU / Extreme;
+- REN100 / Normal;
+- REN100 / Extreme.
 
-The original 6-bus reporting table groups diesel-, oil-, and gas-fired units under `FossilThermal`. The public explorer preserves that aggregate as a technology view and adds a fuel-resolved view derived from generator-level model results.
+The source run covers 2025–2050 and uses one active realization (`W=1`) for each configuration. All four cases completed with `ModelStat = 8`, `SolveStat = 1` and MIP gap below 1%. The source model reported 330 generators, 6 reduced planning nodes, 7 planning corridors, 209 hydro plants, 4 reservoirs and 4 hydraulic links. Detailed validation is recorded in [`VALIDATION.md`](VALIDATION.md) and `data/metadata/validation/ecuador_6bus_v2_validation.json`.
 
-Fuel classification uses the `Combustible` field from the 6-bus source trace:
+The public transformation uses the current result schema:
 
-- `Diesel` → `DIESEL`
-- `FuelOil` and `Residual` → `FUEL OIL`
-- `Gas` and `GasCC` → `GAS`
-- imports are identified from the model class rather than the source-fuel label
+- scenario summary;
+- annual system indicators;
+- generation/capacity/additions by technology;
+- monthly system indicators;
+- corridor-level transmission results;
+- reservoir operation;
+- compact hydro-plant monthly results;
+- cascade-hydraulics results.
 
-For generation, the reconstruction uses the complete twelve-month `GeneratedPower` output for every modeled generator and year. Installed capacity uses `YearOperatingPlants`, and additions use `BuildActivity`. The reconstructed diesel + fuel oil + gas totals reproduce the original `FossilThermal` series for all four cases and all years within listing-output precision. The detailed public tables are `generation_by_fuel.csv`, `capacity_by_fuel.csv`, `new_capacity_by_fuel.csv`, and `emissions_by_fuel.csv`.
+Full generator-level annual/build records are used only during offline transformation and are not distributed in the public repository.
 
+## 6-Bus fuel/resource reconstruction
+
+The native 6-bus technology output combines diesel-, residual/fuel-oil- and gas-fired units under a fossil-thermal class. The public fuel/resource view is reconstructed offline from the validated generator roster and then aggregated before publication.
+
+The mapping distinguishes:
+
+- Hydro;
+- Solar PV;
+- Wind;
+- Geothermal;
+- Bioenergy;
+- Diesel;
+- Fuel oil / residual;
+- Natural gas;
+- Imports.
+
+The reconstructed annual generation totals reproduce the native model technology totals for all four cases and all planning years within `1e-5 GWh`. Generator-level fuel mapping is not included in the public release.
+
+## Hydraulic topology
+
+The 6-bus cascade display follows the model input relationships:
+
+- Mazar → Paute Molino: total upstream release;
+- Paute Molino → Sopladora: turbine discharge;
+- Sopladora → Cardenillo: turbine discharge;
+- Agoyán → San Francisco: turbine discharge;
+- Pucará: independent reservoir.
+
+Reservoir storage and release data come from the reservoir result block. Zero-storage cascade-ROR water transfers come from the separate cascade-hydraulics result block.
+
+## Zone crosswalk
+
+The reduced model uses historical source-zone labels that differ from the canonical public display convention for the four internal Ecuador zones. The transformation retains the validated crosswalk offline and publishes canonical display codes in the explorer while preserving model-source fields where needed for traceability in the embedded corridor records.
+
+## Reference geography
+
+Reference plants and the georeferenced planning-network overlay provide physical context. They are visually separated from optimization objects because reduced planning nodes/corridors are abstractions and are not one-to-one physical assets.
+
+Colombia and Peru are shown as external planning systems using the reference anchors retained by the public geography layer.
+
+## Ecuador 24-Bus
+
+The national case is retained from the validated public planning-result archive used by the preceding explorer release. The public browser contains aggregate uncertainty statistics and representative trajectories. The W100/W5 realization-level source tables used to create those summaries are not distributed in version 2.0.0.
+
+National ENS aggregates retain the corrected source-based calculation used in the preceding audited release.

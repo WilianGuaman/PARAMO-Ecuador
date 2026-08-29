@@ -1,10 +1,18 @@
-# Public Data Layer
+# Public data layer
 
-This directory contains the curated data used by the PARAMO Ecuador Results Explorer.
+The Results Explorer follows a minimum-public-data architecture.
 
-- `cases/ecuador_24bus/` — REF, BRIDGE and NZT results under Baseline and Adverse hydrology.
-- `cases/ecuador_6bus/` — BAU and REN100 results under Normal and Extreme hydrology, including both the original technology aggregation and fuel-resolved thermal results (diesel, fuel oil/residual, and natural gas).
-- `geography/` — PARAMO network crosswalks and reference generation assets used for geographic context.
-- `metadata/` — case manifests, metric definitions, scenario catalog, data dictionary and release manifest.
+The chart-ready result series used by the static site are embedded in:
 
-The public data layer excludes the PARAMO optimization engine, private InputData workbooks, GDX/LST files and solver logs. See `docs/DATA_PROVENANCE.md` for source and transformation details.
+`assets/js/dashboard_data.js`
+
+The bundle contains only the system aggregates and selected diagnostics required to render the public figures. It is not the complete PARAMO result database and is not intended as a substitute for the controlled research dataset.
+
+This `data/` directory contains only supporting public resources:
+
+- `geography/` — reference generation assets, planning-network geography, zone metadata and international anchors;
+- `metadata/` — case registry, metric definitions, scenario catalog, public-bundle schema, validation summaries and release checksums.
+
+Generator-level result tables, realization-level Monte Carlo outputs, GDX/LST/log files, InputData workbooks and the complete Results workbook are not distributed.
+
+See [`../docs/DATA_ACCESS.md`](../docs/DATA_ACCESS.md) and [`../docs/DATA_PROVENANCE.md`](../docs/DATA_PROVENANCE.md).

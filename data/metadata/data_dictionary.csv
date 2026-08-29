@@ -1,287 +1,330 @@
-case_id,file,variable,definition,unit,public
-ecuador_24bus,annual_representative_results.csv,Hydrology,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,annual_representative_results.csv,Scenario,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,annual_representative_results.csv,Representative_w,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,annual_representative_results.csv,Year,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,annual_representative_results.csv,PNS_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,annual_representative_results.csv,CO2_kt,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,annual_representative_results.csv,BIOENERGY_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,annual_representative_results.csv,DIESEL_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,annual_representative_results.csv,FUEL OIL_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,annual_representative_results.csv,GAS_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,annual_representative_results.csv,GEOTHERMAL_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,annual_representative_results.csv,HYDRO_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,annual_representative_results.csv,IMPORTS_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,annual_representative_results.csv,NUCLEAR_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,annual_representative_results.csv,PV_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,annual_representative_results.csv,WIND_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,annual_representative_results.csv,GenerationTotal_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_additions_statistics.csv,Hydrology,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_additions_statistics.csv,Scenario,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_additions_statistics.csv,Year,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_additions_statistics.csv,Tech,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_additions_statistics.csv,mean_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_additions_statistics.csv,p10_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_additions_statistics.csv,p50_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_additions_statistics.csv,p90_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_additions_statistics.csv,min_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_additions_statistics.csv,max_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_additions_statistics.csv,add_mean_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_additions_statistics.csv,add_p10_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_additions_statistics.csv,add_p50_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_additions_statistics.csv,add_p90_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_representative.csv,Hydrology,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_representative.csv,Scenario,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_representative.csv,w,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_representative.csv,Year,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_representative.csv,Tech,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_representative.csv,Capacity_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_statistics.csv,Hydrology,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_statistics.csv,Scenario,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_statistics.csv,Year,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_statistics.csv,Tech,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_statistics.csv,mean_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_statistics.csv,p10_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_statistics.csv,p50_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_statistics.csv,p90_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_statistics.csv,min_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,capacity_statistics.csv,max_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,cost_realizations.csv,Hydrology,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,cost_realizations.csv,Scenario,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,cost_realizations.csv,w,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,cost_realizations.csv,Component,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,cost_realizations.csv,MUSD,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,monthly_generation_representative.csv,Hydrology,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,monthly_generation_representative.csv,Scenario,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,monthly_generation_representative.csv,Representative_w,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,monthly_generation_representative.csv,Year,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,monthly_generation_representative.csv,Month,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,monthly_generation_representative.csv,Tech,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,monthly_generation_representative.csv,GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,monthly_generation_representative.csv,Date,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,monthly_operation_representative.csv,Hydrology,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,monthly_operation_representative.csv,Scenario,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,monthly_operation_representative.csv,Representative_w,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,monthly_operation_representative.csv,Date,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,monthly_operation_representative.csv,Year,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,monthly_operation_representative.csv,Month,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,monthly_operation_representative.csv,MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,monthly_operation_representative.csv,ENS_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,monthly_operation_representative.csv,CO2_kt,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,reservoir_monthly_envelope.csv,Hydrology,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,reservoir_monthly_envelope.csv,Scenario,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,reservoir_monthly_envelope.csv,Month,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,reservoir_monthly_envelope.csv,p10,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,reservoir_monthly_envelope.csv,p50,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,reservoir_monthly_envelope.csv,p90,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,reservoir_monthly_envelope.csv,min,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,reservoir_monthly_envelope.csv,max,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,reservoir_representative.csv,Hydrology,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,reservoir_representative.csv,Scenario,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,reservoir_representative.csv,Representative_w,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,reservoir_representative.csv,Date,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,reservoir_representative.csv,Year,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,reservoir_representative.csv,Month,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,reservoir_representative.csv,StorageHm3,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,reservoir_representative.csv,TurbineHm3,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,reservoir_representative.csv,SpillHm3,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,reservoir_representative.csv,ReleaseHm3,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,risk_realizations.csv,Hydrology,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,risk_realizations.csv,Scenario,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,risk_realizations.csv,w,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,risk_realizations.csv,PNS_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,risk_realizations.csv,CO2_kt,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,Hydrology,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,Scenario,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,EnsembleN,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,Representative_w,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,MeanTotalCost_MUSD,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,P10TotalCost_MUSD,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,P50TotalCost_MUSD,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,P90TotalCost_MUSD,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,RepTotalCost_MUSD,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,MeanCO2_kt,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,P10CO2_kt,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,P50CO2_kt,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,P90CO2_kt,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,RepCO2_kt,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,MeanENS_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,P10ENS_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,P50ENS_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,P90ENS_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,RepENS_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,MeanCAPEX_MUSD,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,MeanOPEX_MUSD,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,MeanTransmissionCost_MUSD,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,MeanEmissionCost_MUSD,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,MeanReserveCost_MUSD,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,MeanPNSCost_MUSD,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,MeanImports_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,ProbENSPositive_pct,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,AF_mean,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,AF_p10,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,AF_p50,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,AF_p90,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,ReservoirMean_Hm3,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,Correlation_AF_CO2,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,Correlation_AF_Imports,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,Correlation_AF_PNS,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,MeanInstalledCapacity2050_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,P10InstalledCapacity2050_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,P50InstalledCapacity2050_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,P90InstalledCapacity2050_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,scenario_summary.csv,RepInstalledCapacity2050_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,uncertainty_summary.csv,Hydrology,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,uncertainty_summary.csv,Scenario,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,uncertainty_summary.csv,Metric,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,uncertainty_summary.csv,Mean,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,uncertainty_summary.csv,P10,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,uncertainty_summary.csv,P50,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,uncertainty_summary.csv,P90,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,uncertainty_summary.csv,Min,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,uncertainty_summary.csv,Max,See methodology and metric registry for semantic interpretation.,,True
-ecuador_24bus,uncertainty_summary.csv,EnsembleN,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,annual_results.csv,Case,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,annual_results.csv,Year,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,annual_results.csv,Demand_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,annual_results.csv,DomesticGen_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,annual_results.csv,Imports_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,annual_results.csv,ENS_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,annual_results.csv,Curtailment_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,annual_results.csv,CO2_kt,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,annual_results.csv,RenShare,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,annual_results.csv,ReserveAvg_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,annual_results.csv,ReservePeak_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,annual_results.csv,OperatingCapacity_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,annual_results.csv,NewCapacity_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,annual_results.csv,GenericNewCapacity_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,annual_results.csv,HydroAF,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,branches.csv,from_node,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,branches.csv,to_node,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,branches.csv,planning_transfer_limit_mw,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,branches.csv,thermal_rating_mva,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,branches.csv,basis,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,branches.csv,confidence,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,capacity.csv,Case,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,capacity.csv,Year,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,capacity.csv,Hydro,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,capacity.csv,SolarPV,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,capacity.csv,Wind,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,capacity.csv,Geothermal,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,capacity.csv,Biomass,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,capacity.csv,FossilThermal,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,capacity.csv,Imports,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,capacity.csv,Other,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,cost_components.csv,Case,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,cost_components.csv,Operating,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,cost_components.csv,Investment,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,cost_components.csv,FixedOM,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,cost_components.csv,PNSPenalty,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,generation_mix.csv,Case,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,generation_mix.csv,Year,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,generation_mix.csv,Hydro,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,generation_mix.csv,SolarPV,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,generation_mix.csv,Wind,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,generation_mix.csv,Geothermal,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,generation_mix.csv,Biomass,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,generation_mix.csv,FossilThermal,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,generation_mix.csv,Imports,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,generation_mix.csv,Other,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,monthly_results.csv,Case,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,monthly_results.csv,Year,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,monthly_results.csv,Month,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,monthly_results.csv,Demand_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,monthly_results.csv,DomesticGen_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,monthly_results.csv,Imports_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,monthly_results.csv,ENS_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,monthly_results.csv,Curtailment_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,monthly_results.csv,CO2_kt,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,monthly_results.csv,RenShare,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,monthly_results.csv,Reserve_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,new_capacity.csv,Case,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,new_capacity.csv,Year,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,new_capacity.csv,Hydro,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,new_capacity.csv,SolarPV,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,new_capacity.csv,Wind,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,new_capacity.csv,Geothermal,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,new_capacity.csv,Biomass,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,new_capacity.csv,FossilThermal,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,new_capacity.csv,Imports,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,new_capacity.csv,Other,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,nodes.csv,node,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,nodes.csv,name,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,nodes.csv,type,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,nodes.csv,longitude,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,nodes.csv,latitude,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,reservoir.csv,Case,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,reservoir.csv,Year,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,reservoir.csv,Month,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,reservoir.csv,Reservoir,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,reservoir.csv,Volume_Hm3,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,reservoir.csv,Turbine_Hm3,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,reservoir.csv,Spill_Hm3,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,reservoir.csv,Generation_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,Case,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,TotalCost_MUSD,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,OperatingCost_MUSD,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,InvestmentCost_MUSD,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,FixedOM_MUSD,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,PNSPenalty_MUSD,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,CumEmissions_Mt,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,CumImports_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,CumENS_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,CumCurtailment_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,NewGen_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,GenericNewGen_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,NewTransCircuits,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,RenShare2050,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,Emissions2050_Mt,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,Imports2050_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,ENS2050_GWh,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,ModelStat,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,SolveStat,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,MIPGapPct,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,scenario_summary.csv,SolveTime_s,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,transmission.csv,Case,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,transmission.csv,Year,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,transmission.csv,FromNode,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,transmission.csv,ToNode,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,transmission.csv,ExistingCap_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,transmission.csv,NewCircuits,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,transmission.csv,PeakAbsFlow_MW,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,transmission.csv,Utilization,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,transmission.csv,Capex_MUSD,See methodology and metric registry for semantic interpretation.,,True
-ecuador_6bus,zone_crosswalk.csv,model_zone_code,Zone code used in the original 6-bus model result files.,,True
-ecuador_6bus,zone_crosswalk.csv,canonical_zone_code,Canonical Ecuador Power DataHub zone code used by the public dashboard.,,True
-ecuador_6bus,transmission.csv,ModelFromNode,Original 6-bus model source-zone code retained for traceability.,,True
-ecuador_6bus,transmission.csv,ModelToNode,Original 6-bus model destination-zone code retained for traceability.,,True
-geography,international_interconnections.csv,external_system,External power system represented in PARAMO planning geography.,,True
-geography,international_interconnections.csv,modeled_import_capacity_mw,Import capacity represented in the planning data associated with the external system.,MW,True
-ecuador_6bus,generation_by_fuel.csv,Case,Model case,,True
-ecuador_6bus,generation_by_fuel.csv,Year,Planning year,year,True
-ecuador_6bus,generation_by_fuel.csv,FuelCategory,Public fuel/resource category,,True
-ecuador_6bus,generation_by_fuel.csv,Generation_GWh,Annual electricity generation,GWh,True
-ecuador_6bus,generation_by_fuel.csv,Unit,Unit label,,True
-ecuador_6bus,capacity_by_fuel.csv,Case,Model case,,True
-ecuador_6bus,capacity_by_fuel.csv,Year,Planning year,year,True
-ecuador_6bus,capacity_by_fuel.csv,FuelCategory,Public fuel/resource category,,True
-ecuador_6bus,capacity_by_fuel.csv,Capacity_MW,Installed operating capacity,MW,True
-ecuador_6bus,capacity_by_fuel.csv,Unit,Unit label,,True
-ecuador_6bus,new_capacity_by_fuel.csv,Case,Model case,,True
-ecuador_6bus,new_capacity_by_fuel.csv,Year,Planning year,year,True
-ecuador_6bus,new_capacity_by_fuel.csv,FuelCategory,Public fuel/resource category,,True
-ecuador_6bus,new_capacity_by_fuel.csv,NewCapacity_MW,Capacity commissioned in the year,MW,True
-ecuador_6bus,new_capacity_by_fuel.csv,Unit,Unit label,,True
-ecuador_6bus,emissions_by_fuel.csv,Case,Model case,,True
-ecuador_6bus,emissions_by_fuel.csv,Year,Planning year,year,True
-ecuador_6bus,emissions_by_fuel.csv,FuelCategory,Public fuel/resource category,,True
-ecuador_6bus,emissions_by_fuel.csv,CO2_kt,Annual direct model CO2 emissions assigned to fuel category,ktCO2,True
-ecuador_6bus,emissions_by_fuel.csv,Unit,Unit label,,True
-ecuador_6bus,generator_fuel_mapping.csv,Generator,PARAMO generator identifier,,True
-ecuador_6bus,generator_fuel_mapping.csv,GeneratorName,Generator/project name,,True
-ecuador_6bus,generator_fuel_mapping.csv,SourceFuel,Fuel label in 6-bus source trace,,True
-ecuador_6bus,generator_fuel_mapping.csv,PublicFuelCategory,Fuel/resource category used in public explorer,,True
-ecuador_6bus,generator_fuel_mapping.csv,Pgmax_MW,Unit nominal capacity,MW,True
-ecuador_6bus,fuel_taxonomy.csv,PublicFuelCategory,Public category used in explorer,,True
-ecuador_6bus,fuel_taxonomy.csv,SourceFuelValues,Source-trace fuel labels mapped to category,,True
-ecuador_6bus,fuel_taxonomy.csv,Interpretation,Public interpretation,,True
+block,field,description,unit,public_scope
+national.summary,Hydrology,Hydrological condition.,,browser bundle
+national.summary,Scenario,Policy pathway.,,browser bundle
+national.summary,EnsembleN,Number of source realizations summarized by the aggregate statistic.,,browser bundle
+national.summary,Representative_w,Representative realization identifier used for the displayed trajectory.,,browser bundle
+national.summary,MeanTotalCost_MUSD,Mean total cost musd across the source ensemble.,MUSD,browser bundle
+national.summary,P10TotalCost_MUSD,P10 al cost musd across the source ensemble.,MUSD,browser bundle
+national.summary,P50TotalCost_MUSD,P50 al cost musd across the source ensemble.,MUSD,browser bundle
+national.summary,P90TotalCost_MUSD,P90 al cost musd across the source ensemble.,MUSD,browser bundle
+national.summary,RepTotalCost_MUSD,Representative-realization total cost musd.,MUSD,browser bundle
+national.summary,MeanCO2_kt,Mean co2 kt across the source ensemble.,ktCO2,browser bundle
+national.summary,P10CO2_kt,P10 kt across the source ensemble.,ktCO2,browser bundle
+national.summary,P50CO2_kt,P50 kt across the source ensemble.,ktCO2,browser bundle
+national.summary,P90CO2_kt,P90 kt across the source ensemble.,ktCO2,browser bundle
+national.summary,RepCO2_kt,Representative-realization co2 kt.,ktCO2,browser bundle
+national.summary,MeanENS_GWh,Mean ens gwh across the source ensemble.,GWh,browser bundle
+national.summary,P10ENS_GWh,P10 gwh across the source ensemble.,GWh,browser bundle
+national.summary,P50ENS_GWh,P50 gwh across the source ensemble.,GWh,browser bundle
+national.summary,P90ENS_GWh,P90 gwh across the source ensemble.,GWh,browser bundle
+national.summary,RepENS_GWh,Representative-realization ens gwh.,GWh,browser bundle
+national.summary,MeanCAPEX_MUSD,Mean capex musd across the source ensemble.,MUSD,browser bundle
+national.summary,MeanOPEX_MUSD,Mean opex musd across the source ensemble.,MUSD,browser bundle
+national.summary,MeanTransmissionCost_MUSD,Mean transmission cost musd across the source ensemble.,MUSD,browser bundle
+national.summary,MeanEmissionCost_MUSD,Mean emission cost musd across the source ensemble.,MUSD,browser bundle
+national.summary,MeanReserveCost_MUSD,Mean reserve cost musd across the source ensemble.,MUSD,browser bundle
+national.summary,MeanPNSCost_MUSD,Mean pnscost musd across the source ensemble.,MUSD,browser bundle
+national.summary,MeanImports_GWh,Mean imports gwh across the source ensemble.,GWh,browser bundle
+national.summary,ProbENSPositive_pct,Share of source realizations with positive energy not served.,%,browser bundle
+national.summary,AF_mean,AF mean.,p.u.,browser bundle
+national.summary,AF_p10,AF p10.,p.u.,browser bundle
+national.summary,AF_p50,AF p50.,p.u.,browser bundle
+national.summary,AF_p90,AF p90.,p.u.,browser bundle
+national.summary,ReservoirMean_Hm3,Reservoir Mean Hm3.,hm3,browser bundle
+national.summary,Correlation_AF_CO2,Correlation between hydropower availability and cumulative CO2 across source realizations.,,browser bundle
+national.summary,Correlation_AF_Imports,Correlation between hydropower availability and imports across source realizations.,,browser bundle
+national.summary,Correlation_AF_PNS,Correlation between hydropower availability and energy not served across source realizations.,,browser bundle
+national.summary,MeanInstalledCapacity2050_MW,Mean installed capacity2050 mw across the source ensemble.,MW,browser bundle
+national.summary,P10InstalledCapacity2050_MW,P10 talled capacity2050 mw across the source ensemble.,MW,browser bundle
+national.summary,P50InstalledCapacity2050_MW,P50 talled capacity2050 mw across the source ensemble.,MW,browser bundle
+national.summary,P90InstalledCapacity2050_MW,P90 talled capacity2050 mw across the source ensemble.,MW,browser bundle
+national.summary,RepInstalledCapacity2050_MW,Representative-realization installed capacity2050 mw.,MW,browser bundle
+national.uncertainty,Hydrology,Hydrological condition.,,browser bundle
+national.uncertainty,Scenario,Policy pathway.,,browser bundle
+national.uncertainty,Metric,Metric name.,,browser bundle
+national.uncertainty,Mean,Mean  across the source ensemble.,,browser bundle
+national.uncertainty,P10,P10  across the source ensemble.,,browser bundle
+national.uncertainty,P50,P50  across the source ensemble.,,browser bundle
+national.uncertainty,P90,P90  across the source ensemble.,,browser bundle
+national.uncertainty,Min,Min.,,browser bundle
+national.uncertainty,Max,Max.,,browser bundle
+national.uncertainty,EnsembleN,Number of source realizations summarized by the aggregate statistic.,,browser bundle
+national.annualRep,Hydrology,Hydrological condition.,,browser bundle
+national.annualRep,Scenario,Policy pathway.,,browser bundle
+national.annualRep,Representative_w,Representative realization identifier used for the displayed trajectory.,,browser bundle
+national.annualRep,Year,Planning year.,year,browser bundle
+national.annualRep,PNS_GWh,PNS GWh.,GWh,browser bundle
+national.annualRep,CO2_kt,CO2 kt.,ktCO2,browser bundle
+national.annualRep,BIOENERGY_GWh,BIOENERGY GWh.,GWh,browser bundle
+national.annualRep,DIESEL_GWh,DIESEL GWh.,GWh,browser bundle
+national.annualRep,FUEL OIL_GWh,FUEL OIL GWh.,GWh,browser bundle
+national.annualRep,GAS_GWh,GAS GWh.,GWh,browser bundle
+national.annualRep,GEOTHERMAL_GWh,GEOTHERMAL GWh.,GWh,browser bundle
+national.annualRep,HYDRO_GWh,HYDRO GWh.,GWh,browser bundle
+national.annualRep,IMPORTS_GWh,IMPORTS GWh.,GWh,browser bundle
+national.annualRep,NUCLEAR_GWh,NUCLEAR GWh.,GWh,browser bundle
+national.annualRep,PV_GWh,PV GWh.,GWh,browser bundle
+national.annualRep,WIND_GWh,WIND GWh.,GWh,browser bundle
+national.annualRep,GenerationTotal_GWh,Generation Total GWh.,GWh,browser bundle
+national.capacityStats,Hydrology,Hydrological condition.,,browser bundle
+national.capacityStats,Scenario,Policy pathway.,,browser bundle
+national.capacityStats,Year,Planning year.,year,browser bundle
+national.capacityStats,Tech,Technology category.,,browser bundle
+national.capacityStats,mean_MW,Mean installed capacity statistic.,MW,browser bundle
+national.capacityStats,p10_MW,P10 installed capacity statistic.,MW,browser bundle
+national.capacityStats,p50_MW,P50 installed capacity statistic.,MW,browser bundle
+national.capacityStats,p90_MW,P90 installed capacity statistic.,MW,browser bundle
+national.capacityStats,min_MW,Min installed capacity statistic.,MW,browser bundle
+national.capacityStats,max_MW,Max installed capacity statistic.,MW,browser bundle
+national.capacityAddStats,Hydrology,Hydrological condition.,,browser bundle
+national.capacityAddStats,Scenario,Policy pathway.,,browser bundle
+national.capacityAddStats,Year,Planning year.,year,browser bundle
+national.capacityAddStats,Tech,Technology category.,,browser bundle
+national.capacityAddStats,mean_MW,Mean installed capacity statistic.,MW,browser bundle
+national.capacityAddStats,p10_MW,P10 installed capacity statistic.,MW,browser bundle
+national.capacityAddStats,p50_MW,P50 installed capacity statistic.,MW,browser bundle
+national.capacityAddStats,p90_MW,P90 installed capacity statistic.,MW,browser bundle
+national.capacityAddStats,min_MW,Min installed capacity statistic.,MW,browser bundle
+national.capacityAddStats,max_MW,Max installed capacity statistic.,MW,browser bundle
+national.capacityAddStats,add_mean_MW,Annual capacity-addition statistic.,MW,browser bundle
+national.capacityAddStats,add_p10_MW,Annual capacity-addition statistic.,MW,browser bundle
+national.capacityAddStats,add_p50_MW,Annual capacity-addition statistic.,MW,browser bundle
+national.capacityAddStats,add_p90_MW,Annual capacity-addition statistic.,MW,browser bundle
+national.monthlyGen,Hydrology,Hydrological condition.,,browser bundle
+national.monthlyGen,Scenario,Policy pathway.,,browser bundle
+national.monthlyGen,Representative_w,Representative realization identifier used for the displayed trajectory.,,browser bundle
+national.monthlyGen,Year,Planning year.,year,browser bundle
+national.monthlyGen,Month,Calendar month number.,month,browser bundle
+national.monthlyGen,Tech,Technology category.,,browser bundle
+national.monthlyGen,GWh,GWh.,GWh,browser bundle
+national.monthlyGen,Date,Display date used for monthly time-series plotting.,,browser bundle
+national.monthlyOps,Hydrology,Hydrological condition.,,browser bundle
+national.monthlyOps,Scenario,Policy pathway.,,browser bundle
+national.monthlyOps,Representative_w,Representative realization identifier used for the displayed trajectory.,,browser bundle
+national.monthlyOps,Date,Display date used for monthly time-series plotting.,,browser bundle
+national.monthlyOps,Year,Planning year.,year,browser bundle
+national.monthlyOps,Month,Calendar month number.,month,browser bundle
+national.monthlyOps,MW,MW.,MW,browser bundle
+national.monthlyOps,ENS_GWh,ENS GWh.,GWh,browser bundle
+national.monthlyOps,CO2_kt,CO2 kt.,ktCO2,browser bundle
+national.reservoirEnvelope,Hydrology,Hydrological condition.,,browser bundle
+national.reservoirEnvelope,Scenario,Policy pathway.,,browser bundle
+national.reservoirEnvelope,Month,Calendar month number.,month,browser bundle
+national.reservoirEnvelope,p10,P10.,,browser bundle
+national.reservoirEnvelope,p50,P50.,,browser bundle
+national.reservoirEnvelope,p90,P90.,,browser bundle
+national.reservoirEnvelope,min,Min.,,browser bundle
+national.reservoirEnvelope,max,Max.,,browser bundle
+national.reservoirRep,Hydrology,Hydrological condition.,,browser bundle
+national.reservoirRep,Scenario,Policy pathway.,,browser bundle
+national.reservoirRep,Representative_w,Representative realization identifier used for the displayed trajectory.,,browser bundle
+national.reservoirRep,Date,Display date used for monthly time-series plotting.,,browser bundle
+national.reservoirRep,Year,Planning year.,year,browser bundle
+national.reservoirRep,Month,Calendar month number.,month,browser bundle
+national.reservoirRep,StorageHm3,Storage Hm3.,hm3,browser bundle
+national.reservoirRep,TurbineHm3,Turbine Hm3.,hm3,browser bundle
+national.reservoirRep,SpillHm3,Spill Hm3.,hm3,browser bundle
+national.reservoirRep,ReleaseHm3,Release Hm3.,hm3,browser bundle
+sixNode.summary,Case,Combined 6-bus policy and hydrology case identifier.,,browser bundle
+sixNode.summary,TotalCost_MUSD,Total Cost MUSD.,MUSD,browser bundle
+sixNode.summary,OperatingCost_MUSD,Operating Cost MUSD.,MUSD,browser bundle
+sixNode.summary,InvestmentCost_MUSD,Investment Cost MUSD.,MUSD,browser bundle
+sixNode.summary,FixedOM_MUSD,Fixed OM MUSD.,MUSD,browser bundle
+sixNode.summary,PNSPenalty_MUSD,PNSPenalty MUSD.,MUSD,browser bundle
+sixNode.summary,CumEmissions_Mt,Cum Emissions Mt.,MtCO2,browser bundle
+sixNode.summary,CumImports_GWh,Cum Imports GWh.,GWh,browser bundle
+sixNode.summary,CumENS_GWh,Cum ENS GWh.,GWh,browser bundle
+sixNode.summary,CumCurtailment_GWh,Cum Curtailment GWh.,GWh,browser bundle
+sixNode.summary,NewGen_MW,New Gen MW.,MW,browser bundle
+sixNode.summary,GenericNewGen_MW,Generic New Gen MW.,MW,browser bundle
+sixNode.summary,NewTransCircuits,Cumulative number of new transmission circuits in the case summary.,,browser bundle
+sixNode.summary,RenShareFinalYear,Renewable generation share in the final planning year.,p.u.,browser bundle
+sixNode.summary,EmissionsFinalYear_Mt,Emissions Final Year Mt.,MtCO2,browser bundle
+sixNode.summary,ImportsFinalYear_GWh,Imports Final Year GWh.,GWh,browser bundle
+sixNode.summary,ENSFinalYear_GWh,ENSFinal Year GWh.,GWh,browser bundle
+sixNode.summary,ModelStat,GAMS model status.,,browser bundle
+sixNode.summary,SolveStat,GAMS solve status.,,browser bundle
+sixNode.summary,MIPGapPct,MIPGap Pct.,%,browser bundle
+sixNode.summary,SolveTime_s,Solve Time s.,s,browser bundle
+sixNode.summary,PeakPNSMax_MW,Peak PNSMax MW.,MW,browser bundle
+sixNode.summary,BaseYearNewBuild_MW,Base Year New Build MW.,MW,browser bundle
+sixNode.summary,EnergyDemandResidual_GWh,Energy Demand Residual GWh.,GWh,browser bundle
+sixNode.summary,MaxWaterBalanceResidual_Hm3,Max Water Balance Residual Hm3.,hm3,browser bundle
+sixNode.summary,MaxTransmissionUtilization,Maximum modeled corridor utilization over the planning horizon.,p.u.,browser bundle
+sixNode.summary,GeneratorCount,Generator Count.,,browser bundle
+sixNode.summary,ExistingCount,Existing Count.,,browser bundle
+sixNode.summary,CandidateCount,Candidate Count.,,browser bundle
+sixNode.summary,NodeCount,Node Count.,,browser bundle
+sixNode.summary,CorridorCount,Corridor Count.,,browser bundle
+sixNode.summary,HydroCount,Hydro Count.,,browser bundle
+sixNode.summary,ReservoirCount,Reservoir Count.,,browser bundle
+sixNode.summary,RORCount,RORCount.,,browser bundle
+sixNode.summary,ThermalCount,Thermal Count.,,browser bundle
+sixNode.summary,VRECount,VRECount.,,browser bundle
+sixNode.summary,ImportCount,Import Count.,,browser bundle
+sixNode.summary,CascadeCount,Cascade Count.,,browser bundle
+sixNode.summary,MonteCarloRuns,Number of active w realizations in the source 6-bus run.,,browser bundle
+sixNode.annual,Case,Combined 6-bus policy and hydrology case identifier.,,browser bundle
+sixNode.annual,Year,Planning year.,year,browser bundle
+sixNode.annual,Demand_GWh,Demand GWh.,GWh,browser bundle
+sixNode.annual,DomesticGen_GWh,Domestic Gen GWh.,GWh,browser bundle
+sixNode.annual,Imports_GWh,Imports GWh.,GWh,browser bundle
+sixNode.annual,ENS_GWh,ENS GWh.,GWh,browser bundle
+sixNode.annual,Curtailment_GWh,Curtailment GWh.,GWh,browser bundle
+sixNode.annual,CO2_kt,CO2 kt.,ktCO2,browser bundle
+sixNode.annual,RenShare,Ren Share.,p.u.,browser bundle
+sixNode.annual,ReserveAvg_MW,Reserve Avg MW.,MW,browser bundle
+sixNode.annual,ReservePeak_MW,Reserve Peak MW.,MW,browser bundle
+sixNode.annual,OperatingCapacity_MW,Operating Capacity MW.,MW,browser bundle
+sixNode.annual,NewCapacity_MW,New Capacity MW.,MW,browser bundle
+sixNode.annual,GenericNewCapacity_MW,Generic New Capacity MW.,MW,browser bundle
+sixNode.annual,HydroAF,Aggregate hydropower availability factor.,p.u.,browser bundle
+sixNode.annual,AnnualPeakDemand_MW,Annual Peak Demand MW.,MW,browser bundle
+sixNode.annual,PeakCreditedCapacity_MW,Peak Credited Capacity MW.,MW,browser bundle
+sixNode.annual,PeakPNS_MW,Peak PNS MW.,MW,browser bundle
+sixNode.genMix,Case,Combined 6-bus policy and hydrology case identifier.,,browser bundle
+sixNode.genMix,Year,Planning year.,year,browser bundle
+sixNode.genMix,Hydro,Annual value for the Hydro model technology category; unit depends on the parent block.,,browser bundle
+sixNode.genMix,SolarPV,Annual value for the SolarPV model technology category; unit depends on the parent block.,,browser bundle
+sixNode.genMix,Wind,Annual value for the Wind model technology category; unit depends on the parent block.,,browser bundle
+sixNode.genMix,Geothermal,Annual value for the Geothermal model technology category; unit depends on the parent block.,,browser bundle
+sixNode.genMix,Biomass,Annual value for the Biomass model technology category; unit depends on the parent block.,,browser bundle
+sixNode.genMix,FossilThermal,Annual value for the FossilThermal model technology category; unit depends on the parent block.,,browser bundle
+sixNode.genMix,Imports,Annual value for the Imports model technology category; unit depends on the parent block.,,browser bundle
+sixNode.genMix,Other,Annual value for the Other model technology category; unit depends on the parent block.,,browser bundle
+sixNode.capacity,Case,Combined 6-bus policy and hydrology case identifier.,,browser bundle
+sixNode.capacity,Year,Planning year.,year,browser bundle
+sixNode.capacity,Hydro,Annual value for the Hydro model technology category; unit depends on the parent block.,,browser bundle
+sixNode.capacity,SolarPV,Annual value for the SolarPV model technology category; unit depends on the parent block.,,browser bundle
+sixNode.capacity,Wind,Annual value for the Wind model technology category; unit depends on the parent block.,,browser bundle
+sixNode.capacity,Geothermal,Annual value for the Geothermal model technology category; unit depends on the parent block.,,browser bundle
+sixNode.capacity,Biomass,Annual value for the Biomass model technology category; unit depends on the parent block.,,browser bundle
+sixNode.capacity,FossilThermal,Annual value for the FossilThermal model technology category; unit depends on the parent block.,,browser bundle
+sixNode.capacity,Imports,Annual value for the Imports model technology category; unit depends on the parent block.,,browser bundle
+sixNode.capacity,Other,Annual value for the Other model technology category; unit depends on the parent block.,,browser bundle
+sixNode.newCapacity,Case,Combined 6-bus policy and hydrology case identifier.,,browser bundle
+sixNode.newCapacity,Year,Planning year.,year,browser bundle
+sixNode.newCapacity,Hydro,Annual value for the Hydro model technology category; unit depends on the parent block.,,browser bundle
+sixNode.newCapacity,SolarPV,Annual value for the SolarPV model technology category; unit depends on the parent block.,,browser bundle
+sixNode.newCapacity,Wind,Annual value for the Wind model technology category; unit depends on the parent block.,,browser bundle
+sixNode.newCapacity,Geothermal,Annual value for the Geothermal model technology category; unit depends on the parent block.,,browser bundle
+sixNode.newCapacity,Biomass,Annual value for the Biomass model technology category; unit depends on the parent block.,,browser bundle
+sixNode.newCapacity,FossilThermal,Annual value for the FossilThermal model technology category; unit depends on the parent block.,,browser bundle
+sixNode.newCapacity,Imports,Annual value for the Imports model technology category; unit depends on the parent block.,,browser bundle
+sixNode.newCapacity,Other,Annual value for the Other model technology category; unit depends on the parent block.,,browser bundle
+sixNode.monthly,Case,Combined 6-bus policy and hydrology case identifier.,,browser bundle
+sixNode.monthly,Year,Planning year.,year,browser bundle
+sixNode.monthly,Month,Calendar month number.,month,browser bundle
+sixNode.monthly,Demand_GWh,Demand GWh.,GWh,browser bundle
+sixNode.monthly,DomesticGen_GWh,Domestic Gen GWh.,GWh,browser bundle
+sixNode.monthly,Imports_GWh,Imports GWh.,GWh,browser bundle
+sixNode.monthly,ENS_GWh,ENS GWh.,GWh,browser bundle
+sixNode.monthly,Curtailment_GWh,Curtailment GWh.,GWh,browser bundle
+sixNode.monthly,CO2_kt,CO2 kt.,ktCO2,browser bundle
+sixNode.monthly,RenShare,Ren Share.,p.u.,browser bundle
+sixNode.monthly,Reserve_MW,Reserve MW.,MW,browser bundle
+sixNode.transmission,Case,Combined 6-bus policy and hydrology case identifier.,,browser bundle
+sixNode.transmission,Year,Planning year.,year,browser bundle
+sixNode.transmission,ModelFromNode,Original reduced-model source-zone code.,,browser bundle
+sixNode.transmission,ModelToNode,Original reduced-model destination-zone code.,,browser bundle
+sixNode.transmission,FromNode,Canonical public source-zone code.,,browser bundle
+sixNode.transmission,ToNode,Canonical public destination-zone code.,,browser bundle
+sixNode.transmission,Corridor,Canonical public corridor label.,,browser bundle
+sixNode.transmission,BaseCapacity_MW,Corridor capacity before endogenous expansion/reinforcement.,MW,browser bundle
+sixNode.transmission,AvailableCapacity_MW,Corridor capacity available in the selected year.,MW,browser bundle
+sixNode.transmission,AddedCapacity_MW,Cumulative capacity increase relative to the base corridor.,MW,browser bundle
+sixNode.transmission,NewCircuits,Cumulative new-circuit count available in the year.,,browser bundle
+sixNode.transmission,StdNewCircuitsAdded,Standard new circuits commissioned in the year.,,browser bundle
+sixNode.transmission,RepLikeNewCircuitsAdded,Reinforced-specification new circuits commissioned in the year.,,browser bundle
+sixNode.transmission,ExistingRepowerActivated,Indicator that existing-corridor reinforcement is commissioned in the year.,,browser bundle
+sixNode.transmission,PeakAbsFlow_MW,Absolute flow in the annual peak adequacy snapshot.,MW,browser bundle
+sixNode.transmission,EnergyAvgMaxFlow_MW,Maximum absolute monthly energy-representative flow for the year.,MW,browser bundle
+sixNode.transmission,Utilization,Peak absolute flow divided by available corridor capacity.,p.u.,browser bundle
+sixNode.transmission,Capex_MUSD,Capex MUSD.,MUSD,browser bundle
+sixNode.transmission,Decision,Investment action occurring in the specific year.,,browser bundle
+sixNode.reservoir,Case,Combined 6-bus policy and hydrology case identifier.,,browser bundle
+sixNode.reservoir,Year,Planning year.,year,browser bundle
+sixNode.reservoir,Month,Calendar month number.,month,browser bundle
+sixNode.reservoir,Reservoir,Reservoir generator identifier.,,browser bundle
+sixNode.reservoir,OperatingStatus,Expected/weighted operating status in the model result.,,browser bundle
+sixNode.reservoir,Volume_Hm3,Volume Hm3.,hm3,browser bundle
+sixNode.reservoir,MinVolume_Hm3,Min Volume Hm3.,hm3,browser bundle
+sixNode.reservoir,MaxVolume_Hm3,Max Volume Hm3.,hm3,browser bundle
+sixNode.reservoir,StoragePct,Reservoir storage as a fraction of usable maximum storage.,p.u.,browser bundle
+sixNode.reservoir,LateralInflow_Hm3,Lateral Inflow Hm3.,hm3,browser bundle
+sixNode.reservoir,UpstreamRelease_Hm3,Upstream Release Hm3.,hm3,browser bundle
+sixNode.reservoir,TotalInflow_Hm3,Total Inflow Hm3.,hm3,browser bundle
+sixNode.reservoir,Turbine_Hm3,Turbine Hm3.,hm3,browser bundle
+sixNode.reservoir,Spill_Hm3,Spill Hm3.,hm3,browser bundle
+sixNode.reservoir,Release_Hm3,Release Hm3.,hm3,browser bundle
+sixNode.reservoir,Generation_GWh,Generation GWh.,GWh,browser bundle
+sixNode.reservoir,WaterBalanceResidual_Hm3,Numerical residual of the modeled monthly water balance.,hm3,browser bundle
+sixNode.reservoir,PlantName,Human-readable selected hydro plant name.,,browser bundle
+sixNode.hydroSelected,Case,Combined 6-bus policy and hydrology case identifier.,,browser bundle
+sixNode.hydroSelected,Year,Planning year.,year,browser bundle
+sixNode.hydroSelected,Month,Calendar month number.,month,browser bundle
+sixNode.hydroSelected,Generator,Generator identifier retained only for the selected public hydro assets.,,browser bundle
+sixNode.hydroSelected,PlantName,Human-readable selected hydro plant name.,,browser bundle
+sixNode.hydroSelected,OperatingStatus,Expected/weighted operating status in the model result.,,browser bundle
+sixNode.hydroSelected,Generation_GWh,Generation GWh.,GWh,browser bundle
+sixNode.hydroSelected,Capacity_MW,Capacity MW.,MW,browser bundle
+sixNode.hydroSelected,AF,Plant-level hydro availability factor.,p.u.,browser bundle
+sixNode.cascadeHydro,Case,Combined 6-bus policy and hydrology case identifier.,,browser bundle
+sixNode.cascadeHydro,Year,Planning year.,year,browser bundle
+sixNode.cascadeHydro,Month,Calendar month number.,month,browser bundle
+sixNode.cascadeHydro,Generator,Generator identifier retained only for the selected public hydro assets.,,browser bundle
+sixNode.cascadeHydro,LateralInflow_Hm3,Lateral Inflow Hm3.,hm3,browser bundle
+sixNode.cascadeHydro,UpstreamRelease_Hm3,Upstream Release Hm3.,hm3,browser bundle
+sixNode.cascadeHydro,Turbine_Hm3,Turbine Hm3.,hm3,browser bundle
+sixNode.cascadeHydro,Spill_Hm3,Spill Hm3.,hm3,browser bundle
+sixNode.cascadeHydro,Release_Hm3,Release Hm3.,hm3,browser bundle
+sixNode.cascadeHydro,WaterBalanceResidual_Hm3,Numerical residual of the modeled monthly water balance.,hm3,browser bundle
+sixNode.cascadeHydro,PlantName,Human-readable selected hydro plant name.,,browser bundle
+sixNode.generationFuel,Case,Combined 6-bus policy and hydrology case identifier.,,browser bundle
+sixNode.generationFuel,Year,Planning year.,year,browser bundle
+sixNode.generationFuel,FuelCategory,Public fuel/resource reporting category.,,browser bundle
+sixNode.generationFuel,Generation_GWh,Generation GWh.,GWh,browser bundle
+sixNode.capacityFuel,Case,Combined 6-bus policy and hydrology case identifier.,,browser bundle
+sixNode.capacityFuel,Year,Planning year.,year,browser bundle
+sixNode.capacityFuel,FuelCategory,Public fuel/resource reporting category.,,browser bundle
+sixNode.capacityFuel,Capacity_MW,Capacity MW.,MW,browser bundle
+sixNode.newCapacityFuel,Case,Combined 6-bus policy and hydrology case identifier.,,browser bundle
+sixNode.newCapacityFuel,Year,Planning year.,year,browser bundle
+sixNode.newCapacityFuel,FuelCategory,Public fuel/resource reporting category.,,browser bundle
+sixNode.newCapacityFuel,NewCapacity_MW,New Capacity MW.,MW,browser bundle
+sixNode.emissionsFuel,Case,Combined 6-bus policy and hydrology case identifier.,,browser bundle
+sixNode.emissionsFuel,Year,Planning year.,year,browser bundle
+sixNode.emissionsFuel,FuelCategory,Public fuel/resource reporting category.,,browser bundle
+sixNode.emissionsFuel,CO2_kt,CO2 kt.,ktCO2,browser bundle
+geography.plants,plant_id,Plant id.,,browser bundle
+geography.plants,plant_name,Plant name.,,browser bundle
+geography.plants,company_name,Company name.,,browser bundle
+geography.plants,technology,Technology.,,browser bundle
+geography.plants,energy_type,Energy type.,,browser bundle
+geography.plants,nominal_capacity_mw,Nominal capacity mw.,MW,browser bundle
+geography.plants,effective_capacity_mw,Effective capacity mw.,MW,browser bundle
+geography.plants,longitude,Longitude.,,browser bundle
+geography.plants,latitude,Latitude.,,browser bundle
+geography.plants,planning_zone,Planning zone.,,browser bundle
+geography.plants,province,Province.,,browser bundle
+geography.plants,canton,Canton.,,browser bundle
+geography.plants,zone_confidence,Zone confidence.,,browser bundle
+geography.referenceLines,line_id,Line id.,,browser bundle
+geography.referenceLines,from_bus_name,From bus name.,,browser bundle
+geography.referenceLines,to_bus_name,To bus name.,,browser bundle
+geography.referenceLines,from_lon,From lon.,,browser bundle
+geography.referenceLines,from_lat,From lat.,,browser bundle
+geography.referenceLines,to_lon,To lon.,,browser bundle
+geography.referenceLines,to_lat,To lat.,,browser bundle
+geography.referenceLines,existing_transfer_mw,Existing transfer mw.,MW,browser bundle
+geography.referenceLines,reconductored_transfer_mw,Reconductored transfer mw.,MW,browser bundle
+geography.interconnections,external_system,External system.,,browser bundle
+geography.interconnections,country,Country.,,browser bundle
+geography.interconnections,model_connection_bus,Model connection bus.,,browser bundle
+geography.interconnections,model_connection_name,Model connection name.,,browser bundle
+geography.interconnections,external_model_bus,External model bus.,,browser bundle
+geography.interconnections,network_line_id,Network line id.,,browser bundle
+geography.interconnections,modeled_import_capacity_mw,Modeled import capacity mw.,MW,browser bundle
+geography.interconnections,display_longitude,Display longitude.,,browser bundle
+geography.interconnections,display_latitude,Display latitude.,,browser bundle
+geography.interconnections,display_basis,Display basis.,,browser bundle

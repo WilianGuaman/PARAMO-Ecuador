@@ -1,30 +1,12 @@
 {
-  "title": "PARAMO Ecuador Public Results Dataset",
+  "title": "PARAMO Ecuador Public Visualization Data Layer",
   "upload_type": "dataset",
-  "description": "Curated public result tables for the PARAMO Ecuador 24-bus national planning case and Ecuador 6-bus reduced planning case, including cost, emissions, energy not served, expansion, hydrology, reservoir and network outputs. The 6-bus release includes validated fuel-resolved capacity, additions, generation and CO2 emissions for diesel, fuel oil/residual and natural gas.",
-  "creators": [
-    {
-      "name": "Guamán Cuenca, Wilian"
-    }
-  ],
+  "description": "Minimum public chart-ready data layer supporting PARAMO Ecuador Results Explorer v2.0.0. It contains aggregate national planning statistics, updated four-scenario 6-bus aggregates, selected corridor and cascade diagnostics, and public reference geography. Full model results and realization-level datasets are not included.",
+  "creators": [{"name": "Guamán Cuenca, Wilian"}],
   "access_right": "open",
   "license": "cc-by-4.0",
-  "version": "1.1.0",
-  "publication_date": "2026-08-25",
-  "keywords": [
-    "power system planning",
-    "Monte Carlo",
-    "hydropower",
-    "reliability",
-    "emissions",
-    "Ecuador",
-    "PARAMO"
-  ],
-  "related_identifiers": [
-    {
-      "identifier": "10.1016/j.ecmx.2025.101297",
-      "relation": "references",
-      "scheme": "doi"
-    }
-  ]
+  "version": "2.0.0",
+  "publication_date": "2026-08-28",
+  "keywords": ["power system planning", "hydropower", "reliability", "transmission expansion", "Ecuador", "PARAMO"],
+  "related_identifiers": [{"identifier": "10.1016/j.ecmx.2025.101297", "relation": "references", "scheme": "doi"}]
 }

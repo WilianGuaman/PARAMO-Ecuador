@@ -1,12 +1,12 @@
 cff-version: 1.2.0
-message: "If you use PARAMO Ecuador Results Explorer, its figures, or its public results, please cite this repository and the associated scholarly methodology as appropriate."
+message: "If you use PARAMO Ecuador Results Explorer, its figures, or its public visualization data, please cite this repository and the associated scholarly methodology as appropriate."
 title: "PARAMO Ecuador Results Explorer"
 type: software
 authors:
   - family-names: "Guamán Cuenca"
     given-names: "Wilian"
-version: 1.1.0
-date-released: 2026-08-25
+version: 2.0.0
+date-released: 2026-08-28
 url: "https://wilianguaman.github.io/PARAMO-Ecuador/"
 repository-code: "https://github.com/WilianGuaman/PARAMO-Ecuador"
 license: Apache-2.0
@@ -14,9 +14,9 @@ keywords:
   - power system planning
   - generation expansion
   - transmission expansion
+  - reconductoring
   - hydropower
   - hydrological uncertainty
-  - Monte Carlo
   - Ecuador
 preferred-citation:
   type: software
@@ -24,7 +24,7 @@ preferred-citation:
     - family-names: "Guamán Cuenca"
       given-names: "Wilian"
   title: "PARAMO Ecuador Results Explorer: Planning And Resource Allocation under Multi-scenario Optimization"
-  version: "1.1.0"
+  version: "2.0.0"
   year: 2026
   url: "https://github.com/WilianGuaman/PARAMO-Ecuador"
 references:

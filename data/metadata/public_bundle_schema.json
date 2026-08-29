@@ -1,0 +1,40 @@
+{
+  "version": "2.0.0",
+  "result_storage": "assets/js/dashboard_data.js",
+  "direct_result_downloads": false,
+  "figure_exports": [
+    "PNG",
+    "SVG"
+  ],
+  "national_public_blocks": [
+    "scenario summary",
+    "aggregate uncertainty statistics",
+    "representative annual/monthly trajectories",
+    "capacity statistics",
+    "reservoir statistics/representative trajectory"
+  ],
+  "six_bus_public_blocks": [
+    "scenario summary",
+    "annual/monthly system results",
+    "technology and fuel/resource aggregates",
+    "corridor decisions",
+    "reservoir operation",
+    "selected hydro-plant results",
+    "selected cascade hydraulics"
+  ],
+  "reference_blocks": [
+    "generation plants",
+    "georeferenced planning network",
+    "zone registry",
+    "international system anchors"
+  ],
+  "excluded_from_public_distribution": [
+    "PARAMO GAMS implementation",
+    "InputData workbook",
+    "complete Results workbook",
+    "GDX/LST/log files",
+    "full generator-level annual/build outputs",
+    "Monte Carlo realization-level result tables"
+  ],
+  "data_access_policy": "docs/DATA_ACCESS.md"
+}

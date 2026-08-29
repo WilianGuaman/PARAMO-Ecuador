@@ -1,0 +1,50 @@
+name: PARAMO data-access request
+description: Request additional PARAMO Ecuador research data that are not included in the public visualization bundle.
+title: "Data access request: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is public. Do not include confidential, sensitive, proprietary or personal information. Requests are reviewed before any non-public research data are shared.
+  - type: dropdown
+    id: case
+    attributes:
+      label: Study case
+      description: Select the PARAMO Ecuador study case relevant to the request.
+      options:
+        - Ecuador 24-Bus National Planning Case
+        - Ecuador 6-Bus Reduced Planning Case
+        - Both cases
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Requested data
+      description: Identify the variables, result blocks, scenarios, years or level of detail needed.
+      placeholder: "Example: annual corridor expansion results for the 6-bus BAU/REN100 cases, 2025–2050."
+    validations:
+      required: true
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Intended use
+      description: Briefly describe the research, teaching or reproducibility purpose.
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Institution or project (optional)
+      description: Provide only information you are comfortable publishing in a GitHub Issue.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I understand that this request is public and contains no confidential or sensitive information.
+          required: true
+        - label: I will cite the PARAMO Ecuador Results Explorer release and associated methodology where appropriate.
+          required: true
+        - label: I understand that approval is not automatic and may depend on scope, provenance and redistribution constraints.
+          required: true

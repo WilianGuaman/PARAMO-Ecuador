@@ -1,0 +1,31 @@
+{
+  "source_run": "2026-08-28 22:31 local GAMS run",
+  "scenario_count": 4,
+  "all_modelstat_8": true,
+  "all_solvestat_1": true,
+  "max_mip_gap_pct": 0.8816571579935091,
+  "max_water_balance_residual_hm3": 0.0,
+  "max_energy_demand_residual_gwh": 2.9103830456733704e-11,
+  "base_year_new_build_mw": 0.0,
+  "generator_count": 330,
+  "existing_count": 147,
+  "candidate_count": 183,
+  "node_count": 6,
+  "corridor_count": 7,
+  "fuel_reconstruction": "PASS: fuel-resolved annual generation exactly reconstructs model technology aggregates within 1e-5 GWh.",
+  "all_cases_completed": true,
+  "source_modelstat": 8,
+  "source_solvestat": 1,
+  "public_bundle_checks": {
+    "annual_rows_per_case": 26,
+    "monthly_rows_per_case": 312,
+    "transmission_rows_per_case": 182,
+    "reservoir_rows_per_case": 1248,
+    "selected_hydro_rows_per_case": 2184,
+    "max_monthly_to_annual_demand_error_gwh": 1.4551915228366852e-11,
+    "max_fuel_generation_reconstruction_error_gwh": 1.8189894035458565e-09,
+    "max_fuel_capacity_reconstruction_error_mw": 1.0913936421275139e-11,
+    "max_fuel_new_capacity_reconstruction_error_mw": 2.2737367544323206e-13,
+    "max_fuel_emissions_reconstruction_error_ktco2": 9.713403414934874e-10
+  }
+}
