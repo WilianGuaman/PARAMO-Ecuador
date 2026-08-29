@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0",
+  "version": "2.1.0",
   "result_storage": "assets/js/dashboard_data.js",
   "direct_result_downloads": false,
   "figure_exports": [
@@ -23,8 +23,9 @@
     "selected cascade hydraulics"
   ],
   "reference_blocks": [
-    "generation plants",
-    "georeferenced planning network",
+    "reference generation plants",
+    "author-supplied physical transmission grid (69\u2013500 kV)",
+    "24-bus planning links",
     "zone registry",
     "international system anchors"
   ],

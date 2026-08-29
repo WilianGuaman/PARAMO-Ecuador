@@ -50,7 +50,15 @@ The interface is organized around planning questions rather than raw result file
 - **Costs & Uncertainty** — cost composition and available uncertainty summaries.
 - **Scenario Comparison** — common indicators for two selected configurations.
 
-The map distinguishes reduced planning corridors from the georeferenced reference network. Reference plants can be displayed independently. For the 6-bus case, corridor width represents available capacity and corridor color identifies the cumulative expansion state.
+The map distinguishes reduced planning corridors from the georeferenced reference network. Reference plants can be displayed independently. The physical grid is visible by default and can be filtered to 500, 230, 138 or 69 kV. For the 6-bus case, corridor width represents available capacity and corridor color identifies the cumulative expansion state.
+
+### Transmission decisions
+
+<p align="center">
+  <img src="assets/readme/transmission-decisions-6bus.png" alt="PARAMO 6-bus transmission investment, capacity and decision timeline" width="1100">
+</p>
+
+The 6-bus transmission view separates the original transfer capability, available capacity in the selected year, cumulative reinforcement/new-circuit state, first intervention year, annual action, peak flow, utilization and CAPEX. The georeferenced physical grid remains a contextual layer and is never presented as an optimized corridor decision.
 
 ## Hydropower cascades
 
@@ -60,7 +68,15 @@ The reduced Ecuador case includes explicit hydraulic relationships used in the e
 - **Agoyán:** Agoyán → San Francisco
 - **Pucará:** independent reservoir
 
-The public hydrology view combines reservoir storage/output data with a separate cascade-hydraulics layer for zero-storage run-of-river plants. This avoids treating every hydro plant as a reservoir while preserving the water-transfer information needed to interpret the cascades.
+The public hydrology view combines true system-wide monthly hydropower, Pacific/Amazon availability and generation profiles, reservoir storage/output data, and a separate cascade-hydraulics layer for zero-storage run-of-river plants. This avoids treating every hydro plant as a reservoir while preserving the water-transfer information needed to interpret the cascades.
+
+<p align="center">
+  <img src="assets/readme/hydrology-seasonality-6bus.png" alt="PARAMO hydrological seasonality, storage and cascade operation" width="1100">
+</p>
+
+<p align="center">
+  <img src="assets/readme/hydraulic-cascade-paute.png" alt="Paute hydraulic cascade in PARAMO" width="1000">
+</p>
 
 ## Public-data policy
 
@@ -117,7 +133,7 @@ The dashboard is a publication layer for precomputed PARAMO results. The source 
 
 **Explorer / software release**
 
-> Guamán Cuenca, W. (2026). *PARAMO Ecuador Results Explorer: Planning And Resource Allocation under Multi-scenario Optimization* (Version 2.0.0) [Software and public research results]. GitHub. https://github.com/WilianGuaman/PARAMO-Ecuador
+> Guamán Cuenca, W. (2026). *PARAMO Ecuador Results Explorer: Planning And Resource Allocation under Multi-scenario Optimization* (Version 2.1.0) [Software and public research results]. GitHub. https://github.com/WilianGuaman/PARAMO-Ecuador
 
 **Foundational methodology**
 
@@ -138,3 +154,15 @@ Machine-readable citation: [`CITATION.cff`](CITATION.cff) · [`BibTeX`](docs/cit
 See [`LICENSES.md`](LICENSES.md) for component-level terms and attribution.
 
 Copyright © 2026 **Wilian Guamán Cuenca**.
+
+
+## Version 2.1.0 improvements
+
+- visible engineering units on every chart card and axis;
+- author-supplied georeferenced physical grid (69–500 kV) on both maps;
+- clear separation between physical lines, 24-bus planning links and 6-bus reduced corridors;
+- corridor-level investment timeline and cumulative reinforcement/new-circuit state for the 6-bus case;
+- monthly Pacific/Amazon hydrological seasonality and generation profiles;
+- system, Paute, Agoyán–San Francisco and Pucará cascade views with selected-month hydraulic balances.
+
+The 24-bus public dataset does not contain optimized line-level build years. The explorer therefore shows physical geometry and planning-link capability without inferring investment decisions.

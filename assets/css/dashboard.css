@@ -17,6 +17,32 @@
 @media(max-width:500px){.filter-panel{display:block}.kpi-grid,.kpi-grid.four{grid-template-columns:1fr 1fr}.kpi-value{font-size:18px}.plot,.plot.tall{height:325px}.brand-logo{max-width:250px;height:46px}.chart-tools{display:none}}
 
 .runtime-notice{margin:8px 10px 0;padding:10px 13px;border:1px solid #d8a3a3;border-left:4px solid var(--red);background:#fff6f6;color:#6a3131;font-size:12px;line-height:1.45}.plot-loading{height:100%;display:flex;align-items:center;justify-content:center;color:#78869a;font-size:12px;background:linear-gradient(180deg,#fff,#fafbfd)}
-/* v2.0.0 additions */
+/* v2.1.0 public explorer additions */
 .filter-actions.single{grid-template-columns:1fr}.privacy-note{font-size:10px!important;color:#7b5660!important;border-left:3px solid var(--magenta);padding-left:8px}.cascade-card{margin-bottom:10px}.cascade-diagram{padding:18px;display:flex;align-items:stretch;gap:8px;overflow-x:auto;background:linear-gradient(180deg,#fbfcfe,#f4f7fa)}.cascade-node{min-width:150px;flex:1;border:1px solid #cfd8e4;border-top:4px solid var(--teal);background:#fff;padding:10px;box-shadow:var(--shadow)}.cascade-node.reservoir{border-top-color:var(--navy)}.cascade-node.candidate{border-top-color:var(--gold)}.cascade-node h3{margin:0 0 5px;color:var(--navy);font-size:13px}.cascade-node .meta{font-size:10px;color:#6a7688;line-height:1.45}.cascade-node .metric{display:flex;justify-content:space-between;gap:8px;border-top:1px solid #edf0f4;padding-top:5px;margin-top:5px;font-size:10.5px}.cascade-arrow{min-width:72px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#59708d;font-size:10px;text-align:center}.cascade-arrow .shaft{font-size:28px;line-height:1;color:var(--teal)}.decision-badge{display:inline-block;border-radius:999px;padding:3px 7px;font-size:9px;font-weight:800;white-space:nowrap}.decision-none{background:#edf1f5;color:#667486}.decision-reinforce{background:#e8f1fa;color:#245b8f}.decision-new{background:#e8f5ec;color:#357344}.decision-repnew{background:#f9edda;color:#8a5b13}.decision-mixed{background:#f3e8f0;color:#8a3465}.map-line-note{font-size:9px;color:#69778b}.reference-line-key{width:20px;height:0;border-top:2px dotted #a6b0bd;display:inline-block}.planning-line-key{width:20px;height:0;border-top:3px solid var(--teal);display:inline-block}.action-cell{white-space:nowrap}.hydro-note{font-size:10px;color:#6d7888;margin:0 10px 10px}.data-scope-list{margin:8px 0 0;padding-left:18px;color:#59677a;font-size:11px;line-height:1.5}
 @media(max-width:820px){.cascade-diagram{flex-direction:column}.cascade-arrow{min-height:45px}.cascade-arrow .shaft{transform:rotate(90deg)}}
+
+
+/* v2.1.0 — units, physical grid, decision and hydrology detail */
+.chart-head>div{display:flex;flex-direction:column;gap:2px;min-width:0}
+.chart-subtitle{display:block;font-size:9.5px;font-weight:500;color:#728095;line-height:1.3}
+.chart-unit{display:inline-flex;align-items:center;white-space:nowrap;padding:3px 7px;border-radius:999px;background:#eef3f6;border:1px solid #d3dde4;color:#365165;font-size:9px;font-weight:800;letter-spacing:.01em;margin-left:auto;margin-right:6px}
+.chart-card.full-width{margin-top:10px}
+.decision-timeline-card{min-height:310px}.decision-plot{height:260px}
+.hydro-insight{margin-bottom:10px}
+.six-only-grid[hidden]{display:none!important}
+.cascade-card{overflow:hidden}.cascade-diagram{display:block;padding:12px;background:#f7f9fb}
+.cascade-group{border:1px solid #d7e0e7;background:#fff;margin:0 0 12px;box-shadow:0 2px 8px rgba(32,58,82,.06)}
+.cascade-group:last-child{margin-bottom:0}.cascade-group-title{padding:8px 11px;background:#eef3f6;border-bottom:1px solid #d7e0e7;font-size:11px;font-weight:800;color:#24414f;display:flex;justify-content:space-between;gap:8px;align-items:center}
+.cascade-chain{display:flex;align-items:stretch;gap:7px;overflow-x:auto;padding:11px}
+.cascade-node{min-width:165px}.cascade-node .metric strong{font-variant-numeric:tabular-nums}
+.cascade-arrow{min-width:92px}.cascade-arrow .flow-unit{font-weight:800;color:#24414f}.cascade-arrow .flow-label{font-size:9px;color:#6d7b8c;line-height:1.25}
+.cascade-detail-wrap{border-top:1px solid #d7e0e7;background:#fff;padding:10px}.cascade-detail-title{font-size:11px;font-weight:800;color:#24414f;margin-bottom:7px}
+.cascade-table{max-height:330px;overflow:auto}.cascade-table .data-table{min-width:1180px}
+.season-pill{display:inline-flex;padding:2px 7px;border-radius:999px;font-size:9px;font-weight:800}.season-wet{background:#dceff4;color:#176277}.season-dry{background:#f7ead8;color:#8a5d19}
+.decision-badge{font-size:9px}.decision-reinforced-new{background:#efe2f0;color:#8a3465}.decision-new-reinforced{background:#f8e8d2;color:#8a5b13}
+.map-legend .grid-key{width:22px;height:0;display:inline-block}.grid-500{border-top:4px solid #7b1fa2}.grid-230{border-top:3px solid #d84315}.grid-138{border-top:2px solid #2f78b7}.grid-69{border-top:1px solid #8da0ad}
+.map-controls label{white-space:nowrap}.map-controls input{accent-color:#168b87}
+.map-line-note{line-height:1.35}.network-state-note{font-size:10px;color:#607086;margin-top:5px}
+@media(max-width:1100px){.cascade-chain{padding:8px}.cascade-node{min-width:150px}.chart-unit{margin-left:4px}}
+
+.map-voltage-control{margin-left:auto;text-transform:none!important;font-weight:700!important}.map-voltage-control span{font-size:9px;color:#647287}.map-voltage-control select{border:1px solid #c8d2dd;background:#fff;color:#31465f;border-radius:3px;padding:3px 5px;font-size:10px;font-weight:700;min-width:88px}.map-scope-note{padding:5px 9px;border-bottom:1px solid var(--line);background:#f7f9fb;color:#667487;font-size:9px;line-height:1.35}.map-plot .geo{background:#fff}.map-legend{line-height:1.35}

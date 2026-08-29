@@ -1,6 +1,6 @@
 # Validation — Ecuador 6-Bus public release
 
-Version 2.0.0 uses the four-scenario PARAMO run completed on 28 August 2026. The run completed normally and produced consolidated GDX and Excel outputs.
+Version 2.1.0 uses the four-scenario PARAMO run completed on 28 August 2026. The run completed normally and produced consolidated GDX and Excel outputs.
 
 ## Solver status
 
@@ -46,3 +46,21 @@ For all four cases:
 The generator-level source roster was used offline to reconstruct annual generation by public fuel/resource category. The sum of the reconstructed categories matches the model's native annual technology aggregation for every case and year within `1e-5 GWh`.
 
 Only the aggregated fuel/resource series are included in the browser bundle.
+
+## Public explorer validation
+
+The v2.1.0 build also passes 40 release-layer checks. These include:
+
+- exact agreement between the four public 6-bus scenario summaries and the source `Results.xlsx`;
+- 26 annual and 312 monthly records per case;
+- 7 corridor trajectories over 26 years per case;
+- monthly demand reconstruction of annual demand within `1.46e-11 GWh`;
+- Pacific plus Amazon hydro generation reproducing the complete system hydro series within `5e-9 GWh`;
+- complete 12-month wet/dry calendars for both hydrological regimes;
+- 133 georeferenced physical transmission features with valid Ecuador coordinates;
+- runtime rendering of the physical grid, 6-bus planning corridors, decision timeline, reservoir views, hydrological seasonality and hydraulic cascades;
+- a visible engineering-unit label for every rendered analytical chart;
+- no GAMS, GDX, Excel, LST or solver-log artifacts in the public package;
+- no direct dataset ZIP or CSV-result download in the public interface.
+
+The machine-readable report is available at [`data/metadata/validation/public_explorer_v2.1.0_validation.json`](../data/metadata/validation/public_explorer_v2.1.0_validation.json). A human-readable release checklist is available at [`VALIDATION_v2.1.0.md`](../VALIDATION_v2.1.0.md).

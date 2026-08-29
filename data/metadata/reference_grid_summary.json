@@ -1,0 +1,19 @@
+{
+  "feature_count": 133,
+  "voltage_counts": {
+    "138": 66,
+    "230": 53,
+    "69": 8,
+    "500": 6
+  },
+  "source_crs": "EPSG:32717",
+  "public_crs": "EPSG:4326",
+  "source_files": [
+    "Lineas.shp",
+    "Lineas.dbf",
+    "Lineas.shx",
+    "Lineas.prj",
+    "Lineas.cpg",
+    "Lineas.geojson"
+  ]
+}

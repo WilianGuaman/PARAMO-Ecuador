@@ -31,13 +31,13 @@ For the 6-bus case, select **All corridors** or an individual corridor. The tabl
 - base capacity [MW];
 - available capacity in the selected year [MW];
 - cumulative added capacity [MW];
-- cumulative state (Base, Reinforced, Expanded, Expanded + reinforced);
+- cumulative state (Base, Reinforced, New circuit, Reinforced + new circuits);
 - investment action in the selected year;
 - peak flow [MW];
 - utilization [%];
 - annual corridor CAPEX [MUSD].
 
-On the map, line width is proportional to available capacity and line color indicates the cumulative expansion state. The optional **Reference network** is a georeferenced contextual layer and is visually distinct from the 6-bus reduced planning corridors.
+On the map, line width is proportional to available capacity and line color indicates the cumulative expansion state. The **Physical grid** control displays the author-supplied georeferenced line layer. The adjacent voltage selector filters the contextual network to all 69–500 kV lines, ≥138 kV, or an individual voltage level. It is visually distinct from the 6-bus reduced planning corridors. A separate decision timeline identifies the year and type of each corridor investment event.
 
 ## Hydrology & reservoirs
 
@@ -49,12 +49,12 @@ The 6-bus Hydro asset selector includes:
 - Pucará;
 - individual selected plants.
 
-Cascade mode combines reservoir records with the zero-storage cascade-hydraulics output. The selected-month cascade diagram shows generation, AF, reservoir storage where applicable, and water transferred between linked plants.
+The seasonality heatmap shows monthly availability factors for the Pacific and Amazon hydrological regimes, while the regime profile shows their contribution to system hydropower. Cascade mode combines reservoir records with the zero-storage cascade-hydraulics output. The selected-month cascade diagram and hydraulic-balance table show generation, AF, storage, inflow, upstream transfer, turbinated water, spill/bypass and total release with explicit units.
 
 ## Map controls
 
 - **Planning lines** — active model/planning network for the selected case.
-- **Reference network** — georeferenced contextual planning-network layer.
+- **Physical grid** — author-supplied georeferenced physical transmission-line layer; use **Grid voltage** to select 69–500 kV, ≥138 kV, 500 kV, 230 kV, 138 kV or 69 kV.
 - **Model nodes** — PARAMO planning nodes/zones.
 - **Reference plants** — public reference generation assets.
 - **International** — Colombia and Peru external-system anchors where represented.

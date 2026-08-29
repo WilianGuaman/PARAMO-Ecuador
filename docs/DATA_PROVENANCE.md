@@ -5,13 +5,13 @@
 The explorer combines two classes of information:
 
 1. **PARAMO planning results**, transformed offline from validated result archives into a minimum chart-ready browser bundle.
-2. **Reference-system geography**, retained from the public Ecuador planning/geospatial crosswalk used by the previous explorer release.
+2. **Reference-system geography**, including the author-supplied georeferenced transmission-line layer and the validated node/plant crosswalk used by the explorer.
 
 The browser bundle is a publication layer. It is not a copy of the complete `Results.xlsx`, GDX database, InputData workbook or solver output.
 
 ## Ecuador 6-Bus — current result source
 
-Version 2.0.0 uses the four-case 6-bus PARAMO run completed on 28 August 2026:
+Version 2.1.0 uses the four-case 6-bus PARAMO run completed on 28 August 2026:
 
 - BAU / Normal;
 - BAU / Extreme;
@@ -69,12 +69,12 @@ The reduced model uses historical source-zone labels that differ from the canoni
 
 ## Reference geography
 
-Reference plants and the georeferenced planning-network overlay provide physical context. They are visually separated from optimization objects because reduced planning nodes/corridors are abstractions and are not one-to-one physical assets.
+Reference plants and the author-supplied georeferenced 69–500 kV physical-grid overlay provide physical context. They are visually separated from optimization objects because reduced planning nodes/corridors are abstractions and are not one-to-one physical assets.
 
-Colombia and Peru are shown as external planning systems using the reference anchors retained by the public geography layer.
+The physical-grid source is transformed from EPSG:32717 to EPSG:4326 and simplified for browser display. Voltage, circuits, length and thermal-capability attributes are retained where available. Colombia and Peru are shown as external planning systems using the reference anchors retained by the public geography layer.
 
 ## Ecuador 24-Bus
 
-The national case is retained from the validated public planning-result archive used by the preceding explorer release. The public browser contains aggregate uncertainty statistics and representative trajectories. The W100/W5 realization-level source tables used to create those summaries are not distributed in version 2.0.0.
+The national case is retained from the validated public planning-result archive used by the preceding explorer release. The public browser contains aggregate uncertainty statistics and representative trajectories. The W100/W5 realization-level source tables used to create those summaries are not distributed in version 2.1.0.
 
 National ENS aggregates retain the corrected source-based calculation used in the preceding audited release.

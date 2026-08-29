@@ -1,12 +1,29 @@
 {
   "title": "PARAMO Ecuador Public Visualization Data Layer",
   "upload_type": "dataset",
-  "description": "Minimum public chart-ready data layer supporting PARAMO Ecuador Results Explorer v2.0.0. It contains aggregate national planning statistics, updated four-scenario 6-bus aggregates, selected corridor and cascade diagnostics, and public reference geography. Full model results and realization-level datasets are not included.",
-  "creators": [{"name": "Guamán Cuenca, Wilian"}],
+  "description": "Minimum public chart-ready data layer supporting PARAMO Ecuador Results Explorer v2.1.0. It contains aggregate national planning statistics, updated four-scenario 6-bus aggregates, selected corridor and cascade diagnostics, and public reference geography. Full model results and realization-level datasets are not included.",
+  "creators": [
+    {
+      "name": "Guamán Cuenca, Wilian"
+    }
+  ],
   "access_right": "open",
   "license": "cc-by-4.0",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "publication_date": "2026-08-28",
-  "keywords": ["power system planning", "hydropower", "reliability", "transmission expansion", "Ecuador", "PARAMO"],
-  "related_identifiers": [{"identifier": "10.1016/j.ecmx.2025.101297", "relation": "references", "scheme": "doi"}]
+  "keywords": [
+    "power system planning",
+    "hydropower",
+    "reliability",
+    "transmission expansion",
+    "Ecuador",
+    "PARAMO"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.1016/j.ecmx.2025.101297",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ]
 }
