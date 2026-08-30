@@ -1,21 +1,32 @@
-# Validation — Ecuador 6-Bus public release
+# Validation — Ecuador 6-Bus final public results
 
-Version 2.1.0 uses the four-scenario PARAMO run completed on 28 August 2026. The run completed normally and produced consolidated GDX and Excel outputs.
+Version 2.4.0 uses the final four-scenario PARAMO run completed on **30 August 2026**. The run completed normally, retained a usable incumbent for every case, and produced consolidated GDX and Excel outputs.
 
 ## Solver status
 
 | Case | ModelStat | SolveStat | MIP gap [%] | Solve time [s] |
 |---|---:|---:|---:|---:|
-| BAU_Normal | 8 | 1 | 0.675 | 282.0 |
-| BAU_Extreme | 8 | 1 | 0.558 | 1,063.5 |
-| REN100_Normal | 8 | 1 | 0.882 | 755.0 |
-| REN100_Extreme | 8 | 1 | 0.585 | 775.0 |
+| BAU_Normal | 8 | 1 | 0.686 | 346.0 |
+| BAU_Extreme | 8 | 1 | 0.979 | 240.9 |
+| REN100_Normal | 8 | 1 | 0.746 | 596.3 |
+| REN100_Extreme | 8 | 1 | 0.646 | 449.1 |
 
 All four solutions satisfy the configured 1% MIP-gap criterion.
 
+## Final scenario summary
+
+| Case | Total cost [MUSD] | Cumulative CO₂ [MtCO₂] | Cumulative ENS [GWh] | Final renewable share [%] |
+|---|---:|---:|---:|---:|
+| BAU_Normal | 32,615.81 | 23.44 | 0.00 | 97.81 |
+| BAU_Extreme | 36,823.54 | 146.95 | 61.59 | 85.19 |
+| REN100_Normal | 32,741.32 | 21.12 | 0.00 | 100.00 |
+| REN100_Extreme | 50,872.92 | 41.81 | 10,012.06 | 100.00 |
+
+The final 100%-renewable extreme-hydrology case reaches the renewable target but exhibits substantial ENS, imports, curtailment and reliability cost. The explorer reports these outcomes directly rather than treating target compliance as equivalent to adequacy.
+
 ## Structural checks
 
-The source result summary reports the same system structure for all four cases:
+The source result summary reports the same model structure in all four cases:
 
 - 330 generators;
 - 147 existing generators;
@@ -23,7 +34,7 @@ The source result summary reports the same system structure for all four cases:
 - 6 planning nodes;
 - 7 planning corridors;
 - 209 hydro generators;
-- 4 reservoir plants;
+- 4 reservoirs;
 - 205 run-of-river hydro generators;
 - 54 VRE generators;
 - 65 thermal-class generators;
@@ -33,34 +44,42 @@ The source result summary reports the same system structure for all four cases:
 
 ## Numerical audit
 
-For all four cases:
+For every case:
 
 - base-year endogenous new build = 0 MW;
-- maximum peak PNS = 0 MW;
+- maximum peak-snapshot PNS = 0 MW;
 - annual demand reconstruction residual is approximately `2.91e-11 GWh`;
-- reported water-balance residual is within numerical tolerance;
+- maximum water-balance residual is below `1.71e-13 hm³`;
 - maximum corridor utilization does not exceed the modeled limit beyond floating-point tolerance.
 
-## Public fuel/resource reconstruction
+## Public-data transformation audit
 
-The generator-level source roster was used offline to reconstruct annual generation by public fuel/resource category. The sum of the reconstructed categories matches the model's native annual technology aggregation for every case and year within `1e-5 GWh`.
+The public bundle is rebuilt from the final Results workbook and validated before publication.
 
-Only the aggregated fuel/resource series are included in the browser bundle.
+- 26 annual rows per case;
+- 312 monthly rows per case;
+- 182 corridor-year rows per case;
+- 1,248 reservoir-month rows per case;
+- 2,184 selected-hydro rows per case;
+- monthly demand reconstructs annual demand within `1.46e-11 GWh`;
+- Pacific + Amazon monthly hydro reconstructs system hydropower within `9.10e-13 GWh`;
+- monthly system hydropower reconstructs the native annual hydro aggregate within `2.12e-10 GWh`;
+- public fuel/resource generation reconstructs native technology output within `1.97e-10 GWh`;
+- fuel/resource capacity reconstructs native technology capacity within `9.10e-13 MW`;
+- fuel/resource new capacity reconstructs exactly;
+- fuel/resource emissions reconstruct annual model emissions within `5.46e-12 ktCO₂`.
 
-## Public explorer validation
+Only aggregated fuel/resource series are included in the browser bundle.
 
-The v2.1.0 build also passes 40 release-layer checks. These include:
+## Browser validation
 
-- exact agreement between the four public 6-bus scenario summaries and the source `Results.xlsx`;
-- 26 annual and 312 monthly records per case;
-- 7 corridor trajectories over 26 years per case;
-- monthly demand reconstruction of annual demand within `1.46e-11 GWh`;
-- Pacific plus Amazon hydro generation reproducing the complete system hydro series within `5e-9 GWh`;
-- complete 12-month wet/dry calendars for both hydrological regimes;
-- 133 georeferenced physical transmission features with valid Ecuador coordinates;
-- runtime rendering of the physical grid, 6-bus planning corridors, decision timeline, reservoir views, hydrological seasonality and hydraulic cascades;
-- a visible engineering-unit label for every rendered analytical chart;
-- no GAMS, GDX, Excel, LST or solver-log artifacts in the public package;
-- no direct dataset ZIP or CSV-result download in the public interface.
+The packaged application was executed in headless Chromium using the exact release HTML, CSS, Plotly library, data bundle and dashboard JavaScript.
 
-The machine-readable report is available at [`data/metadata/validation/public_explorer_v2.1.0_validation.json`](../data/metadata/validation/public_explorer_v2.1.0_validation.json). A human-readable release checklist is available at [`VALIDATION_v2.1.0.md`](../VALIDATION_v2.1.0.md).
+- 59 plot contexts were exercised across the 24-bus and 6-bus cases;
+- 0 JavaScript runtime errors;
+- 0 missing visible Cartesian axis titles;
+- 0 numeric y-axes without explicit units;
+- the 6-bus map rendered 332 transmission paths and 6 model-node points;
+- the Paute view rendered 6 positive Sankey links and 4 cascade rows.
+
+Runtime results are recorded in `data/metadata/validation/runtime_v2.4.0.json`.

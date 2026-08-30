@@ -10,7 +10,7 @@ The bundle contains only the system aggregates and selected diagnostics required
 
 This `data/` directory contains only supporting public resources:
 
-- `geography/` — reference generation assets, physical transmission-grid and planning-network geography, zone metadata and international anchors;
+- `geography/` — reference generation assets, PARAMO planning-network geography, the complete user-supplied georeferenced 6.3–500 kV electricity-line layer with runtime voltage filters, zone metadata and international anchors;
 - `metadata/` — case registry, metric definitions, scenario catalog, public-bundle schema, validation summaries and release checksums.
 
 Generator-level result tables, realization-level Monte Carlo outputs, GDX/LST/log files, InputData workbooks and the complete Results workbook are not distributed.

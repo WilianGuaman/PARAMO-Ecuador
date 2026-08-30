@@ -1,5 +1,5 @@
 {
-  "version": "2.1.0",
+  "version": "2.4.0",
   "result_storage": "assets/js/dashboard_data.js",
   "direct_result_downloads": false,
   "figure_exports": [
@@ -20,12 +20,13 @@
     "corridor decisions",
     "reservoir operation",
     "selected hydro-plant results",
-    "selected cascade hydraulics"
+    "selected cascade hydraulics",
+    "system/regime hydro seasonality",
+    "corridor investment timing and cumulative state"
   ],
   "reference_blocks": [
-    "reference generation plants",
-    "author-supplied physical transmission grid (69\u2013500 kV)",
-    "24-bus planning links",
+    "generation plants",
+    "georeferenced planning network",
     "zone registry",
     "international system anchors"
   ],
@@ -37,5 +38,16 @@
     "full generator-level annual/build outputs",
     "Monte Carlo realization-level result tables"
   ],
-  "data_access_policy": "docs/DATA_ACCESS.md"
+  "data_access_policy": "docs/DATA_ACCESS.md",
+  "geography_blocks": [
+    "24-bus planning branches",
+    "complete user-supplied Lineas.geojson layer (587 features, 6.3\u2013500 kV)",
+    "runtime filters for core transmission and voltage levels",
+    "reference plants",
+    "model nodes",
+    "international anchors"
+  ],
+  "map_rendering": "Local Cartesian longitude/latitude engineering plot; no external basemap dependency",
+  "six_bus_source_run": "2026-08-30",
+  "six_bus_result_status": "Four cases; ModelStat 8; SolveStat 1; MIP gap <1%"
 }

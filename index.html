@@ -1,133 +1,135 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="PARAMO Ecuador Results Explorer — interactive long-term power-system planning results for Ecuador under hydrological uncertainty." name="description"/>
-<meta content="PARAMO Ecuador Results Explorer" property="og:title"/>
-<meta content="Generation, transmission, hydrology, emissions, reliability and cost results for Ecuador planning cases." property="og:description"/>
-<meta content="assets/brand/social-preview.png" property="og:image"/>
-<title>PARAMO Ecuador Results Explorer</title>
-<link href="assets/brand/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="assets/css/dashboard.css" rel="stylesheet"/>
-<script src="assets/vendor/plotly-3.3.1.min.js"></script>
-<script src="assets/js/dashboard_data.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PARAMO Ecuador Results Explorer — interactive long-term power-system planning results for Ecuador under hydrological uncertainty.">
+  <meta property="og:title" content="PARAMO Ecuador Results Explorer">
+  <meta property="og:description" content="Generation, transmission, hydrology, emissions, reliability and cost results for Ecuador planning cases.">
+  <meta property="og:image" content="assets/brand/social-preview.png">
+  <title>PARAMO Ecuador Results Explorer</title>
+  <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <script src="assets/vendor/plotly-3.3.1.min.js"></script>
+  <script src="assets/js/dashboard_data.js"></script>
+  <script src="assets/js/reference_network_data.js"></script>
 </head>
 <body>
 <header class="site-header">
-<div class="brand-block">
-<img alt="PARAMO — Planning And Resource Allocation under Multi-scenario Optimization" class="brand-logo" src="assets/brand/paramo-logo-horizontal.svg"/>
-<div class="brand-subtitle"><strong>Ecuador Results Explorer</strong> · Long-term planning under hydrological uncertainty · 2025–2050</div>
-</div>
-<div class="header-actions">
-<a class="header-btn primary-link" data-open-tab="data-access" href="#data-access">Request data access</a>
-<a class="header-btn" href="docs/CITATION.md">Cite</a>
-<button class="header-btn" id="presentationBtn" type="button">Presentation mode</button>
-<button class="header-btn" id="copyLinkBtn" type="button">Copy view link</button>
-<a class="header-btn" href="https://github.com/WilianGuaman/PARAMO-Ecuador">GitHub</a>
-<span class="version-pill">v2.1.0</span>
-</div>
+  <div class="brand-block">
+    <img class="brand-logo" src="assets/brand/paramo-logo-horizontal.svg" alt="PARAMO — Planning And Resource Allocation under Multi-scenario Optimization">
+    <div class="brand-subtitle"><strong>Ecuador Results Explorer</strong> · Long-term planning under hydrological uncertainty · 2025–2050</div>
+  </div>
+  <div class="header-actions">
+    <a class="header-btn primary-link" href="#data-access" data-open-tab="data-access">Request data access</a>
+    <a class="header-btn" href="docs/CITATION.md">Cite</a>
+    <button id="presentationBtn" class="header-btn" type="button">Presentation mode</button>
+    <button id="copyLinkBtn" class="header-btn" type="button">Copy view link</button>
+    <a class="header-btn" href="https://github.com/WilianGuaman/PARAMO-Ecuador">GitHub</a>
+    <span class="version-pill">2.4.0</span>
+  </div>
 </header>
-<nav aria-label="Dashboard sections" class="top-nav">
-<button class="nav-btn active" data-tab="overview">Overview</button>
-<button class="nav-btn" data-tab="generation">Generation Expansion</button>
-<button class="nav-btn" data-tab="network">Transmission &amp; Reconductoring</button>
-<button class="nav-btn" data-tab="hydrology">Hydrology &amp; Reservoirs</button>
-<button class="nav-btn" data-tab="operation">System Operation</button>
-<button class="nav-btn" data-tab="emissions">Emissions &amp; Decarbonization</button>
-<button class="nav-btn" data-tab="reliability">Reliability &amp; ENS</button>
-<button class="nav-btn" data-tab="costs">Costs &amp; Uncertainty</button>
-<button class="nav-btn" data-tab="compare">Scenario Comparison</button>
-<button class="nav-btn" data-tab="data-access">Data Access</button>
-<button class="nav-btn" data-tab="methodology">Methodology</button>
+<nav class="top-nav" aria-label="Dashboard sections">
+  <button class="nav-btn active" data-tab="overview">Overview</button>
+  <button class="nav-btn" data-tab="generation">Generation Expansion</button>
+  <button class="nav-btn" data-tab="network">Transmission & Reconductoring</button>
+  <button class="nav-btn" data-tab="hydrology">Hydrology & Reservoirs</button>
+  <button class="nav-btn" data-tab="operation">System Operation</button>
+  <button class="nav-btn" data-tab="emissions">Emissions & Decarbonization</button>
+  <button class="nav-btn" data-tab="reliability">Reliability & ENS</button>
+  <button class="nav-btn" data-tab="costs">Costs & Uncertainty</button>
+  <button class="nav-btn" data-tab="compare">Scenario Comparison</button>
+  <button class="nav-btn" data-tab="data-access">Data Access</button>
+  <button class="nav-btn" data-tab="methodology">Methodology</button>
 </nav>
-<div class="runtime-notice" hidden="" id="runtimeNotice" role="status"></div>
+<div id="runtimeNotice" class="runtime-notice" role="status" hidden></div>
 <div class="dashboard-grid">
-<aside aria-label="Study filters" class="filter-panel">
-<section class="filter-section">
-<div class="filter-heading">Explore PARAMO results</div>
-<label for="caseSelect">Study case</label>
-<select id="caseSelect"><option value="ecuador_24bus">Ecuador 24-Bus · National planning case</option><option value="ecuador_6bus">Ecuador 6-Bus · Reduced planning case</option></select>
-<label for="scenarioSelect">Policy pathway</label><select id="scenarioSelect"></select>
-<label for="hydrologySelect">Hydrology</label><select id="hydrologySelect"></select>
-<div id="statWrap"><label for="statSelect">Statistic</label><select id="statSelect"><option value="Mean">Mean</option><option value="P10">P10</option><option value="P50">P50</option><option value="P90">P90</option><option value="Representative">Representative realization</option></select></div>
-<label for="yearSelect">Year</label><select id="yearSelect"></select>
-<label for="monthSelect">Month</label><select id="monthSelect"><option value="1">January</option><option value="2">February</option><option value="3">March</option><option value="4">April</option><option value="5">May</option><option value="6">June</option><option value="7">July</option><option value="8">August</option><option value="9">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option></select>
-</section>
-<section class="filter-actions single"><button id="resetBtn" type="button">Reset view</button></section>
-<section class="filter-note" id="ensembleNote"></section>
-<section class="filter-note subtle" id="caseCapabilityNote"></section>
-</aside>
-<main class="main-panel">
-<section class="tab-panel active" id="overview">
-<div class="section-intro"><div><h1>Planning outcomes at a glance</h1><p>Economy, decarbonization and reliability are shown together so scenario trade-offs remain visible.</p></div><span class="status-badge">Model results</span></div>
-<div class="kpi-grid" id="overviewKpis"></div>
-<div class="insight" id="overviewInsight"></div>
-<div class="chart-grid two">
-<div class="chart-card"><div class="chart-head"><span class="chart-title">Cost–CO₂–reliability performance</span><span class="chart-tools" data-tools="overviewTradeoff"></span></div><div class="plot" id="overviewTradeoff"></div></div>
-<div class="chart-card"><div class="chart-head"><span class="chart-title">Normalized outcome comparison</span><span class="chart-tools" data-tools="overviewBars"></span></div><div class="plot" id="overviewBars"></div></div>
+  <aside class="filter-panel" aria-label="Study filters">
+    <section class="filter-section">
+      <div class="filter-heading">Explore PARAMO results</div>
+      <label for="caseSelect">Study case</label>
+      <select id="caseSelect"><option value="ecuador_24bus">Ecuador 24-Bus · National planning case</option><option value="ecuador_6bus">Ecuador 6-Bus · Reduced planning case</option></select>
+      <label for="scenarioSelect">Policy pathway</label><select id="scenarioSelect"></select>
+      <label for="hydrologySelect">Hydrology</label><select id="hydrologySelect"></select>
+      <div id="statWrap"><label for="statSelect">Statistic</label><select id="statSelect"><option value="Mean">Mean</option><option value="P10">P10</option><option value="P50">P50</option><option value="P90">P90</option><option value="Representative">Representative realization</option></select></div>
+      <label for="yearSelect">Year</label><select id="yearSelect"></select>
+      <label for="monthSelect">Month</label><select id="monthSelect"><option value="1">January</option><option value="2">February</option><option value="3">March</option><option value="4">April</option><option value="5">May</option><option value="6">June</option><option value="7">July</option><option value="8">August</option><option value="9">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option></select>
+    </section>
+    <section class="filter-actions single"><button id="resetBtn" type="button">Reset view</button></section>
+    <section class="filter-note" id="ensembleNote"></section>
+    <section class="filter-note subtle" id="caseCapabilityNote"></section>
+  </aside>
+
+  <main class="main-panel">
+    <section id="overview" class="tab-panel active">
+      <div class="section-intro"><div><h1>Planning outcomes at a glance</h1><p>Economy, decarbonization and reliability are shown together so scenario trade-offs remain visible.</p></div><span class="status-badge">Model results</span></div>
+      <div id="overviewKpis" class="kpi-grid"></div>
+      <div id="overviewInsight" class="insight"></div>
+      <div class="chart-grid two">
+        <div class="chart-card"><div class="chart-head"><span class="chart-title">Cost–CO₂–reliability performance</span><span class="chart-tools" data-tools="overviewTradeoff"></span></div><div id="overviewTradeoff" class="plot"></div></div>
+        <div class="chart-card"><div class="chart-head"><span class="chart-title">Normalized outcome comparison</span><span class="chart-tools" data-tools="overviewBars"></span></div><div id="overviewBars" class="plot"></div></div>
+      </div>
+      <div class="table-card"><div class="chart-head"><span class="chart-title">Scenario summary</span></div><div id="overviewTable" class="table-wrap"></div></div>
+    </section>
+
+    <section id="generation" class="tab-panel">
+      <div class="section-intro"><div><h1>Generation expansion</h1><p>Installed capacity, additions and annual electricity production across the planning horizon.</p></div><div class="section-tools"><label id="fuelViewWrap" class="inline-control" hidden><span>6-Bus display</span><select id="fuelViewSelect"><option value="fuel">Fuel detail</option><option value="technology">Technology aggregation</option></select></label><span class="status-badge">Expansion result</span></div></div>
+      <div id="generationKpis" class="kpi-grid four"></div>
+      <div class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title" id="capacityChartTitle">Installed capacity</span><span class="chart-tools" data-tools="capacityTrajectory"></span></div><div id="capacityTrajectory" class="plot tall"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title" id="capacityAdditionsTitle">Capacity additions</span><span class="chart-tools" data-tools="capacityAdditions"></span></div><div id="capacityAdditions" class="plot tall"></div></div></div>
+      <div class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title" id="generationAnnualTitle">Annual generation</span><span class="chart-tools" data-tools="generationAnnual"></span></div><div id="generationAnnual" class="plot tall"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title" id="generationMixYearTitle">Selected-year mix</span><span class="chart-tools" data-tools="generationMixYear"></span></div><div id="generationMixYear" class="plot tall"></div></div></div>
+    </section>
+
+    <section id="network" class="tab-panel">
+      <div class="section-intro"><div><h1>Transmission & reconductoring</h1><p>Expansion decisions, available corridor capacity, peak loading and investment.</p></div><div class="section-tools"><label id="corridorWrap" class="inline-control" hidden><span>Corridor</span><select id="corridorSelect"></select></label><span id="networkStatus" class="status-badge warning">Capability dependent</span></div></div>
+      <div id="networkNote" class="warning-box"></div>
+      <div id="networkKpis" class="kpi-grid four"></div>
+      <div class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title">Transmission investment</span><span class="chart-tools" data-tools="transmissionCost"></span></div><div id="transmissionCost" class="plot"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title" id="networkSecondaryTitle">Corridor capability</span><span class="chart-tools" data-tools="networkSecondary"></span></div><div id="networkSecondary" class="plot"></div></div></div>
+      <div id="transmissionDecisionCard" class="chart-card"><div class="chart-head"><span class="chart-title">Transmission intervention timeline</span><span class="chart-tools" data-tools="transmissionDecisionTimeline"></span></div><div id="transmissionDecisionTimeline" class="plot short"></div></div>
+      <div class="table-card"><div class="chart-head"><span class="chart-title">Network detail</span></div><div id="networkTable" class="table-wrap"></div></div>
+    </section>
+
+    <section id="hydrology" class="tab-panel">
+      <div class="section-intro"><div><h1>Hydrology & reservoirs</h1><p>Hydro availability, storage, water transfers and cascade operation.</p></div><div class="section-tools"><label id="hydroAssetWrap" class="inline-control" hidden><span>Hydro asset</span><select id="hydroAssetSelect"></select></label><span class="status-badge">Hydrology-aware</span></div></div>
+      <div id="hydroKpis" class="kpi-grid four"></div>
+      <div class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title" id="hydroStorageTitle">Reservoir storage</span><span class="chart-tools" data-tools="reservoirEnvelope"></span></div><div id="reservoirEnvelope" class="plot"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title" id="hydroGenerationTitle">Hydro operation</span><span class="chart-tools" data-tools="reservoirYear"></span></div><div id="reservoirYear" class="plot"></div></div></div>
+      <div class="chart-card seasonality-card"><div class="chart-head"><span class="chart-title" id="hydroSeasonalityTitle">Seasonal hydropower profile</span><span class="chart-tools" data-tools="hydroSeasonality"></span></div><div id="hydroSeasonality" class="plot short"></div><div id="hydroSeasonLegend" class="hydro-season-legend"></div></div>
+      <div id="hydroFlowGrid" class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title" id="hydroWaterBalanceTitle">Monthly generation and hydraulic release</span><span class="chart-tools" data-tools="hydroWaterBalance"></span></div><div id="hydroWaterBalance" class="plot tall"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title" id="hydroCascadeFlowTitle">Hydraulic transfers in selected month</span><span class="chart-tools" data-tools="hydroCascadeFlow"></span></div><div id="hydroCascadeFlow" class="plot tall"></div></div></div>
+      <div id="cascadeCard" class="chart-card cascade-card" hidden><div class="chart-head"><span class="chart-title" id="cascadeTitle">Hydraulic cascade · selected month</span></div><div id="cascadeDiagram" class="cascade-diagram"></div><div id="cascadeTable" class="table-wrap"></div></div>
+      <div class="chart-card"><div class="chart-head"><span class="chart-title">Hydrology penalty across scenarios</span><span class="chart-tools" data-tools="hydrologyPenalty"></span></div><div id="hydrologyPenalty" class="plot"></div></div>
+    </section>
+
+    <section id="operation" class="tab-panel"><div class="section-intro"><div><h1>System operation</h1><p>Monthly and annual operational indicators for the selected planning configuration.</p></div><span id="operationBadge" class="status-badge">Representative run</span></div><div id="operationKpis" class="kpi-grid four"></div><div class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title">Monthly energy balance</span><span class="chart-tools" data-tools="monthlyGeneration"></span></div><div id="monthlyGeneration" class="plot tall"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title">Reserve / ENS / curtailment</span><span class="chart-tools" data-tools="operationReliability"></span></div><div id="operationReliability" class="plot tall"></div></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title">Annual operation trajectory</span><span class="chart-tools" data-tools="annualOperation"></span></div><div id="annualOperation" class="plot"></div></div></section>
+
+    <section id="emissions" class="tab-panel"><div class="section-intro"><div><h1>Emissions & decarbonization</h1><p>Carbon outcomes across policy pathways and hydrological conditions.</p></div><span class="status-badge">Decarbonization</span></div><div id="emissionKpis" class="kpi-grid four"></div><div id="emissionInsight" class="insight"></div><div class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title">Cumulative CO₂ comparison</span><span class="chart-tools" data-tools="emissionCumulative"></span></div><div id="emissionCumulative" class="plot"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title" id="emissionAnnualTitle">Annual CO₂ trajectory</span><span class="chart-tools" data-tools="emissionAnnual"></span></div><div id="emissionAnnual" class="plot"></div></div></div><div class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title">CO₂ uncertainty / scenario spread</span><span class="chart-tools" data-tools="emissionDistribution"></span></div><div id="emissionDistribution" class="plot"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title">Cost–CO₂ performance space</span><span class="chart-tools" data-tools="emissionTradeoff"></span></div><div id="emissionTradeoff" class="plot"></div></div></div></section>
+
+    <section id="reliability" class="tab-panel"><div class="section-intro"><div><h1>Reliability & energy not served</h1><p>Annual and cumulative ENS together with economic consequences.</p></div><span class="status-badge">Reliability</span></div><div id="reliabilityKpis" class="kpi-grid four"></div><div id="reliabilityInsight" class="insight"></div><div class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title">Cumulative ENS comparison</span><span class="chart-tools" data-tools="ensCumulative"></span></div><div id="ensCumulative" class="plot"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title">Annual ENS trajectory</span><span class="chart-tools" data-tools="ensAnnual"></span></div><div id="ensAnnual" class="plot"></div></div></div><div class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title">ENS uncertainty / scenario spread</span><span class="chart-tools" data-tools="ensDistribution"></span></div><div id="ensDistribution" class="plot"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title">Reliability versus cost</span><span class="chart-tools" data-tools="ensTradeoff"></span></div><div id="ensTradeoff" class="plot"></div></div></div></section>
+
+    <section id="costs" class="tab-panel"><div class="section-intro"><div><h1>Costs & uncertainty</h1><p>Planning cost statistics and cost composition.</p></div><span class="status-badge">Economic result</span></div><div id="costKpis" class="kpi-grid four"></div><div class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title">Total cost range / scenario comparison</span><span class="chart-tools" data-tools="costDistribution"></span></div><div id="costDistribution" class="plot"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title">Cost components</span><span class="chart-tools" data-tools="costComponents"></span></div><div id="costComponents" class="plot"></div></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title">System performance space</span><span class="chart-tools" data-tools="performanceSpace"></span></div><div id="performanceSpace" class="plot"></div></div></section>
+
+    <section id="compare" class="tab-panel"><div class="section-intro"><div><h1>Scenario comparison</h1><p>Compare two configurations using common public indicators. Different study cases are not one-to-one system equivalents.</p></div><span class="status-badge">A vs B</span></div><div class="compare-grid"><div class="compare-card"><h2>Configuration A</h2><label>Study case</label><select id="compareCaseA"></select><label>Scenario</label><select id="compareScenarioA"></select><label>Hydrology</label><select id="compareHydroA"></select></div><div class="compare-card"><h2>Configuration B</h2><label>Study case</label><select id="compareCaseB"></select><label>Scenario</label><select id="compareScenarioB"></select><label>Hydrology</label><select id="compareHydroB"></select></div></div><div class="chart-grid two"><div class="table-card"><div class="chart-head"><span class="chart-title">Metric comparison</span></div><div id="compareTable" class="table-wrap"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title">Normalized performance</span><span class="chart-tools" data-tools="compareChart"></span></div><div id="compareChart" class="plot"></div></div></div></section>
+
+    <section id="data-access" class="tab-panel">
+      <div class="section-intro"><div><h1>Data access</h1><p>The public browser contains only the aggregated information required for the visualizations. Additional research data are provided by request and review.</p></div><span class="status-badge">Controlled access</span></div>
+      <div class="download-grid"><div class="download-card"><h2>Request research data</h2><p>Use the repository request form to describe the study, requested variables and intended use. Requests are reviewed before data are shared.</p><a class="download-button secondary" href="https://github.com/WilianGuaman/PARAMO-Ecuador/issues/new?template=data-access-request.yml" target="_blank" rel="noopener">Open data-access form</a><p class="privacy-note">GitHub Issues are public. Do not include confidential, sensitive or personal information in the request.</p></div><div class="download-card"><h2>What is public in the explorer?</h2><p>Scenario summaries, chart-ready annual/monthly series, fuel/technology aggregates, selected 6-bus transmission corridor decisions and selected reservoir/cascade diagnostics.</p><a class="download-button" href="docs/DATA_ACCESS.md">Data-access policy</a></div><div class="download-card"><h2>Citation & provenance</h2><p>Use the repository citation for the explorer and the associated scholarly methodology when appropriate.</p><a class="download-button" href="docs/CITATION.md">Citation guide</a></div></div>
+      <div class="method-grid" style="margin-top:10px"><div class="method-card"><h2>Cite the explorer</h2><div id="citationBox" class="citation-box"></div><div class="method-links"><button id="copyCitationBtn" class="download-button" type="button">Copy citation</button><a href="CITATION.cff">CITATION.cff</a><a href="docs/citation/CITATION.bib">BibTeX</a><a href="docs/citation/CITATION.ris">RIS</a></div></div><div class="method-card"><h2>Licensing</h2><p><strong>Dashboard code:</strong> Apache License 2.0.<br><strong>PARAMO-derived public visualization layer and original documentation:</strong> CC BY 4.0 where indicated.<br><strong>Third-party reference data:</strong> original source terms apply.<br><strong>Private optimization model and non-public research datasets:</strong> not distributed through this repository.</p><div class="method-links"><a href="LICENSES.md">License and attribution matrix</a></div></div></div>
+    </section>
+
+    <section id="methodology" class="tab-panel"><div class="section-intro"><div><h1>Methodology, provenance & citation</h1><p>Distinguish optimization results, reference-system data and uncertainty representations.</p></div><span class="status-badge">Research documentation</span></div><div class="method-grid"><div class="method-card"><h2>PARAMO public results layer</h2><p>The dashboard displays precomputed outputs generated with PARAMO. The GAMS implementation, InputData workbooks, GDX/LST/log files and full generator-level result tables are not distributed.</p></div><div class="method-card"><h2>Ecuador 6-Bus</h2><p>The reduced case contains four validated W=1 configurations: BAU and REN100 under Normal and Extreme hydrology. The public layer reports system aggregates, corridor decisions and selected hydraulic cascades.</p></div><div class="method-card"><h2>Ecuador 24-Bus</h2><p>The national planning application contains REF, BRIDGE and NZT pathways. Baseline uses W100 and Adverse uses W5. The browser exposes aggregate statistics and representative trajectories, not realization-level tables.</p></div><div class="method-card"><h2>Geography</h2><p>Model nodes and reduced corridors are planning abstractions. Reference plants and the georeferenced 24-bus network provide physical context and are visually distinguished from optimization objects. Colombia and Peru remain external systems.</p></div><div class="method-card"><h2>Foundational publication</h2><p>Guamán, W., Benalcazar, P., Cordova-Garcia, J., & Torres, M. (2025). <em>An integrated framework for the optimal expansion of hydro-dependent power systems under water-resource uncertainty</em>. Energy Conversion and Management: X, 28, 101297. DOI: 10.1016/j.ecmx.2025.101297.</p></div><div class="method-card"><h2>Documentation</h2><p>Data provenance, limitations, public-data policy and citation guidance are maintained with the release.</p><div class="method-links"><a href="docs/METHODOLOGY.md">Methodology</a><a href="docs/DATA_PROVENANCE.md">Data provenance</a><a href="docs/LIMITATIONS.md">Limitations</a><a href="docs/DATA_ACCESS.md">Data access</a></div></div></div></section>
+  </main>
+
+  <aside class="map-panel">
+    <div class="map-heading"><div><strong id="mapTitle">PARAMO network</strong><span id="mapSubtitle">Ecuador planning geography</span></div><span id="mapBadge" class="map-badge">24-bus</span></div>
+    <div class="map-controls"><label><input id="mapLines" type="checkbox" checked> Planning / model lines</label><label><input id="mapReferenceLines" type="checkbox" checked> Physical transmission grid</label><label><input id="mapNodes" type="checkbox" checked> Model nodes</label><label><input id="mapPlants" type="checkbox"> Reference plants</label><label><input id="mapExternal" type="checkbox" checked> International</label><label class="map-filter"><span>Georeferenced line voltage</span><select id="mapGridFilter">
+<option value="core138">≥138 kV · national transmission grid</option>
+<option value="all69">≥69 kV · transmission + subtransmission</option>
+<option value="all">All 587 supplied lines · 6.3–500 kV</option>
+<option value="500">500 kV only</option><option value="230">230 kV only</option><option value="138">138 kV only</option><option value="69">69 kV only</option>
+<option value="46">46 kV only</option><option value="34.5">34.5 kV only</option><option value="22">22–22.8 kV</option><option value="13.8">13.8 kV only</option><option value="13.2">13.2 kV only</option><option value="6.3">6.3 kV only</option>
+<option value="transmission">Source class: transmission only</option></select></label></div>
+    <div id="mapGridStatus" class="map-grid-status"></div><div id="networkMap" class="map-plot"></div><div id="mapLegend" class="map-legend"></div>
+  </aside>
 </div>
-<div class="table-card"><div class="chart-head"><span class="chart-title">Scenario summary</span></div><div class="table-wrap" id="overviewTable"></div></div>
-</section>
-<section class="tab-panel" id="generation">
-<div class="section-intro"><div><h1>Generation expansion</h1><p>Installed capacity, additions and annual electricity production across the planning horizon.</p></div><div class="section-tools"><label class="inline-control" hidden="" id="fuelViewWrap"><span>6-Bus display</span><select id="fuelViewSelect"><option value="fuel">Fuel detail</option><option value="technology">Technology aggregation</option></select></label><span class="status-badge">Expansion result</span></div></div>
-<div class="kpi-grid four" id="generationKpis"></div>
-<div class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title" id="capacityChartTitle">Installed capacity</span><span class="chart-tools" data-tools="capacityTrajectory"></span></div><div class="plot tall" id="capacityTrajectory"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title" id="capacityAdditionsTitle">Capacity additions</span><span class="chart-tools" data-tools="capacityAdditions"></span></div><div class="plot tall" id="capacityAdditions"></div></div></div>
-<div class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title" id="generationAnnualTitle">Annual generation</span><span class="chart-tools" data-tools="generationAnnual"></span></div><div class="plot tall" id="generationAnnual"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title" id="generationMixYearTitle">Selected-year mix</span><span class="chart-tools" data-tools="generationMixYear"></span></div><div class="plot tall" id="generationMixYear"></div></div></div>
-</section>
-<section class="tab-panel" id="network">
-<div class="section-intro"><div><h1>Transmission &amp; reconductoring</h1><p>Expansion decisions, available corridor capacity, peak loading and investment.</p></div><div class="section-tools"><label class="inline-control" hidden="" id="corridorWrap"><span>Corridor</span><select id="corridorSelect"></select></label><span class="status-badge warning" id="networkStatus">Capability dependent</span></div></div>
-<div class="warning-box" id="networkNote"></div>
-<div class="kpi-grid four" id="networkKpis"></div>
-<div class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title">Transmission investment</span><span class="chart-tools" data-tools="transmissionCost"></span></div><div class="plot" id="transmissionCost"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title" id="networkSecondaryTitle">Corridor capability</span><span class="chart-tools" data-tools="networkSecondary"></span></div><div class="plot" id="networkSecondary"></div></div></div>
-<div class="chart-card full-width decision-timeline-card">
-<div class="chart-head">
-<div><span class="chart-title">Transmission decision timeline</span><span class="chart-subtitle">Reinforcement and new-circuit investment events</span></div>
-<span class="chart-tools" data-tools="transmissionDecisions"></span>
-</div>
-<div class="plot decision-plot" id="transmissionDecisions"></div>
-</div><div class="table-card"><div class="chart-head"><span class="chart-title">Network detail</span></div><div class="table-wrap" id="networkTable"></div></div>
-</section>
-<section class="tab-panel" id="hydrology">
-<div class="section-intro"><div><h1>Hydrology &amp; reservoirs</h1><p>Hydro availability, storage, water transfers and cascade operation.</p></div><div class="section-tools"><label class="inline-control" hidden="" id="hydroAssetWrap"><span>Hydro asset</span><select id="hydroAssetSelect"></select></label><span class="status-badge">Hydrology-aware</span></div></div>
-<div class="kpi-grid four" id="hydroKpis"></div><div class="insight hydro-insight" id="hydroInsight"></div>
-<div class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title" id="hydroStorageTitle">Reservoir storage</span><span class="chart-tools" data-tools="reservoirEnvelope"></span></div><div class="plot" id="reservoirEnvelope"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title" id="hydroGenerationTitle">Hydro operation</span><span class="chart-tools" data-tools="reservoirYear"></span></div><div class="plot" id="reservoirYear"></div></div></div><div class="chart-grid two six-only-grid" id="hydroSeasonalityGrid">
-<div class="chart-card">
-<div class="chart-head"><div><span class="chart-title">Hydrological seasonality</span><span class="chart-subtitle">Monthly availability by hydrological regime</span></div><span class="chart-tools" data-tools="hydroSeasonality"></span></div>
-<div class="plot" id="hydroSeasonality"></div>
-</div>
-<div class="chart-card">
-<div class="chart-head"><div><span class="chart-title">Hydro generation by regime</span><span class="chart-subtitle">Pacific and Amazon contributions to system hydropower</span></div><span class="chart-tools" data-tools="hydroRegimeProfile"></span></div>
-<div class="plot" id="hydroRegimeProfile"></div>
-</div>
-</div>
-<div class="chart-card cascade-card" id="cascadeCard"><div class="chart-head"><span class="chart-title">Hydraulic cascades · selected month</span></div><div class="cascade-diagram" id="cascadeDiagram"></div><div class="cascade-detail-wrap">
-<div class="cascade-detail-title">Selected-month hydraulic balance</div>
-<div class="table-wrap cascade-table" id="cascadeTable"></div>
-</div></div>
-<div class="chart-card"><div class="chart-head"><span class="chart-title">Hydrology penalty across scenarios</span><span class="chart-tools" data-tools="hydrologyPenalty"></span></div><div class="plot" id="hydrologyPenalty"></div></div>
-</section>
-<section class="tab-panel" id="operation"><div class="section-intro"><div><h1>System operation</h1><p>Monthly and annual operational indicators for the selected planning configuration.</p></div><span class="status-badge" id="operationBadge">Representative run</span></div><div class="kpi-grid four" id="operationKpis"></div><div class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title">Monthly energy balance</span><span class="chart-tools" data-tools="monthlyGeneration"></span></div><div class="plot tall" id="monthlyGeneration"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title">Reserve / ENS / curtailment</span><span class="chart-tools" data-tools="operationReliability"></span></div><div class="plot tall" id="operationReliability"></div></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title">Annual operation trajectory</span><span class="chart-tools" data-tools="annualOperation"></span></div><div class="plot" id="annualOperation"></div></div></section>
-<section class="tab-panel" id="emissions"><div class="section-intro"><div><h1>Emissions &amp; decarbonization</h1><p>Carbon outcomes across policy pathways and hydrological conditions.</p></div><span class="status-badge">Decarbonization</span></div><div class="kpi-grid four" id="emissionKpis"></div><div class="insight" id="emissionInsight"></div><div class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title">Cumulative CO₂ comparison</span><span class="chart-tools" data-tools="emissionCumulative"></span></div><div class="plot" id="emissionCumulative"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title" id="emissionAnnualTitle">Annual CO₂ trajectory</span><span class="chart-tools" data-tools="emissionAnnual"></span></div><div class="plot" id="emissionAnnual"></div></div></div><div class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title">CO₂ uncertainty / scenario spread</span><span class="chart-tools" data-tools="emissionDistribution"></span></div><div class="plot" id="emissionDistribution"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title">Cost–CO₂ performance space</span><span class="chart-tools" data-tools="emissionTradeoff"></span></div><div class="plot" id="emissionTradeoff"></div></div></div></section>
-<section class="tab-panel" id="reliability"><div class="section-intro"><div><h1>Reliability &amp; energy not served</h1><p>Annual and cumulative ENS together with economic consequences.</p></div><span class="status-badge">Reliability</span></div><div class="kpi-grid four" id="reliabilityKpis"></div><div class="insight" id="reliabilityInsight"></div><div class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title">Cumulative ENS comparison</span><span class="chart-tools" data-tools="ensCumulative"></span></div><div class="plot" id="ensCumulative"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title">Annual ENS trajectory</span><span class="chart-tools" data-tools="ensAnnual"></span></div><div class="plot" id="ensAnnual"></div></div></div><div class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title">ENS uncertainty / scenario spread</span><span class="chart-tools" data-tools="ensDistribution"></span></div><div class="plot" id="ensDistribution"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title">Reliability versus cost</span><span class="chart-tools" data-tools="ensTradeoff"></span></div><div class="plot" id="ensTradeoff"></div></div></div></section>
-<section class="tab-panel" id="costs"><div class="section-intro"><div><h1>Costs &amp; uncertainty</h1><p>Planning cost statistics and cost composition.</p></div><span class="status-badge">Economic result</span></div><div class="kpi-grid four" id="costKpis"></div><div class="chart-grid two"><div class="chart-card"><div class="chart-head"><span class="chart-title">Total cost range / scenario comparison</span><span class="chart-tools" data-tools="costDistribution"></span></div><div class="plot" id="costDistribution"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title">Cost components</span><span class="chart-tools" data-tools="costComponents"></span></div><div class="plot" id="costComponents"></div></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title">System performance space</span><span class="chart-tools" data-tools="performanceSpace"></span></div><div class="plot" id="performanceSpace"></div></div></section>
-<section class="tab-panel" id="compare"><div class="section-intro"><div><h1>Scenario comparison</h1><p>Compare two configurations using common public indicators. Different study cases are not one-to-one system equivalents.</p></div><span class="status-badge">A vs B</span></div><div class="compare-grid"><div class="compare-card"><h2>Configuration A</h2><label>Study case</label><select id="compareCaseA"></select><label>Scenario</label><select id="compareScenarioA"></select><label>Hydrology</label><select id="compareHydroA"></select></div><div class="compare-card"><h2>Configuration B</h2><label>Study case</label><select id="compareCaseB"></select><label>Scenario</label><select id="compareScenarioB"></select><label>Hydrology</label><select id="compareHydroB"></select></div></div><div class="chart-grid two"><div class="table-card"><div class="chart-head"><span class="chart-title">Metric comparison</span></div><div class="table-wrap" id="compareTable"></div></div><div class="chart-card"><div class="chart-head"><span class="chart-title">Normalized performance</span><span class="chart-tools" data-tools="compareChart"></span></div><div class="plot" id="compareChart"></div></div></div></section>
-<section class="tab-panel" id="data-access">
-<div class="section-intro"><div><h1>Data access</h1><p>The public browser contains only the aggregated information required for the visualizations. Additional research data are provided by request and review.</p></div><span class="status-badge">Controlled access</span></div>
-<div class="download-grid"><div class="download-card"><h2>Request research data</h2><p>Use the repository request form to describe the study, requested variables and intended use. Requests are reviewed before data are shared.</p><a class="download-button secondary" href="https://github.com/WilianGuaman/PARAMO-Ecuador/issues/new?template=data-access-request.yml" rel="noopener" target="_blank">Open data-access form</a><p class="privacy-note">GitHub Issues are public. Do not include confidential, sensitive or personal information in the request.</p></div><div class="download-card"><h2>What is public in the explorer?</h2><p>Scenario summaries, chart-ready annual/monthly series, fuel/technology aggregates, selected 6-bus transmission corridor decisions and selected reservoir/cascade diagnostics.</p><a class="download-button" href="docs/DATA_ACCESS.md">Data-access policy</a></div><div class="download-card"><h2>Citation &amp; provenance</h2><p>Use the repository citation for the explorer and the associated scholarly methodology when appropriate.</p><a class="download-button" href="docs/CITATION.md">Citation guide</a></div></div>
-<div class="method-grid" style="margin-top:10px"><div class="method-card"><h2>Cite the explorer</h2><div class="citation-box" id="citationBox"></div><div class="method-links"><button class="download-button" id="copyCitationBtn" type="button">Copy citation</button><a href="CITATION.cff">CITATION.cff</a><a href="docs/citation/CITATION.bib">BibTeX</a><a href="docs/citation/CITATION.ris">RIS</a></div></div><div class="method-card"><h2>Licensing</h2><p><strong>Dashboard code:</strong> Apache License 2.0.<br/><strong>PARAMO-derived public visualization layer and original documentation:</strong> CC BY 4.0 where indicated.<br/><strong>Third-party reference data:</strong> original source terms apply.<br/><strong>Private optimization model and non-public research datasets:</strong> not distributed through this repository.</p><div class="method-links"><a href="LICENSES.md">License and attribution matrix</a></div></div></div>
-</section>
-<section class="tab-panel" id="methodology"><div class="section-intro"><div><h1>Methodology, provenance &amp; citation</h1><p>Distinguish optimization results, reference-system data and uncertainty representations.</p></div><span class="status-badge">Research documentation</span></div><div class="method-grid"><div class="method-card"><h2>PARAMO public results layer</h2><p>The dashboard displays precomputed outputs generated with PARAMO. The GAMS implementation, InputData workbooks, GDX/LST/log files and full generator-level result tables are not distributed.</p></div><div class="method-card"><h2>Ecuador 6-Bus</h2><p>The reduced case contains four validated W=1 configurations: BAU and REN100 under Normal and Extreme hydrology. The public layer reports system aggregates, corridor decisions and selected hydraulic cascades.</p></div><div class="method-card"><h2>Ecuador 24-Bus</h2><p>The national planning application contains REF, BRIDGE and NZT pathways. Baseline uses W100 and Adverse uses W5. The browser exposes aggregate statistics and representative trajectories, not realization-level tables.</p></div><div class="method-card"><h2>Geography</h2><p>Model nodes and reduced corridors are planning abstractions. Reference plants and the georeferenced 24-bus network provide physical context and are visually distinguished from optimization objects. Colombia and Peru remain external systems.</p></div><div class="method-card"><h2>Foundational publication</h2><p>Guamán, W., Benalcazar, P., Cordova-Garcia, J., &amp; Torres, M. (2025). <em>An integrated framework for the optimal expansion of hydro-dependent power systems under water-resource uncertainty</em>. Energy Conversion and Management: X, 28, 101297. DOI: 10.1016/j.ecmx.2025.101297.</p></div><div class="method-card"><h2>Documentation</h2><p>Data provenance, limitations, public-data policy and citation guidance are maintained with the release.</p><div class="method-links"><a href="docs/METHODOLOGY.md">Methodology</a><a href="docs/DATA_PROVENANCE.md">Data provenance</a><a href="docs/LIMITATIONS.md">Limitations</a><a href="docs/DATA_ACCESS.md">Data access</a></div></div></div></section>
-</main>
-<aside class="map-panel">
-<div class="map-heading"><div><strong id="mapTitle">PARAMO network</strong><span id="mapSubtitle">Ecuador planning geography</span></div><span class="map-badge" id="mapBadge">24-bus</span></div>
-<div class="map-controls"><label><input checked="" id="mapLines" type="checkbox"/> Planning lines</label><label><input checked="" id="mapReferenceLines" type="checkbox"/> Physical grid</label><label><input checked="" id="mapNodes" type="checkbox"/> Model nodes</label><label><input id="mapPlants" type="checkbox"/> Reference plants</label><label><input checked="" id="mapExternal" type="checkbox"/> International</label><label class="map-voltage-control"><span>Grid voltage</span><select id="mapVoltageSelect"><option value="all">69–500 kV</option><option value="ge138">≥138 kV</option><option value="500">500 kV</option><option value="230">230 kV</option><option value="138">138 kV</option><option value="69">69 kV</option></select></label></div>
-<div class="map-scope-note" id="mapScopeNote">Physical grid geometry is contextual; planning links and reduced corridors are optimization abstractions.</div>
-<div class="map-plot" id="networkMap"></div><div class="map-legend" id="mapLegend"></div>
-</aside>
-</div>
-<footer class="site-footer"><div><strong>PARAMO</strong> · Planning And Resource Allocation under Multi-scenario Optimization<br/>Ecuador Results Explorer · v2.1.0 · 2025–2050</div><div class="footer-cite">© 2026 Wilian Guamán Cuenca · <a href="docs/CITATION.md">How to cite</a> · <a href="https://doi.org/10.1016/j.ecmx.2025.101297">Foundational publication</a></div></footer>
-<script src="assets/js/reference_network_data.js"></script><script src="assets/js/dashboard.js"></script>
+<footer class="site-footer"><div><strong>PARAMO</strong> · Planning And Resource Allocation under Multi-scenario Optimization<br>Ecuador Results Explorer · 2.4.0 · 2025–2050</div><div class="footer-cite">© 2026 Wilian Guamán Cuenca · <a href="docs/CITATION.md">How to cite</a> · <a href="https://doi.org/10.1016/j.ecmx.2025.101297">Foundational publication</a></div></footer>
+<script src="assets/js/dashboard.js"></script>
 </body>
 </html>

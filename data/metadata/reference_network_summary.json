@@ -1,0 +1,47 @@
+{
+  "release": "2.4.0",
+  "source_file": "Lineas.geojson",
+  "source_feature_count": 587,
+  "voltage_counts": {
+    "500": 6,
+    "230": 53,
+    "138": 87,
+    "69": 343,
+    "46": 54,
+    "34.5": 19,
+    "22.8": 2,
+    "22": 13,
+    "13.8": 6,
+    "13.2": 2,
+    "6.3": 2
+  },
+  "company_type_counts": {
+    "Autogeneradora": 41,
+    "Consumo Propio": 1,
+    "Distribuidora": 405,
+    "Generadora": 29,
+    "Gran Consumidor": 1,
+    "Transmisora": 110
+  },
+  "coordinate_reference_system": "EPSG:4326",
+  "default_dashboard_filter": "core138",
+  "available_filters": [
+    "core138",
+    "all69",
+    "all",
+    "500",
+    "230",
+    "138",
+    "69",
+    "46",
+    "34.5",
+    "22",
+    "13.8",
+    "13.2",
+    "6.3",
+    "transmission"
+  ],
+  "note": "All 587 features from the supplied GeoJSON are included; the default dashboard filter displays the 146 lines at 138 kV or above.",
+  "rendering": "Local Cartesian longitude/latitude plot; no external basemap dependency",
+  "default_feature_count": 146
+}

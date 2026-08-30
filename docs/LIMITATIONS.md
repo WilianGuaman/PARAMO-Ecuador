@@ -33,3 +33,8 @@ The 6-bus fuel/resource view is an offline reporting reconstruction from the val
 ## Geographic coordinates
 
 Reference coordinates are intended for visualization and crosswalk context. External-system anchors and reduced-node display locations should not be treated as surveyed substation coordinates unless the underlying source explicitly identifies them as such.
+
+
+## Transmission decision scope
+
+The current public 24-bus layer does not contain optimized line-by-line investment decisions; it displays aggregate transmission cost, model branch capabilities and a physical reference network. Corridor-specific repowering and new-circuit decisions are available for the validated 6-bus results.

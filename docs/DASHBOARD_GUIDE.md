@@ -31,13 +31,13 @@ For the 6-bus case, select **All corridors** or an individual corridor. The tabl
 - base capacity [MW];
 - available capacity in the selected year [MW];
 - cumulative added capacity [MW];
-- cumulative state (Base, Reinforced, New circuit, Reinforced + new circuits);
+- cumulative state (Base, Reinforced, Expanded, Expanded + reinforced);
 - investment action in the selected year;
 - peak flow [MW];
 - utilization [%];
 - annual corridor CAPEX [MUSD].
 
-On the map, line width is proportional to available capacity and line color indicates the cumulative expansion state. The **Physical grid** control displays the author-supplied georeferenced line layer. The adjacent voltage selector filters the contextual network to all 69–500 kV lines, ≥138 kV, or an individual voltage level. It is visually distinct from the 6-bus reduced planning corridors. A separate decision timeline identifies the year and type of each corridor investment event.
+On the map, line width is proportional to available capacity and line color indicates the cumulative expansion state. The optional **Physical transmission grid** is the user-supplied georeferenced contextual layer and is visually distinct from the 6-bus reduced planning corridors.
 
 ## Hydrology & reservoirs
 
@@ -49,12 +49,12 @@ The 6-bus Hydro asset selector includes:
 - Pucará;
 - individual selected plants.
 
-The seasonality heatmap shows monthly availability factors for the Pacific and Amazon hydrological regimes, while the regime profile shows their contribution to system hydropower. Cascade mode combines reservoir records with the zero-storage cascade-hydraulics output. The selected-month cascade diagram and hydraulic-balance table show generation, AF, storage, inflow, upstream transfer, turbinated water, spill/bypass and total release with explicit units.
+Cascade mode combines reservoir records with the zero-storage cascade-hydraulics output. The selected-month cascade diagram shows generation, AF, reservoir storage where applicable, and water transferred between linked plants.
 
 ## Map controls
 
 - **Planning lines** — active model/planning network for the selected case.
-- **Physical grid** — author-supplied georeferenced physical transmission-line layer; use **Grid voltage** to select 69–500 kV, ≥138 kV, 500 kV, 230 kV, 138 kV or 69 kV.
+- **Physical transmission grid** — user-supplied georeferenced electricity-line layer rendered in longitude/latitude coordinates.
 - **Model nodes** — PARAMO planning nodes/zones.
 - **Reference plants** — public reference generation assets.
 - **International** — Colombia and Peru external-system anchors where represented.
@@ -72,3 +72,17 @@ Additional research data can be requested from the **Data Access** tab or throug
 ## Shareable views
 
 The current study case, scenario, hydrology, statistic, year, month and active section are encoded in the URL. **Copy view link** reproduces the selected view.
+
+
+## v2.4.0 map and hydrology controls
+
+- **Planning / model lines** shows PARAMO planning objects.
+- **Physical transmission grid** shows the complete supplied 6.3–500 kV line layer; the default filter displays the ≥138 kV backbone.
+- Every chart displays a visible unit badge in addition to axis labels.
+- The 6-bus transmission table separates cumulative corridor configuration from the action in the selected year.
+- The hydrology section adds system-wide seasonal profiles, Pacific/Amazon availability and detailed Paute and Agoyán cascade operation.
+
+
+## Physical-grid and hydro-flow controls in v2.4.0
+
+Use **Georeferenced line voltage** to switch between the core ≥138 kV network, the ≥69 kV layer, all 587 supplied features, individual voltage levels, or transmission-only records. The hydrology page includes explicit monthly GWh/hm³ axes and a Sankey diagram for selected hydraulic cascades.

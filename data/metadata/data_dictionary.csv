@@ -328,23 +328,3 @@ geography.interconnections,modeled_import_capacity_mw,Modeled import capacity mw
 geography.interconnections,display_longitude,Display longitude.,,browser bundle
 geography.interconnections,display_latitude,Display latitude.,,browser bundle
 geography.interconnections,display_basis,Display basis.,,browser bundle
-sixNode.transmission,AnnualAction,Investment action commissioned in the specific planning year.,,browser bundle
-sixNode.transmission,CumulativeState,Cumulative corridor state after all interventions through the selected year.,,browser bundle
-sixNode.transmission,FirstInvestmentYear,First year with reinforcement or a new-circuit investment.,year,browser bundle
-sixNode.transmission,ReinforcementYear,"Year in which the existing corridor is reinforced, when applicable.",year,browser bundle
-sixNode.transmission,FirstNewCircuitYear,"First year in which a new circuit is commissioned, when applicable.",year,browser bundle
-sixNode.transmission,CumulativeStdCircuits,Cumulative standard-specification circuits commissioned through the selected year.,circuits,browser bundle
-sixNode.transmission,CumulativeReinforcedCircuits,Cumulative reinforced-specification new circuits commissioned through the selected year.,circuits,browser bundle
-sixNode.transmission,CumulativeNewCircuits,Total cumulative new circuits of both specifications.,circuits,browser bundle
-sixNode.hydroRegimeMonthly,Case,Combined 6-bus policy and hydrology case identifier.,,browser bundle
-sixNode.hydroRegimeMonthly,Year,Planning year.,year,browser bundle
-sixNode.hydroRegimeMonthly,Month,Calendar month number.,month,browser bundle
-sixNode.hydroRegimeMonthly,HydroRegime,"Pacific, Amazon or complete system hydropower aggregate.",,browser bundle
-sixNode.hydroRegimeMonthly,Generation_GWh,Monthly hydro generation for the regime/system aggregate.,GWh,browser bundle
-sixNode.hydroRegimeMonthly,Capacity_MW,Operating hydro capacity included in the regime/system aggregate.,MW,browser bundle
-sixNode.hydroRegimeMonthly,AF,Capacity-weighted hydro availability factor.,p.u.,browser bundle
-sixNode.hydroRegimeMonthly,Season,Wet/Dry seasonal label from the case hydrology calendar.,,browser bundle
-geography.physicalGrid,voltage_kv,Nominal voltage of the georeferenced physical transmission feature.,kV,public GeoJSON/reference bundle
-geography.physicalGrid,thermal_capacity_mw,"Reference thermal capability supplied with the source line layer, when available.",MW,public GeoJSON/reference bundle
-geography.physicalGrid,length_km,Feature length calculated from the author-supplied geometry.,km,public GeoJSON/reference bundle
-geography.physicalGrid,circuits,Reference number of circuits in the source line layer.,circuits,public GeoJSON/reference bundle
