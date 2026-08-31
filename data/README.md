@@ -10,9 +10,13 @@ The bundle contains only the system aggregates and selected diagnostics required
 
 This `data/` directory contains only supporting public resources:
 
-- `geography/` — reference generation assets, PARAMO planning-network geography, the complete user-supplied georeferenced 6.3–500 kV electricity-line layer with runtime voltage filters, zone metadata and international anchors;
+- `geography/` — the mainland Ecuador outline, the existing 230 and 500 kV grid retained from the supplied georeferenced line layer, reference generation facilities, reduced PARAMO network geography, zone metadata and international anchors;
 - `metadata/` — case registry, metric definitions, scenario catalog, public-bundle schema, validation summaries and release checksums.
 
-Generator-level result tables, realization-level Monte Carlo outputs, GDX/LST/log files, InputData workbooks and the complete Results workbook are not distributed.
+For the Ecuador 24-Bus case, the public result layer contains ensemble summary statistics, robust-multimetric representative trajectories, aggregate transmission-investment statistics and aggregate reservoir/hydropower operation. It does not contain realization-level tables, line-specific investment decisions or reservoir-specific hydraulic transfers.
+
+For the Ecuador 6-Bus case, the public layer contains validated system aggregates, corridor-year decisions and selected reservoir/cascade diagnostics required by the explorer. Full generator-level output is not distributed.
+
+Generator-level build tables, realization-level Monte Carlo outputs, GDX/LST/log files, InputData workbooks and complete Results workbooks are not distributed.
 
 See [`../docs/DATA_ACCESS.md`](../docs/DATA_ACCESS.md) and [`../docs/DATA_PROVENANCE.md`](../docs/DATA_PROVENANCE.md).

@@ -1,44 +1,20 @@
 {
-  "release": "2.4.0",
+  "release": "2.5.0",
   "source_file": "Lineas.geojson",
   "source_feature_count": 587,
-  "voltage_counts": {
+  "public_feature_count": 59,
+  "public_voltage_counts": {
     "500": 6,
-    "230": 53,
-    "138": 87,
-    "69": 343,
-    "46": 54,
-    "34.5": 19,
-    "22.8": 2,
-    "22": 13,
-    "13.8": 6,
-    "13.2": 2,
-    "6.3": 2
-  },
-  "company_type_counts": {
-    "Autogeneradora": 41,
-    "Consumo Propio": 1,
-    "Distribuidora": 405,
-    "Generadora": 29,
-    "Gran Consumidor": 1,
-    "Transmisora": 110
+    "230": 53
   },
   "coordinate_reference_system": "EPSG:4326",
-  "default_dashboard_filter": "ge138",
-  "available_filters": [
-    "ge138",
-    "ge69",
-    "all",
-    "500",
-    "230",
-    "138",
-    "69",
-    "46",
-    "34.5",
-    "22",
-    "13.8",
-    "13.2",
-    "6.3"
+  "public_scope": "Existing 500 and 230 kV lines only",
+  "lower_voltage_features_excluded": true,
+  "note": "The source file contains 587 features. The public v2.5.0 layer retains only 6 existing 500 kV and 53 existing 230 kV features.",
+  "rendering": "Local Cartesian longitude/latitude plot; no external basemap dependency",
+  "reduced_networks": [
+    "PARAMO 24-node",
+    "PARAMO 6-node"
   ],
-  "note": "All 587 features from the supplied GeoJSON are included; the dashboard filters them at runtime."
+  "ecuador_boundary": "data/geography/ecuador_boundary.geojson"
 }

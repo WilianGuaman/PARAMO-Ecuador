@@ -1,5 +1,5 @@
 {
-  "version": "2.4.0",
+  "version": "2.5.0",
   "result_storage": "assets/js/dashboard_data.js",
   "direct_result_downloads": false,
   "figure_exports": [
@@ -9,9 +9,11 @@
   "national_public_blocks": [
     "scenario summary",
     "aggregate uncertainty statistics",
-    "representative annual/monthly trajectories",
-    "capacity statistics",
-    "reservoir statistics/representative trajectory"
+    "robust-multimetric representative annual/monthly trajectories",
+    "capacity statistics and representative capacity",
+    "aggregate transmission-investment statistics by type",
+    "aggregate reservoir statistics and representative operation",
+    "calendar-month hydro climatology"
   ],
   "six_bus_public_blocks": [
     "scenario summary",
@@ -24,30 +26,47 @@
     "system/regime hydro seasonality",
     "corridor investment timing and cumulative state"
   ],
-  "reference_blocks": [
-    "generation plants",
-    "georeferenced planning network",
-    "zone registry",
-    "international system anchors"
+  "geography_blocks": [
+    "mainland Ecuador boundary",
+    "existing 500 kV grid (6 features)",
+    "existing 230 kV grid (53 features)",
+    "24-node reduced network",
+    "6-node reduced network",
+    "reference plants",
+    "international anchors"
   ],
   "excluded_from_public_distribution": [
     "PARAMO GAMS implementation",
     "InputData workbook",
-    "complete Results workbook",
+    "complete Results workbooks",
     "GDX/LST/log files",
     "full generator-level annual/build outputs",
     "Monte Carlo realization-level result tables"
   ],
   "data_access_policy": "docs/DATA_ACCESS.md",
-  "geography_blocks": [
-    "24-bus planning branches",
-    "complete user-supplied Lineas.geojson layer (587 features, 6.3\u2013500 kV)",
-    "runtime filters for core transmission and voltage levels",
+  "map_rendering": "Local Cartesian longitude/latitude plot; no external basemap dependency",
+  "map_controls": [
+    "existing 230/500 kV grid",
+    "PARAMO reduced network",
+    "reduced-model nodes",
     "reference plants",
-    "model nodes",
-    "international anchors"
+    "international systems"
   ],
-  "map_rendering": "Local Cartesian longitude/latitude engineering plot; no external basemap dependency",
+  "national_representative_method": "robust_multimetric",
+  "national_representative_runs": {
+    "Baseline": {
+      "BRIDGE": "w96",
+      "NZT": "w59",
+      "REF": "w32"
+    },
+    "Adverse": {
+      "BRIDGE": "w2",
+      "NZT": "w5",
+      "REF": "w5"
+    }
+  },
+  "national_transmission_scope": "Aggregate investment cost by investment type; no line/year/flow/utilization decisions in supplied public source archives.",
+  "national_hydrology_scope": "Aggregate reservoir uncertainty and representative operation; no reservoir IDs or plant-to-plant hydraulic transfer variables in supplied source archives.",
   "six_bus_source_run": "2026-08-30",
   "six_bus_result_status": "Four cases; ModelStat 8; SolveStat 1; MIP gap <1%"
 }

@@ -1,7 +1,7 @@
 {
   "title": "PARAMO Ecuador Public Visualization Data Layer",
   "upload_type": "dataset",
-  "description": "Minimum public chart-ready data layer supporting PARAMO Ecuador Results Explorer v2.4.0. It contains aggregate national planning statistics, the final four-scenario 6-bus results completed on 30 August 2026, selected corridor and cascade diagnostics, and public reference geography. Full model results and realization-level datasets are not included.",
+  "description": "Minimum public chart-ready data layer supporting PARAMO Ecuador Results Explorer v2.5.0. The release rebuilds the national 24-bus representative trajectories with robust_multimetric selection, adds aggregate transmission-investment and hydro-seasonality views, and publishes only the existing 230/500 kV physical grid plus independently switchable PARAMO reduced networks. Full model results and realization-level datasets are not included.",
   "creators": [
     {
       "name": "Guamán Cuenca, Wilian"
@@ -9,8 +9,8 @@
   ],
   "access_right": "open",
   "license": "cc-by-4.0",
-  "version": "2.4.0",
-  "publication_date": "2026-08-30",
+  "version": "2.5.0",
+  "publication_date": "2026-08-31",
   "keywords": [
     "power system planning",
     "hydropower",

@@ -1,40 +1,45 @@
 # Limitations
 
-The Results Explorer is a public interpretation layer for precomputed PARAMO studies. The following boundaries are important when using or citing the visualizations.
-
 ## Study-case abstraction
 
-The Ecuador 6-Bus case is a reduced planning representation. Its internal nodes and corridors aggregate parts of the power system and must not be interpreted as a one-to-one physical transmission network. Reference plants and the reference planning-network overlay are contextual layers, not additional optimization nodes or branches.
+The Ecuador 24-Bus and 6-Bus cases are separate planning representations. Their results are not directly interchangeable system solutions.
 
-The Ecuador 24-Bus case and the 6-Bus case are separate study representations. Their numerical results should not be interpreted as directly interchangeable system solutions.
+Reduced planning nodes and branches/corridors aggregate the system. They must not be interpreted as a one-to-one physical transmission network.
 
-## Uncertainty representation
+## Ecuador 24-Bus
 
-The current 6-bus public release uses `W=1` for each of the four BAU/REN100 × Normal/Extreme configurations. It therefore supports controlled scenario comparison but does not represent an empirical Monte Carlo distribution for that case.
+### Archive comparability
 
-The 24-bus case retains aggregate uncertainty information from W100 Baseline and W5 Adverse ensembles. Representative annual/monthly trajectories are not percentile trajectories.
+The Baseline W100 and Adverse W5 public labels correspond to two supplied result archives. The archive metadata refer to different working model directories and do not explicitly encode the Baseline/Adverse label. Their comparability under a common formulation should be documented with the retained private run records.
 
-## Optimization tolerance
+### Representative trajectories
 
-The four current 6-bus cases were solved with a relative MIP-gap target of 1%. Reported solutions are optimal subject to the configured solver tolerance, not mathematical proofs of a zero-gap global optimum.
+The robust-multimetric realization is a representative observation, not a percentile trajectory. Mean/P10/P50/P90 statistics and representative time series answer different questions.
+
+### Transmission
+
+The supplied 24-bus result archives contain aggregate transmission costs but not selected line/year decisions, flows or utilization. The dashboard cannot identify which 24-bus branch was constructed or reinforced. The displayed 24-node network is a static case-definition layer.
+
+### Hydrology
+
+Reservoir outputs are system aggregates without reservoir IDs. Plant-specific storage, water balance and cascade transfers cannot be recovered. The dashboard reports aggregate uncertainty and representative seasonal operation only.
+
+### Base-year calibration
+
+The supplied national-case results allow positive endogenous capacity additions in 2025 and retain the calibration characteristics of an earlier model application. The 24-bus case should be read as a legacy national planning application, not as the same calibrated base-year representation used in the final 6-bus run.
+
+The national validation archive also reports discrepancies between modelled and official 2025 supply/capacity components. These limitations should be considered when comparing the 24-bus and final 6-bus results.
+
+## Ecuador 6-Bus
+
+The public release uses `W=1` for each BAU/REN100 × Normal/Extreme configuration. It supports controlled scenario comparison but does not constitute an empirical Monte Carlo distribution.
+
+The four cases were solved with a relative MIP-gap target of 1%. Reported solutions are optimal subject to that tolerance.
+
+## Physical-grid layer
+
+The public map retains only 500 and 230 kV features from the supplied geographic dataset. Lower-voltage lines are intentionally excluded. The mainland Ecuador polygon is geographic context and does not represent the electrical study boundary.
 
 ## Public data scope
 
-Only the chart-ready public bundle and reference metadata required for the explorer are distributed. The absence of a full table in the repository does not mean that the underlying model omitted that variable. Additional research data are handled through the controlled request process described in [`DATA_ACCESS.md`](DATA_ACCESS.md).
-
-## Static-site transparency
-
-GitHub Pages is static. Values embedded for visualization are technically accessible through the browser. The release therefore minimizes the embedded dataset instead of attempting to conceal a full research database behind disabled download buttons.
-
-## Fuel/resource categories
-
-The 6-bus fuel/resource view is an offline reporting reconstruction from the validated generator roster. It is an interpretation layer over the model's native technology reporting. Annual reconstruction was checked against native technology totals before publication.
-
-## Geographic coordinates
-
-Reference coordinates are intended for visualization and crosswalk context. External-system anchors and reduced-node display locations should not be treated as surveyed substation coordinates unless the underlying source explicitly identifies them as such.
-
-
-## Transmission decision scope
-
-The current public 24-bus layer does not contain optimized line-by-line investment decisions; it displays aggregate transmission cost, model branch capabilities and a physical reference network. Corridor-specific repowering and new-circuit decisions are available for the validated 6-bus results.
+The browser bundle intentionally excludes the complete model-result database. Additional material may be requested, but access is reviewed and may be constrained by provenance, licensing or research status.

@@ -9,9 +9,10 @@ The public layer includes, as applicable:
 - scenario-level cost, emissions, reliability and expansion indicators;
 - annual and monthly chart-ready system series;
 - technology/fuel-resource aggregates;
+- 24-bus aggregate transmission-investment statistics and system-level reservoir/hydropower uncertainty;
 - 6-bus corridor-level expansion and loading indicators;
-- reservoir results and selected cascade-hydraulic diagnostics;
-- public reference geography.
+- 6-bus reservoir results and selected cascade-hydraulic diagnostics;
+- the mainland Ecuador outline, existing 230/500 kV grid and reduced-network geography.
 
 The public layer does not include the complete PARAMO research database.
 

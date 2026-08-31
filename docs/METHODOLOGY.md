@@ -2,9 +2,9 @@
 
 ## PARAMO
 
-PARAMO — **Planning And Resource Allocation under Multi-scenario Optimization** — is used to evaluate long-term generation and transmission expansion in hydro-dependent power systems. The public explorer reports precomputed outcomes; the optimization implementation is not distributed in this repository.
+PARAMO — **Planning And Resource Allocation under Multi-scenario Optimization** — evaluates long-term generation, transmission and hydropower expansion in hydro-dependent systems. The public explorer reports precomputed outcomes; the optimization implementation is not distributed in this repository.
 
-The integrated methodology includes generation expansion, transmission expansion/reconductoring, DC network representation, hydropower availability, reservoir/cascade operation, reserve/adequacy conditions, policy constraints and economic/emissions accounting.
+The integrated methodology includes generation expansion, transmission expansion/reconductoring, DC network representation, hydropower availability, reservoir/cascade operation, reserve and adequacy conditions, policy constraints, and economic/emissions accounting.
 
 The associated methodological publication is:
 
@@ -12,13 +12,50 @@ The associated methodological publication is:
 
 ## Ecuador 24-Bus national case
 
-The national planning case spans 2025–2050 and compares REF, BRIDGE and NZT pathways under Baseline and Adverse hydrology. The public release retains the audited aggregate statistics from the Baseline W100 and Adverse W5 ensembles together with representative annual/monthly operational trajectories.
+The national case spans 2025–2050 and compares REF, BRIDGE and NZT pathways under two supplied result archives:
 
-The visualizer reports generation/capacity, cost, emissions, reliability, hydrology and aggregate transmission-investment indicators. Realization-level source tables are not distributed.
+- **Baseline:** Helios BigMem ensemble, W100;
+- **Adverse:** local-PC ensemble, W5.
+
+The public dashboard retains aggregate Mean/P10/P50/P90 statistics. Annual, monthly, plant-generation and reservoir-operation trajectories are drawn from one representative realization per pathway and hydrological condition.
+
+### Representative-realization rule
+
+Version 2.5.0 uses `robust_multimetric` consistently across both archives. The selection considers total cost, operating cost, PNS cost, transmission cost, investment cost, ENS and CO₂ rather than choosing a realization only by total cost.
+
+| Hydrology | BRIDGE | NZT | REF |
+|---|---:|---:|---:|
+| Baseline W100 | w96 | w59 | w32 |
+| Adverse W5 | w2 | w5 | w5 |
+
+The selected realization is used only for trajectories that require internally consistent year/month/plant observations. Ensemble statistics continue to use every supplied realization.
+
+### National transmission results
+
+The supplied archives contain transmission investment components at realization level:
+
+- new-line cost;
+- existing-line reinforcement cost;
+- new reinforced-circuit cost;
+- total transmission cost.
+
+They do not provide selected branch, investment year, power flow, utilization or available capacity by branch. The dashboard therefore reports aggregate transmission investment uncertainty and shows the 24-node reduced network as a static case definition. It does not infer line-specific investment decisions.
+
+### National hydrology results
+
+The 24-bus archives support:
+
+- aggregate reservoir-storage uncertainty;
+- robust representative storage, turbining, spill and release;
+- monthly hydro generation and share;
+- calendar-month Baseline/Adverse hydro profiles;
+- generation by individual hydro plant in the representative trajectory.
+
+The reservoir output does not contain a reservoir identifier. Plant-level storage and hydraulic transfers between cascade plants cannot be reconstructed from the supplied 24-bus archives.
 
 ## Ecuador 6-Bus reduced case
 
-The current reduced case spans 2025–2050 and compares four configurations:
+The current reduced case spans 2025–2050 and compares:
 
 | Policy | Hydrology |
 |---|---|
@@ -27,7 +64,7 @@ The current reduced case spans 2025–2050 and compares four configurations:
 | REN100 | Normal |
 | REN100 | Extreme |
 
-The public version uses one active realization (`W=1`) per configuration. The four cases share the same 330-generator, 6-node, 7-corridor model structure. REN100 activates the renewable-policy constraints used by the source model; BAU provides the business-as-usual comparison.
+The public version uses one active realization (`W=1`) per configuration. The four cases share the same 330-generator, 6-node, 7-corridor model structure.
 
 The result layer includes:
 
@@ -40,14 +77,16 @@ The result layer includes:
 - reservoir operation and water balance;
 - selected cascade-ROR hydraulics.
 
-## Hydropower representation
+## Map methodology
 
-Hydro availability is time- and scenario-dependent. Reservoir plants retain storage-volume and water-balance equations. Zero-storage run-of-river plants in explicit cascades receive upstream water according to the configured total-release or turbine-only relationship.
+The public map separates three types of object:
 
-The public visualizer presents these two output classes separately and recombines them only for interpretation of the Paute and Agoyán cascades.
+1. **mainland Ecuador boundary**;
+2. **existing physical grid:** only 500 and 230 kV georeferenced lines retained from the supplied `Lineas.geojson`;
+3. **PARAMO reduced network:** 24-node or 6-node according to the selected case.
+
+The physical and reduced networks can be enabled independently. Reduced planning branches/corridors are abstractions and are not treated as one-to-one physical lines.
 
 ## Public reporting transformation
 
-The public layer is generated after the optimization run. Model outputs are audited, then transformed into aggregate arrays required by the dashboard. Full generator-level and realization-level source tables are kept outside the public repository.
-
-This separation is intentional: publication logic can evolve without changing the mathematical optimization model, while the source run remains auditable through retained validation metadata.
+The public layer is generated after optimization. Source outputs are audited offline and transformed into the minimum aggregate arrays required by the dashboard. Full generator-level and realization-level source tables remain outside the public repository.

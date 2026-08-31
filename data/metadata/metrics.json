@@ -138,5 +138,23 @@
     "aggregation": "annual direct model emissions by public fuel category",
     "preferred_chart": "stacked_bar",
     "scope": "Ecuador 6-Bus"
+  },
+  "transmission_investment_components": {
+    "display_name": "Transmission investment by type",
+    "short_name": "Transmission components",
+    "unit": "MUSD",
+    "family": "network",
+    "aggregation": "ensemble statistic or representative realization",
+    "preferred_chart": "stacked_bar",
+    "scope": "Ecuador 24-Bus"
+  },
+  "monthly_hydro_climatology": {
+    "display_name": "Calendar-month hydro generation profile",
+    "short_name": "Hydro climatology",
+    "unit": "GWh/month",
+    "family": "hydrology",
+    "aggregation": "statistics across 2025–2050 in robust representative trajectory",
+    "preferred_chart": "band",
+    "scope": "Ecuador 24-Bus"
   }
 }

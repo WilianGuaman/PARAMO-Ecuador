@@ -21,7 +21,21 @@
       "Baseline": 100,
       "Adverse": 5
     },
-    "public_scope_note": "Aggregated ensemble statistics and representative trajectories are embedded in the interactive explorer. Realization-level result tables are not distributed."
+    "public_scope_note": "Aggregate ensemble statistics, robust-multimetric representative trajectories, aggregate transmission investment by type, aggregate reservoir uncertainty, and a static 24-node reduced network. Line-specific investment decisions and plant-level hydraulic transfers are not present in the supplied source archives.",
+    "representative_method": "robust_multimetric",
+    "representative_runs": {
+      "Baseline": {
+        "BRIDGE": "w96",
+        "NZT": "w59",
+        "REF": "w32"
+      },
+      "Adverse": {
+        "BRIDGE": "w2",
+        "NZT": "w5",
+        "REF": "w5"
+      }
+    },
+    "quality_note": "Legacy national application; supplied results include positive endogenous additions in 2025 and retain earlier base-year calibration characteristics."
   },
   {
     "id": "ecuador_6bus",

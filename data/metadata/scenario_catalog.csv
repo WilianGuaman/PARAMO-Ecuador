@@ -1,11 +1,11 @@
-case_id,scenario,hydrology,label,description
-ecuador_24bus,REF,Baseline,Reference,Reference national pathway.
-ecuador_24bus,REF,Adverse,Reference,Reference national pathway under adverse hydrology.
-ecuador_24bus,BRIDGE,Baseline,Bridge Transition,"Transition pathway balancing diversification, cost and adequacy."
-ecuador_24bus,BRIDGE,Adverse,Bridge Transition,Bridge pathway under adverse hydrology.
-ecuador_24bus,NZT,Baseline,Net-Zero Transition,Deep-decarbonization national pathway.
-ecuador_24bus,NZT,Adverse,Net-Zero Transition,Net-zero transition under adverse hydrology.
-ecuador_6bus,BAU,Normal,Business as Usual,Business-as-usual planning under normal hydrology.
-ecuador_6bus,BAU,Extreme,Business as Usual,Business-as-usual planning under extreme hydrology.
-ecuador_6bus,REN100,Normal,100% Renewable,Renewable-target pathway under normal hydrology.
-ecuador_6bus,REN100,Extreme,100% Renewable,Renewable-target pathway under extreme hydrology.
+case_id,scenario,hydrology,label,description,ensemble_n,representative_method,representative_w
+ecuador_24bus,REF,Baseline,Reference,Reference national pathway.,100,robust_multimetric,w32
+ecuador_24bus,REF,Adverse,Reference,Reference national pathway under adverse hydrology.,5,robust_multimetric,w5
+ecuador_24bus,BRIDGE,Baseline,Bridge Transition,"Transition pathway balancing diversification, cost and adequacy.",100,robust_multimetric,w96
+ecuador_24bus,BRIDGE,Adverse,Bridge Transition,Bridge pathway under adverse hydrology.,5,robust_multimetric,w2
+ecuador_24bus,NZT,Baseline,Net-Zero Transition,Deep-decarbonization national pathway.,100,robust_multimetric,w59
+ecuador_24bus,NZT,Adverse,Net-Zero Transition,Net-zero transition under adverse hydrology.,5,robust_multimetric,w5
+ecuador_6bus,BAU,Normal,Business as Usual,Business-as-usual planning under normal hydrology.,1,deterministic,w1
+ecuador_6bus,BAU,Extreme,Business as Usual,Business-as-usual planning under extreme hydrology.,1,deterministic,w1
+ecuador_6bus,REN100,Normal,100% Renewable,Renewable-target pathway under normal hydrology.,1,deterministic,w1
+ecuador_6bus,REN100,Extreme,100% Renewable,Renewable-target pathway under extreme hydrology.,1,deterministic,w1

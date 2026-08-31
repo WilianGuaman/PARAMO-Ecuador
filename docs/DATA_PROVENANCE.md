@@ -2,58 +2,81 @@
 
 ## Public result layer
 
-The explorer combines two classes of information:
+The explorer combines:
 
-1. **PARAMO planning results**, transformed offline from validated result archives into a minimum chart-ready browser bundle.
-2. **Reference-system geography**, retained from the public Ecuador planning/geospatial crosswalk used by the previous explorer release.
+1. **PARAMO planning results**, transformed offline from supplied result archives into a minimum chart-ready browser bundle;
+2. **reference-system geography**, including public planning crosswalks and a filtered existing-grid layer;
+3. a simple mainland Ecuador boundary used only for geographic orientation.
 
-The browser bundle is a publication layer. It is not a copy of the complete `Results.xlsx`, GDX database, InputData workbook or solver output.
+The browser bundle is a publication layer. It is not a copy of a complete Results workbook, GDX database, InputData workbook or solver output.
 
-## Ecuador 6-Bus — current result source
+## Ecuador 6-Bus
 
-Version 2.4.0 uses the final four-case 6-bus PARAMO run completed on 30 August 2026:
+The 6-bus layer uses the final four-case PARAMO run completed on 30 August 2026:
 
 - BAU / Normal;
 - BAU / Extreme;
 - REN100 / Normal;
 - REN100 / Extreme.
 
-The source run covers 2025–2050 and uses one active realization (`W=1`) for each configuration. The final public bundle was regenerated from the consolidated Results workbook associated with the 30 August 2026 run; earlier 6-bus public values were replaced rather than merged. All four cases completed with `ModelStat = 8`, `SolveStat = 1` and MIP gap below 1%. The source model reported 330 generators, 6 reduced planning nodes, 7 planning corridors, 209 hydro plants, 4 reservoirs and 4 hydraulic links. Detailed validation is recorded in [`VALIDATION.md`](VALIDATION.md) and `data/metadata/validation/ecuador_6bus_v2_validation.json`.
+The source run covers 2025–2050 and uses one active realization (`W=1`) per configuration. All four cases completed with `ModelStat = 8`, `SolveStat = 1` and MIP gap below 1%.
 
-The public transformation uses the current result schema:
+The public transformation uses:
 
 - scenario summary;
-- annual system indicators;
+- annual and monthly system indicators;
 - generation/capacity/additions by technology;
-- monthly system indicators;
 - corridor-level transmission results;
 - reservoir operation;
 - compact hydro-plant monthly results;
 - cascade-hydraulics results.
 
-Full generator-level annual/build records are used only during offline transformation and are not distributed in the public repository.
+Full generator-level annual/build records are not distributed.
 
-## 6-Bus fuel/resource reconstruction
+## Ecuador 24-Bus
 
-The native 6-bus technology output combines diesel-, residual/fuel-oil- and gas-fired units under a fossil-thermal class. The public fuel/resource view is reconstructed offline from the validated generator roster and then aggregated before publication.
+Version 2.5.0 rebuilds the national public layer from the two archives supplied for review:
 
-The mapping distinguishes:
+| Public label | Source archive | Ensemble size |
+|---|---|---:|
+| Baseline | Helios BigMem | 100 realizations per pathway |
+| Adverse | Local PC | 5 realizations per pathway |
 
-- Hydro;
-- Solar PV;
-- Wind;
-- Geothermal;
-- Bioenergy;
-- Diesel;
-- Fuel oil / residual;
-- Natural gas;
-- Imports.
+The archives contain REF, BRIDGE and NZT outputs for 2025–2050. The Baseline/Adverse interpretation follows the supplied study context; the archive metadata themselves do not contain explicit `Baseline`/`Adverse` labels. This mapping is therefore recorded as a publication assumption.
 
-The reconstructed annual generation totals reproduce the native model technology totals for all four cases and all planning years within `1e-5 GWh`. Generator-level fuel mapping is not included in the public release.
+### Representative trajectories
+
+A common `robust_multimetric` method is used:
+
+| Public label | BRIDGE | NZT | REF |
+|---|---:|---:|---:|
+| Baseline | w96 | w59 | w32 |
+| Adverse | w2 | w5 | w5 |
+
+The representative trajectories supply annual generation, annual capacity, monthly generation, reserve/PNS/CO₂, and aggregate reservoir operation. Aggregate Mean/P10/P50/P90 statistics use the complete ensemble.
+
+### Transmission information
+
+Realization-level cost tables supply:
+
+- `NewLineBuiltCost`;
+- `ExistingLineRepoweredCost`;
+- `RepoweredLineBuiltCost`;
+- `TransmissionCost`.
+
+The supplied public-result archives do not include line identifiers or line-year decision/flow variables. The dashboard does not assign aggregate costs to individual branches.
+
+### Hydrology information
+
+The national archives supply aggregate storage, turbining, spill and release. Reservoir rows do not contain a reservoir ID. The public 24-bus hydrology view is therefore system-level. It does not attribute storage or hydraulic release to individual plants and does not construct cascade transfers.
+
+## Fuel/resource reconstruction
+
+The native 6-bus fossil-thermal output is reconstructed offline into public fuel/resource categories and aggregated before publication. Generator-level fuel mapping is not included in the public release.
 
 ## Hydraulic topology
 
-The 6-bus cascade display follows the model input relationships:
+The 6-bus cascade display follows the model relationships:
 
 - Mazar → Paute Molino: total upstream release;
 - Paute Molino → Sopladora: turbine discharge;
@@ -61,29 +84,16 @@ The 6-bus cascade display follows the model input relationships:
 - Agoyán → San Francisco: turbine discharge;
 - Pucará: independent reservoir.
 
-Reservoir storage and release data come from the reservoir result block. Zero-storage cascade-ROR water transfers come from the separate cascade-hydraulics result block.
+## Existing transmission grid
 
-## Zone crosswalk
+The physical layer is derived from the user-supplied `Lineas.geojson`, originally provided in EPSG:32717 and transformed to EPSG:4326 for browser display. Version 2.5.0 retains only existing 500 and 230 kV features:
 
-The reduced model uses historical source-zone labels that differ from the canonical public display convention for the four internal Ecuador zones. The transformation retains the validated crosswalk offline and publishes canonical display codes in the explorer while preserving model-source fields where needed for traceability in the embedded corridor records.
+- 500 kV: 6;
+- 230 kV: 53;
+- total: 59.
 
-## Reference geography
+The source files did not include a complete citation/license statement. The repository owner should retain the authoritative source and original redistribution terms.
 
-Reference plants and the georeferenced planning-network overlay provide physical context. They are visually separated from optimization objects because reduced planning nodes/corridors are abstractions and are not one-to-one physical assets.
+## Ecuador boundary
 
-Colombia and Peru are shown as external planning systems using the reference anchors retained by the public geography layer.
-
-## Ecuador 24-Bus
-
-The national case is retained from the validated public planning-result archive used by the preceding explorer release. The public browser contains aggregate uncertainty statistics and representative trajectories. The W100/W5 realization-level source tables used to create those summaries are not distributed in version 2.4.0.
-
-National ENS aggregates retain the corrected source-based calculation used in the preceding audited release.
-
-
-## Georeferenced transmission network (v2.4.0)
-
-The public geography is generated from the exact user-supplied `Lineas.geojson` file. The source contains 587 electricity-line features originally encoded in WGS 84 / UTM zone 17S (EPSG:32717). All 587 features are transformed to EPSG:4326 and retained in the public layer. The default dashboard view filters the layer to the 146 lines at 138 kV or above; users may display all supplied features or individual voltage levels.
-
-The browser renders the lines in a local longitude/latitude engineering plot rather than relying on an external basemap service. Display attributes include voltage, thermal limit, length, circuit count, topology and company where supplied. PARAMO planning branches and reduced corridors remain separate overlays because they are model abstractions, not one-to-one physical assets.
-
-The supplied files did not contain a complete citation or license statement. The repository owner should preserve or add the authoritative source and original terms before external redistribution.
+The mainland Ecuador outline is a low-resolution Natural Earth-derived public-domain boundary used as cartographic context. It does not define the study-system electrical boundary.

@@ -328,3 +328,23 @@ geography.interconnections,modeled_import_capacity_mw,Modeled import capacity mw
 geography.interconnections,display_longitude,Display longitude.,,browser bundle
 geography.interconnections,display_latitude,Display latitude.,,browser bundle
 geography.interconnections,display_basis,Display basis.,,browser bundle
+national.hydroClimatology,Hydrology,Public Baseline or Adverse hydrology label.,,browser bundle
+national.hydroClimatology,Scenario,"REF, BRIDGE or NZT.",,browser bundle
+national.hydroClimatology,Representative_w,Robust-multimetric representative realization.,,browser bundle
+national.hydroClimatology,Month,Calendar month number.,month,browser bundle
+national.hydroClimatology,Mean_GWh,Mean monthly hydro generation across 2025–2050 in the representative trajectory.,GWh/month,browser bundle
+national.hydroClimatology,P10_GWh,10th percentile across planning years in the representative trajectory.,GWh/month,browser bundle
+national.hydroClimatology,P50_GWh,Median across planning years in the representative trajectory.,GWh/month,browser bundle
+national.hydroClimatology,P90_GWh,90th percentile across planning years in the representative trajectory.,GWh/month,browser bundle
+national.hydroClimatology,MeanShare_pct,Mean hydro share of monthly generation.,%,browser bundle
+national.transmissionCostStats,Hydrology,Public Baseline or Adverse hydrology label.,,browser bundle
+national.transmissionCostStats,Scenario,"REF, BRIDGE or NZT.",,browser bundle
+national.transmissionCostStats,Component,Transmission investment component.,,browser bundle
+national.transmissionCostStats,Mean,Ensemble mean.,MUSD,browser bundle
+national.transmissionCostStats,P10,Ensemble 10th percentile.,MUSD,browser bundle
+national.transmissionCostStats,P50,Ensemble median.,MUSD,browser bundle
+national.transmissionCostStats,P90,Ensemble 90th percentile.,MUSD,browser bundle
+national.transmissionCostStats,Representative,Value in the robust-multimetric representative realization.,MUSD,browser bundle
+national.transmissionCostStats,EnsembleN,Number of realizations.,count,browser bundle
+geography.ecuadorBoundary,geometry,Mainland Ecuador outline used as geographic context.,longitude/latitude,Natural Earth-derived public-domain boundary
+geography.referenceNetwork,voltage_kv,Existing physical-grid voltage retained in the public layer.,kV,user-supplied Lineas.geojson
