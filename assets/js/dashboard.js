@@ -313,3 +313,186 @@ function showRuntimeError(err){const box=el('runtimeNotice');if(box){box.hidden=
 function init(){parseURL();initYearOptions();syncSelectors();document.querySelectorAll('.nav-btn').forEach(b=>b.addEventListener('click',()=>switchTab(b.dataset.tab)));document.querySelectorAll('[data-open-tab]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();switchTab(a.dataset.openTab)}));el('caseSelect').addEventListener('change',e=>{state.caseId=e.target.value;state.scenario=is24()?'BRIDGE':'BAU';state.hydrology=CASES[state.caseId].hydrology[0];state.stat=is24()?'Mean':'Deterministic';state.sixFuelView='fuel';state.hydroAsset=e.target.value==='ecuador_6bus'?'paute':'system';state.corridor='all';renderCurrent()});[['scenarioSelect','scenario'],['hydrologySelect','hydrology'],['statSelect','stat'],['yearSelect','year'],['monthSelect','month']].forEach(([id,k])=>el(id).addEventListener('change',e=>{state[k]=(k==='year'||k==='month')?Number(e.target.value):e.target.value;renderCurrent()}));el('fuelViewSelect').addEventListener('change',e=>{state.sixFuelView=e.target.value;renderCurrent()});el('corridorSelect').addEventListener('change',e=>{state.corridor=e.target.value;renderCurrent()});el('hydroAssetSelect').addEventListener('change',e=>{state.hydroAsset=e.target.value;renderCurrent()});[['mapLines','showLines'],['mapReferenceLines','showReferenceLines'],['mapNodes','showNodes'],['mapPlants','showPlants'],['mapExternal','showExternal']].forEach(([id,k])=>el(id).addEventListener('change',e=>{state[k]=e.target.checked;renderMap();updateURL()}));el('resetBtn').addEventListener('click',()=>{Object.assign(state,{tab:'overview',caseId:'ecuador_24bus',scenario:'BRIDGE',hydrology:'Baseline',stat:'Mean',year:2050,month:1,showLines:true,showReferenceLines:true,showNodes:true,showPlants:false,showExternal:true,sixFuelView:'fuel',hydroAsset:'system',corridor:'all'});['mapLines','mapReferenceLines','mapNodes','mapExternal'].forEach(id=>el(id).checked=true);el('mapPlants').checked=false;switchTab('overview')});el('presentationBtn').addEventListener('click',()=>document.body.classList.toggle('presentation-mode'));el('copyLinkBtn').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(location.href);el('copyLinkBtn').textContent='Link copied';setTimeout(()=>el('copyLinkBtn').textContent='Copy view link',1200)}catch{alert(location.href)}});el('citationBox').textContent=citation;el('copyCitationBtn').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(citation);el('copyCitationBtn').textContent='Copied';setTimeout(()=>el('copyCitationBtn').textContent='Copy citation',1200)}catch{alert(citation)}});setupCompare();switchTab(state.tab)}
 try{if(typeof Plotly==='undefined')throw new Error('Plotly library not available.');if(!D)throw new Error('PARAMO public data bundle not available.');init()}catch(err){showRuntimeError(err)}
 })();
+
+
+
+/* v2.6.0 map patch: 24-bus reduced branches + 138/230/500 kV physical grid */
+function _paramoVoltage(v){
+  const x=Number(v);
+  if(!Number.isFinite(x)) return null;
+  if(Math.abs(x-500)<=1) return 500;
+  if(Math.abs(x-230)<=1) return 230;
+  if(Math.abs(x-138)<=1) return 138;
+  return null;
+}
+function _paramoLineArrays(items, hoverFn){
+  const x=[], y=[], text=[];
+  for(const item of items){
+    const x1=Number(item.from_lon ?? item.properties?.from_lon ?? item.geometry?.coordinates?.[0]?.[0]);
+    const y1=Number(item.from_lat ?? item.properties?.from_lat ?? item.geometry?.coordinates?.[0]?.[1]);
+    const x2=Number(item.to_lon ?? item.properties?.to_lon ?? item.geometry?.coordinates?.slice(-1)[0]?.[0]);
+    const y2=Number(item.to_lat ?? item.properties?.to_lat ?? item.geometry?.coordinates?.slice(-1)[0]?.[1]);
+    if([x1,y1,x2,y2].every(Number.isFinite)){
+      x.push(x1,x2,null); y.push(y1,y2,null);
+      const t = hoverFn(item);
+      text.push(t,t,'');
+    }
+  }
+  return {x,y,text};
+}
+function physicalFeatures(){
+  return (RN && Array.isArray(RN.features) ? RN.features : []).filter(ft=>{
+    const kv=_paramoVoltage(ft?.properties?.voltage_kv ?? ft?.properties?.Voltaje);
+    return kv===138 || kv===230 || kv===500;
+  });
+}
+function physicalNetworkTraces(){
+  if(!state.showReferenceLines) return [];
+  const feats = physicalFeatures();
+  const specs = [
+    {kv:138,color:'#d79b00',width:1.7},
+    {kv:230,color:'#168b87',width:2.3},
+    {kv:500,color:'#b22222',width:3.2}
+  ];
+  const traces=[];
+  for(const spec of specs){
+    const items = feats.filter(ft=>_paramoVoltage(ft?.properties?.voltage_kv ?? ft?.properties?.Voltaje)===spec.kv);
+    if(!items.length) continue;
+    const x=[], y=[], text=[];
+    for(const ft of items){
+      const coords=ft?.geometry?.coordinates||[];
+      const parts=[];
+      for(const p of coords){ if(Array.isArray(p) && p.length>=2){ x.push(Number(p[0])); y.push(Number(p[1])); } }
+      x.push(null); y.push(null);
+      const pr=ft.properties||{};
+      const hov = `<b>${pr.description||((pr.from||'—')+' – '+(pr.to||'—'))}</b><br>`+
+        `${spec.kv} kV physical grid<br>`+
+        `Thermal capacity: ${fmt(Number(pr.thermal_capacity_mw),1)} MW<br>`+
+        `Length: ${fmt(Number(pr.length_km),1)} km<br>`+
+        `Circuits: ${fmt0(Number(pr.circuits)||1)}<br>`+
+        `${pr.company||'—'}<extra></extra>`;
+      text.push(hov);
+    }
+    traces.push({
+      type:'scatter', mode:'lines', name:`${spec.kv} kV physical grid`,
+      x,y,text,hovertemplate:'%{text}', line:{color:spec.color,width:spec.width},
+      opacity:0.92, connectgaps:false, showlegend:false
+    });
+  }
+  return traces;
+}
+function planningLineTraces24(){
+  if(!state.showLines) return [];
+  const items = Array.isArray(D?.geography?.planningLines24) ? D.geography.planningLines24 : [];
+  const arrays = _paramoLineArrays(items, item=>{
+    const e = Number(item.existing_transfer_mw);
+    const r = Number(item.reconductored_transfer_mw);
+    const finalMw = Number.isFinite(r)&&r>0 ? r : e;
+    return `<b>${item.from_bus_name||'—'} – ${item.to_bus_name||'—'}</b><br>`+
+      `PARAMO 24-node reduced branch<br>`+
+      `Existing transfer: ${fmt(e,1)} MW<br>`+
+      `Reconductored transfer: ${fmt(r,1)} MW<br>`+
+      `Displayed capacity: ${fmt(finalMw,1)} MW<extra></extra>`;
+  });
+  return [
+    {
+      type:'scatter',mode:'lines',name:'PARAMO 24-node reduced network halo',
+      x:arrays.x,y:arrays.y,text:arrays.text,hovertemplate:'%{text}',
+      line:{color:'rgba(255,255,255,0.95)',width:7.5},opacity:0.98,connectgaps:false,showlegend:false
+    },
+    {
+      type:'scatter',mode:'lines',name:'PARAMO 24-node reduced network',
+      x:arrays.x,y:arrays.y,text:arrays.text,hovertemplate:'%{text}',
+      line:{color:'#0b3c5d',width:4.2,dash:'solid'},opacity:0.98,connectgaps:false,showlegend:false
+    }
+  ];
+}
+function updateMapGridStatus(){
+  const feats = physicalFeatures();
+  const counts={138:0,230:0,500:0};
+  for(const ft of feats){
+    const kv=_paramoVoltage(ft?.properties?.voltage_kv ?? ft?.properties?.Voltaje);
+    if(kv && counts[kv]!==undefined) counts[kv]+=1;
+  }
+  const reducedCount = is24() ? ((D?.geography?.planningLines24||[]).length) : ([...new Set((D?.sixNode?.transmission||[]).map(x=>x.Corridor))].length);
+  el('mapGridStatus').innerHTML =
+    `<strong>Physical transmission grid:</strong> ${counts[500]} lines at 500 kV, ${counts[230]} lines at 230 kV and ${counts[138]} lines at 138 kV.`+
+    `<br><strong>Planning / model lines:</strong> ${reducedCount} reduced branches for the active case.`+
+    `<br><span style="color:#5f6b7a">The national boundary, the filtered high-voltage grid and the reduced PARAMO network can be toggled independently.</span>`;
+}
+function _plotEcuadorBoundary(traces){
+  const ft=D?.geography?.ecuadorBoundary;
+  if(!ft?.geometry?.coordinates) return;
+  const coords=ft.geometry.coordinates[0] || ft.geometry.coordinates;
+  const x=[], y=[];
+  for(const p of coords){ if(Array.isArray(p)&&p.length>=2){ x.push(Number(p[0])); y.push(Number(p[1])); } }
+  traces.push({
+    type:'scatter', mode:'lines', x, y, fill:'toself',
+    fillcolor:'rgba(221,228,235,0.22)',
+    line:{color:'#7b8794',width:1.8},
+    hovertemplate:'Ecuador mainland boundary<extra></extra>',
+    showlegend:false
+  });
+}
+function _plot24Nodes(traces){
+  if(!state.showNodes) return;
+  const nodes = Array.isArray(D?.geography?.nodes24) ? D.geography.nodes24 : [];
+  traces.push({
+    type:'scatter', mode:'markers+text',
+    x:nodes.map(n=>Number(n.longitude)), y:nodes.map(n=>Number(n.latitude)),
+    text:nodes.map(n=>String(n.paramo_bus||'').replace('Node_','N')),
+    textposition:'top center',
+    textfont:{size:10,color:'#173f72'},
+    customdata:nodes.map(n=>`${n.paramo_bus_name||'—'}<br>${n.canonical_substation_name||'—'}<br>${n.canonical_zone||n.model_zone_legacy||'—'}<br>Reduced planning node`),
+    hovertemplate:'%{customdata}<extra></extra>',
+    marker:{size:8,color:'#173f72',line:{color:'#fff',width:1.2}},
+    showlegend:false
+  });
+}
+function _plotExternalLinks(traces){
+  if(!state.showExternal) return;
+  const items = Array.isArray(D?.geography?.interconnections) ? D.geography.interconnections : [];
+  const nodeIndex = new Map((D?.geography?.nodes24||[]).map(n=>[n.paramo_bus,[Number(n.longitude),Number(n.latitude),n.paramo_bus_name]]));
+  const x=[], y=[], text=[];
+  const mx=[], my=[], mtext=[], labels=[];
+  for(const item of items){
+    const start = nodeIndex.get(item.model_connection_bus);
+    const ex = Number(item.display_longitude), ey = Number(item.display_latitude);
+    if(start && Number.isFinite(ex) && Number.isFinite(ey)){
+      x.push(start[0], ex, null); y.push(start[1], ey, null);
+      const hov = `<b>${item.country||item.external_system||'External system'}</b><br>`+
+        `Model connection: ${item.model_connection_name||item.model_connection_bus||'—'}<br>`+
+        `Modeled import capacity: ${fmt(Number(item.modeled_import_capacity_mw),1)} MW<extra></extra>`;
+      text.push(hov, hov, '');
+      mx.push(ex); my.push(ey); labels.push(item.country || item.external_system || 'EXT'); mtext.push(hov);
+    }
+  }
+  if(x.length){
+    traces.push({type:'scatter',mode:'lines',x,y,text,hovertemplate:'%{text}',line:{color:'#9aa8ba',width:2,dash:'dot'},showlegend:false});
+    traces.push({type:'scatter',mode:'markers+text',x:mx,y:my,text:labels,textposition:'bottom center',hovertemplate:'%{customdata}',customdata:mtext,marker:{size:9,color:'#9aa8ba',line:{color:'#fff',width:1.2}},showlegend:false});
+  }
+}
+function renderMap24(){
+  el('mapTitle').textContent='Ecuador physical grid and PARAMO 24-node reduced network';
+  el('mapSubtitle').textContent=`Scenario ${state.scenario} · ${state.hydrology} hydrology`;
+  el('mapBadge').textContent='24-bus';
+  updateMapGridStatus();
+  const traces=[];
+  _plotEcuadorBoundary(traces);
+  traces.push(...physicalNetworkTraces());
+  traces.push(...planningLineTraces24());
+  _plot24Nodes(traces);
+  plotReferencePlants(traces);
+  _plotExternalLinks(traces);
+  const layout = mapLayout ? mapLayout() : {margin:{l:58,r:12,t:12,b:52},paper_bgcolor:'#fff',plot_bgcolor:'#fff'};
+  layout.xaxis = Object.assign({}, layout.xaxis||{}, {title:'Longitude [°]', range:[-81.3,-75.0], gridcolor:'#e6ebf2', zeroline:false});
+  layout.yaxis = Object.assign({}, layout.yaxis||{}, {title:'Latitude [°]', range:[-5.3,1.7], gridcolor:'#e6ebf2', zeroline:false, scaleanchor:'x', scaleratio:1});
+  Plotly.newPlot('networkMap', traces, layout, {displayModeBar:false, responsive:true});
+  el('mapLegend').innerHTML =
+    '<span class="legend-item"><span class="network-voltage-key kv500"></span>500 kV physical grid</span>'+
+    '<span class="legend-item"><span class="network-voltage-key kv230"></span>230 kV physical grid</span>'+
+    '<span class="legend-item"><span class="network-voltage-key kv138"></span>138 kV physical grid</span>'+
+    '<span class="legend-item"><span class="planning-line-key"></span>PARAMO 24-node reduced branch</span>';
+}
+renderCurrent();
+

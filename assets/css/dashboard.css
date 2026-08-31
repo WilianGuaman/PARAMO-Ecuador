@@ -32,3 +32,8 @@
 /* v2.5.0 map simplification: Ecuador + existing 230/500 kV + reduced PARAMO network */
 .ecuador-boundary-key{width:14px;height:10px;display:inline-block;background:rgba(222,230,220,.75);border:1px solid #71806f;border-radius:2px}
 .map-controls{justify-content:flex-start}.map-controls label{font-weight:700;color:#405069}.map-grid-status{line-height:1.45}.network-500{border-top:4px solid #bb1e55}.network-230{border-top:4px solid #173f72}.planning-line-key{border-top:4px solid #063d52}.map-filter{display:none!important}
+
+
+.network-voltage-key.kv500{width:20px;height:0;border-top:4px solid #b22222;display:inline-block;margin-right:8px;vertical-align:middle}
+.network-voltage-key.kv230{width:20px;height:0;border-top:3px solid #168b87;display:inline-block;margin-right:8px;vertical-align:middle}
+.network-voltage-key.kv138{width:20px;height:0;border-top:2px solid #d79b00;display:inline-block;margin-right:8px;vertical-align:middle}
