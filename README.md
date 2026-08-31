@@ -25,7 +25,7 @@
 The map combines the existing **138, 230 and 500 kV** transmission grid with the active PARAMO network. The physical grid and the 24N/6N planning network can be enabled independently.
 
 <p align="center">
-  <img src="assets/readme/network-24n-v2.7.0.png" alt="Ecuador high-voltage grid and PARAMO 24-node network" width="920">
+  <img src="assets/readme/network-24n-v2.7.0.png" alt="Ecuador high-voltage grid and PARAMO 24-node network" width="300">
 </p>
 
 ## Hydropower operation
@@ -33,7 +33,7 @@ The map combines the existing **138, 230 and 500 kV** transmission grid with the
 The hydrology section reports seasonal generation and storage. The 6N case also represents the Paute and Agoyán–San Francisco cascades.
 
 <p align="center">
-  <img src="assets/readme/hydrology-6n-v2.7.0.png" alt="PARAMO 6-node hydropower and cascade results" width="920">
+  <img src="assets/readme/hydrology-6n-v2.7.0.png" alt="PARAMO 6-node hydropower and cascade results" width="300">
 </p>
 
 ## Documentation
