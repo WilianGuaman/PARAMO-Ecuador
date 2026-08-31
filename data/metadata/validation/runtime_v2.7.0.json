@@ -1,0 +1,358 @@
+{
+  "map24_traces": [
+    {
+      "name": "Colombia",
+      "meta": null,
+      "xn": 98,
+      "yn": 98
+    },
+    {
+      "name": "Peru",
+      "meta": null,
+      "xn": 74,
+      "yn": 74
+    },
+    {
+      "name": "Ecuador",
+      "meta": null,
+      "xn": 33,
+      "yn": 33
+    },
+    {
+      "name": "Existing 138 kV",
+      "meta": {
+        "layer": "physical",
+        "voltage": 138,
+        "count": 87
+      },
+      "xn": 889,
+      "yn": 889
+    },
+    {
+      "name": "Existing 230 kV",
+      "meta": {
+        "layer": "physical",
+        "voltage": 230,
+        "count": 53
+      },
+      "xn": 863,
+      "yn": 863
+    },
+    {
+      "name": "Existing 500 kV",
+      "meta": {
+        "layer": "physical",
+        "voltage": 500,
+        "count": 6
+      },
+      "xn": 184,
+      "yn": 184
+    },
+    {
+      "name": "PARAMO 24-node reduced network halo",
+      "meta": {
+        "layer": "reduced24",
+        "count": 30
+      },
+      "xn": 129,
+      "yn": 129
+    },
+    {
+      "name": "PARAMO 24-node reduced network",
+      "meta": {
+        "layer": "reduced24",
+        "count": 30
+      },
+      "xn": 129,
+      "yn": 129
+    },
+    {
+      "name": "Colombia interconnection",
+      "meta": {
+        "layer": "external24",
+        "country": "Colombia"
+      },
+      "xn": 2,
+      "yn": 2
+    },
+    {
+      "name": "Colombia",
+      "meta": {
+        "layer": "external24",
+        "country": "Colombia"
+      },
+      "xn": 1,
+      "yn": 1
+    },
+    {
+      "name": "Peru",
+      "meta": {
+        "layer": "external24",
+        "country": "Peru"
+      },
+      "xn": 1,
+      "yn": 1
+    },
+    {
+      "name": "24N nodes",
+      "meta": {
+        "layer": "nodes24",
+        "count": 24
+      },
+      "xn": 24,
+      "yn": 24
+    }
+  ],
+  "map24_status": "Physical grid: 6 × 500 kV · 53 × 230 kV · 87 × 138 kV\nPARAMO network: 30 branches",
+  "map24_defaults": {
+    "physical": true,
+    "reduced": true,
+    "nodes": true,
+    "external": true
+  },
+  "map24_physical_off": [
+    "Colombia",
+    "Peru",
+    "Ecuador",
+    "PARAMO 24-node reduced network halo",
+    "PARAMO 24-node reduced network",
+    "Colombia interconnection",
+    "Colombia",
+    "Peru",
+    "24N nodes"
+  ],
+  "map24_reduced_off": [
+    "Colombia",
+    "Peru",
+    "Ecuador",
+    "Existing 138 kV",
+    "Existing 230 kV",
+    "Existing 500 kV",
+    "Colombia interconnection",
+    "Colombia",
+    "Peru",
+    "24N nodes"
+  ],
+  "map6_traces": [
+    {
+      "name": "Colombia",
+      "meta": null,
+      "xn": 98,
+      "yn": 98
+    },
+    {
+      "name": "Peru",
+      "meta": null,
+      "xn": 74,
+      "yn": 74
+    },
+    {
+      "name": "Ecuador",
+      "meta": null,
+      "xn": 33,
+      "yn": 33
+    },
+    {
+      "name": "Existing 138 kV",
+      "meta": {
+        "layer": "physical",
+        "voltage": 138,
+        "count": 87
+      },
+      "xn": 889,
+      "yn": 889
+    },
+    {
+      "name": "Existing 230 kV",
+      "meta": {
+        "layer": "physical",
+        "voltage": 230,
+        "count": 53
+      },
+      "xn": 863,
+      "yn": 863
+    },
+    {
+      "name": "Existing 500 kV",
+      "meta": {
+        "layer": "physical",
+        "voltage": 500,
+        "count": 6
+      },
+      "xn": 184,
+      "yn": 184
+    },
+    {
+      "name": "ZNO → ZNX halo",
+      "meta": {
+        "layer": "reduced6",
+        "corridor": "ZNO → ZNX",
+        "external": false
+      },
+      "xn": 2,
+      "yn": 2
+    },
+    {
+      "name": "ZNO → ZNX",
+      "meta": {
+        "layer": "reduced6",
+        "corridor": "ZNO → ZNX",
+        "external": false
+      },
+      "xn": 2,
+      "yn": 2
+    },
+    {
+      "name": "ZNO → ZSO halo",
+      "meta": {
+        "layer": "reduced6",
+        "corridor": "ZNO → ZSO",
+        "external": false
+      },
+      "xn": 2,
+      "yn": 2
+    },
+    {
+      "name": "ZNO → ZSO",
+      "meta": {
+        "layer": "reduced6",
+        "corridor": "ZNO → ZSO",
+        "external": false
+      },
+      "xn": 2,
+      "yn": 2
+    },
+    {
+      "name": "ZNX → ZSO halo",
+      "meta": {
+        "layer": "reduced6",
+        "corridor": "ZNX → ZSO",
+        "external": false
+      },
+      "xn": 2,
+      "yn": 2
+    },
+    {
+      "name": "ZNX → ZSO",
+      "meta": {
+        "layer": "reduced6",
+        "corridor": "ZNX → ZSO",
+        "external": false
+      },
+      "xn": 2,
+      "yn": 2
+    },
+    {
+      "name": "ZNX → ZSX halo",
+      "meta": {
+        "layer": "reduced6",
+        "corridor": "ZNX → ZSX",
+        "external": false
+      },
+      "xn": 2,
+      "yn": 2
+    },
+    {
+      "name": "ZNX → ZSX",
+      "meta": {
+        "layer": "reduced6",
+        "corridor": "ZNX → ZSX",
+        "external": false
+      },
+      "xn": 2,
+      "yn": 2
+    },
+    {
+      "name": "ZNX → COL halo",
+      "meta": {
+        "layer": "reduced6",
+        "corridor": "ZNX → COL",
+        "external": true
+      },
+      "xn": 2,
+      "yn": 2
+    },
+    {
+      "name": "ZNX → COL",
+      "meta": {
+        "layer": "reduced6",
+        "corridor": "ZNX → COL",
+        "external": true
+      },
+      "xn": 2,
+      "yn": 2
+    },
+    {
+      "name": "ZSO → ZSX halo",
+      "meta": {
+        "layer": "reduced6",
+        "corridor": "ZSO → ZSX",
+        "external": false
+      },
+      "xn": 2,
+      "yn": 2
+    },
+    {
+      "name": "ZSO → ZSX",
+      "meta": {
+        "layer": "reduced6",
+        "corridor": "ZSO → ZSX",
+        "external": false
+      },
+      "xn": 2,
+      "yn": 2
+    },
+    {
+      "name": "ZSO → PER halo",
+      "meta": {
+        "layer": "reduced6",
+        "corridor": "ZSO → PER",
+        "external": true
+      },
+      "xn": 2,
+      "yn": 2
+    },
+    {
+      "name": "ZSO → PER",
+      "meta": {
+        "layer": "reduced6",
+        "corridor": "ZSO → PER",
+        "external": true
+      },
+      "xn": 2,
+      "yn": 2
+    },
+    {
+      "name": "6N nodes",
+      "meta": {
+        "layer": "nodes6",
+        "count": 4
+      },
+      "xn": 4,
+      "yn": 4
+    },
+    {
+      "name": "External systems",
+      "meta": {
+        "layer": "external6",
+        "count": 2
+      },
+      "xn": 2,
+      "yn": 2
+    }
+  ],
+  "map6_status": "Physical grid: 6 × 500 kV · 53 × 230 kV · 87 × 138 kV\nPARAMO network: 7 corridors",
+  "hydro_asset": "paute",
+  "cascade_rows": 4,
+  "cascade_nodes": 4,
+  "cascade_plot_types": [
+    "sankey"
+  ],
+  "cascade_positive_links": 6,
+  "plot_context_count": 59,
+  "axis_issues": [],
+  "unit_issues": [],
+  "page_errors": [],
+  "console_errors": [],
+  "version_badge": "2.7.0"
+}

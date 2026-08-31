@@ -1,7 +1,7 @@
 {
   "title": "PARAMO Ecuador Results Explorer: Planning And Resource Allocation under Multi-scenario Optimization",
   "upload_type": "software",
-  "description": "Interactive public explorer for long-term Ecuador power-system planning results generated with PARAMO. Version 2.5.0 rebuilds the national 24-bus representative trajectories using robust_multimetric selection, adds aggregate transmission-investment and hydro-seasonality views, and displays the mainland Ecuador boundary with only the existing 230/500 kV grid plus independently switchable reduced networks.",
+  "description": "Public chart-ready data and documentation for the PARAMO Ecuador Results Explorer.",
   "creators": [
     {
       "name": "Guamán Cuenca, Wilian"
@@ -9,7 +9,7 @@
   ],
   "access_right": "open",
   "license": "Apache-2.0",
-  "version": "2.5.0",
+  "version": "2.7.0",
   "publication_date": "2026-08-31",
   "keywords": [
     "power system planning",

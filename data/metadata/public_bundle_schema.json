@@ -1,6 +1,6 @@
 {
-  "version": "2.5.0",
-  "result_storage": "assets/js/dashboard_data.js",
+  "version": "2.7.0",
+  "result_storage": "assets/js/dashboard_data.v2.7.0.js",
   "direct_result_downloads": false,
   "figure_exports": [
     "PNG",
@@ -27,30 +27,23 @@
     "corridor investment timing and cumulative state"
   ],
   "geography_blocks": [
-    "mainland Ecuador boundary",
+    "Ecuador, Colombia and Peru boundaries",
     "existing 500 kV grid (6 features)",
     "existing 230 kV grid (53 features)",
+    "existing 138 kV grid (87 features)",
     "24-node reduced network",
     "6-node reduced network",
     "reference plants",
-    "international anchors"
-  ],
-  "excluded_from_public_distribution": [
-    "PARAMO GAMS implementation",
-    "InputData workbook",
-    "complete Results workbooks",
-    "GDX/LST/log files",
-    "full generator-level annual/build outputs",
-    "Monte Carlo realization-level result tables"
+    "Colombia and Peru links"
   ],
   "data_access_policy": "docs/DATA_ACCESS.md",
   "map_rendering": "Local Cartesian longitude/latitude plot; no external basemap dependency",
   "map_controls": [
-    "existing 230/500 kV grid",
+    "existing 138/230/500 kV grid",
     "PARAMO reduced network",
     "reduced-model nodes",
     "reference plants",
-    "international systems"
+    "Colombia / Peru links"
   ],
   "national_representative_method": "robust_multimetric",
   "national_representative_runs": {
@@ -65,8 +58,7 @@
       "REF": "w5"
     }
   },
-  "national_transmission_scope": "Aggregate investment cost by investment type; no line/year/flow/utilization decisions in supplied public source archives.",
-  "national_hydrology_scope": "Aggregate reservoir uncertainty and representative operation; no reservoir IDs or plant-to-plant hydraulic transfer variables in supplied source archives.",
-  "six_bus_source_run": "2026-08-30",
+  "national_transmission_scope": "Investment cost by component; branch-year decisions are unavailable in the 24N outputs.",
+  "national_hydrology_scope": "Aggregate reservoir uncertainty and representative operation; reservoir IDs and cascade transfers are unavailable in the 24N outputs.",
   "six_bus_result_status": "Four cases; ModelStat 8; SolveStat 1; MIP gap <1%"
 }

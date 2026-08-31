@@ -21,7 +21,7 @@
       "Baseline": 100,
       "Adverse": 5
     },
-    "public_scope_note": "Aggregate ensemble statistics, robust-multimetric representative trajectories, aggregate transmission investment by type, aggregate reservoir uncertainty, and a static 24-node reduced network. Line-specific investment decisions and plant-level hydraulic transfers are not present in the supplied source archives.",
+    "public_scope_note": "Ensemble statistics, representative annual/monthly trajectories, transmission investment by component, aggregate reservoir operation and the 24-node topology.",
     "representative_method": "robust_multimetric",
     "representative_runs": {
       "Baseline": {
@@ -35,7 +35,7 @@
         "REF": "w5"
       }
     },
-    "quality_note": "Legacy national application; supplied results include positive endogenous additions in 2025 and retain earlier base-year calibration characteristics."
+    "quality_note": "National application with positive 2025 additions and earlier base-year calibration characteristics."
   },
   {
     "id": "ecuador_6bus",
@@ -58,6 +58,6 @@
       "Normal": 1,
       "Extreme": 1
     },
-    "public_scope_note": "Validated four-scenario deterministic results. The browser bundle contains system aggregates, corridor-level transmission decisions and selected hydraulic cascade data required by the visualizer; full generator-level output is not distributed."
+    "public_scope_note": "Four deterministic cases with system aggregates, corridor-year transmission decisions, reservoirs and selected hydraulic cascades."
   }
 ]

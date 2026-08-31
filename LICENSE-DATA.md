@@ -8,6 +8,6 @@ Attribution should identify **Wilian Guamán Cuenca**, **PARAMO Ecuador Results 
 
 This license applies to the **PARAMO-derived public visualization layer** only. It does not grant access to or a license for the PARAMO optimization implementation, private research databases, complete result workbooks or third-party material that is not redistributed under these terms.
 
-The existing 230/500 kV line layer retains the authoritative source terms associated with the user-supplied geographic files and is not relicensed as PARAMO-derived data. The mainland Ecuador outline is derived from Natural Earth public-domain geography.
+The existing 138/230/500 kV line layer retains the authoritative source terms associated with the user-supplied geographic files and is not relicensed as PARAMO-derived data. The mainland Ecuador outline is derived from Natural Earth public-domain geography.
 
 License text: https://creativecommons.org/licenses/by/4.0/

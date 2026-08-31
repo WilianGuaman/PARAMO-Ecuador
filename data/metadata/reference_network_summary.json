@@ -1,20 +1,12 @@
 {
-  "release": "2.5.0",
-  "source_file": "Lineas.geojson",
-  "source_feature_count": 587,
-  "public_feature_count": 59,
-  "public_voltage_counts": {
+  "source": "Lineas.geojson",
+  "source_crs": "EPSG:32717",
+  "public_crs": "EPSG:4326",
+  "feature_count": 146,
+  "voltage_counts": {
     "500": 6,
-    "230": 53
+    "230": 53,
+    "138": 87
   },
-  "coordinate_reference_system": "EPSG:4326",
-  "public_scope": "Existing 500 and 230 kV lines only",
-  "lower_voltage_features_excluded": true,
-  "note": "The source file contains 587 features. The public v2.5.0 layer retains only 6 existing 500 kV and 53 existing 230 kV features.",
-  "rendering": "Local Cartesian longitude/latitude plot; no external basemap dependency",
-  "reduced_networks": [
-    "PARAMO 24-node",
-    "PARAMO 6-node"
-  ],
-  "ecuador_boundary": "data/geography/ecuador_boundary.geojson"
+  "scope": "Existing 138, 230 and 500 kV transmission lines"
 }

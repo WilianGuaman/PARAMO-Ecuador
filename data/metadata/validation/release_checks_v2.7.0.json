@@ -1,0 +1,352 @@
+{
+  "version": "2.7.0",
+  "passed": 69,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "required file: index.html",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file: README.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file: CITATION.cff",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file: .zenodo.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file: assets/css/dashboard.v2.7.0.css",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file: assets/js/dashboard.v2.7.0.js",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file: assets/js/dashboard_data.v2.7.0.js",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file: assets/js/reference_network_data.v2.7.0.js",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file: assets/readme/network-24n-v2.7.0.png",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file: assets/readme/hydrology-6n-v2.7.0.png",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file: data/geography/existing_grid_138_230_500.geojson",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file: data/geography/ecuador_colombia_peru_boundaries.geojson",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "required file: data/metadata/validation/runtime_v2.7.0.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "dashboard JavaScript syntax",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "JSON parse: .zenodo.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "JSON parse: data/metadata/zenodo_dataset.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "JSON parse: data/metadata/public_bundle_schema.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "JSON parse: data/metadata/case_registry.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "JSON parse: data/metadata/metrics.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "JSON parse: data/metadata/physical_network_summary.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "JSON parse: data/metadata/reference_network_summary.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "JSON parse: data/geography/existing_grid_138_230_500.geojson",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "JSON parse: data/geography/ecuador_colombia_peru_boundaries.geojson",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "JSON parse: data/metadata/validation/runtime_v2.7.0.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "JSON parse: data/metadata/validation/release_checks_v2.7.0.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "JSON parse: data/metadata/validation/ecuador_6bus_v2_validation.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "YAML parse: .github/ISSUE_TEMPLATE/config.yml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "YAML parse: .github/ISSUE_TEMPLATE/data-access-request.yml",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "HTML duplicate IDs",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "HTML local references",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "README local references",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "README analytical image count",
+      "status": "PASS",
+      "detail": "['assets/readme/network-24n-v2.7.0.png', 'assets/readme/hydrology-6n-v2.7.0.png']"
+    },
+    {
+      "check": "HTML versioned asset: assets/css/dashboard.v2.7.0.css",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "HTML versioned asset: assets/js/dashboard_data.v2.7.0.js",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "HTML versioned asset: assets/js/reference_network_data.v2.7.0.js",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "HTML versioned asset: assets/js/dashboard.v2.7.0.js",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No unversioned dashboard assets",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "Version badge",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "JavaScript element targets",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "Physical network feature count",
+      "status": "PASS",
+      "detail": "146"
+    },
+    {
+      "check": "Physical network voltages only 138/230/500",
+      "status": "PASS",
+      "detail": "{138: 87, 230: 53, 500: 6}"
+    },
+    {
+      "check": "Physical network counts",
+      "status": "PASS",
+      "detail": "{138: 87, 230: 53, 500: 6}"
+    },
+    {
+      "check": "24N branch count",
+      "status": "PASS",
+      "detail": "30"
+    },
+    {
+      "check": "24N node count",
+      "status": "PASS",
+      "detail": "24"
+    },
+    {
+      "check": "6N corridor count",
+      "status": "PASS",
+      "detail": "['ZNO → ZNX', 'ZNO → ZSO', 'ZNX → COL', 'ZNX → ZSO', 'ZNX → ZSX', 'ZSO → PER', 'ZSO → ZSX']"
+    },
+    {
+      "check": "6N Colombia corridor",
+      "status": "PASS",
+      "detail": "['ZNO → ZNX', 'ZNO → ZSO', 'ZNX → COL', 'ZNX → ZSO', 'ZNX → ZSX', 'ZSO → PER', 'ZSO → ZSX']"
+    },
+    {
+      "check": "6N Peru corridor",
+      "status": "PASS",
+      "detail": "['ZNO → ZNX', 'ZNO → ZSO', 'ZNX → COL', 'ZNX → ZSO', 'ZNX → ZSX', 'ZSO → PER', 'ZSO → ZSX']"
+    },
+    {
+      "check": "Ecuador/Colombia/Peru boundaries",
+      "status": "PASS",
+      "detail": "{'colombia', 'peru', 'ecuador'}"
+    },
+    {
+      "check": "6N case count",
+      "status": "PASS",
+      "detail": "['BAU_Normal', 'BAU_Extreme', 'REN100_Normal', 'REN100_Extreme']"
+    },
+    {
+      "check": "6N ModelStat 8",
+      "status": "PASS",
+      "detail": "[('BAU_Normal', 8.0), ('BAU_Extreme', 8.0), ('REN100_Normal', 8.0), ('REN100_Extreme', 8.0)]"
+    },
+    {
+      "check": "6N SolveStat 1",
+      "status": "PASS",
+      "detail": "[('BAU_Normal', 1.0), ('BAU_Extreme', 1.0), ('REN100_Normal', 1.0), ('REN100_Extreme', 1.0)]"
+    },
+    {
+      "check": "6N MIP gaps below 1%",
+      "status": "PASS",
+      "detail": "[('BAU_Normal', 0.68618143929155), ('BAU_Extreme', 0.979175183453357), ('REN100_Normal', 0.7458537010415334), ('REN100_Extreme', 0.6455252812238442)]"
+    },
+    {
+      "check": "24N configuration count",
+      "status": "PASS",
+      "detail": "6"
+    },
+    {
+      "check": "Runtime 24N physical layers",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Runtime 24N reduced network",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Runtime 24N Colombia connection",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Runtime 6N international corridors",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Runtime independent map toggles",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Runtime Paute table",
+      "status": "PASS",
+      "detail": "4"
+    },
+    {
+      "check": "Runtime Paute cards",
+      "status": "PASS",
+      "detail": "4"
+    },
+    {
+      "check": "Runtime Paute Sankey",
+      "status": "PASS",
+      "detail": "6"
+    },
+    {
+      "check": "Runtime plot contexts",
+      "status": "PASS",
+      "detail": "59"
+    },
+    {
+      "check": "Runtime axis titles",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "Runtime axis units",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "Runtime JavaScript errors",
+      "status": "PASS",
+      "detail": "{'page': [], 'console': []}"
+    },
+    {
+      "check": "No private/model binary artifacts",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "No dataset ZIP download UI",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No CSV result export UI",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "No generic/version-history prose",
+      "status": "PASS",
+      "detail": "[]"
+    }
+  ]
+}
