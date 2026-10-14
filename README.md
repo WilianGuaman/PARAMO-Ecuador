@@ -11,10 +11,10 @@ The explorer follows Ecuador’s electricity system from 2025 to 2050. It compar
 Choose a pathway and hydrological case, move the **year slider**, and filter monthly plots with **Wet / Dry**. Hover over charts and network corridors for values. Figures can be exported as PNG or SVG; detailed views also provide CSV downloads.
 
 - **Generation:** installed capacity, annual additions and monthly electricity supply.
-- **Transmission:** existing-circuit reconductoring, new conventional circuits and new reinforced circuits, shown separately on maps and annual investment heatmaps.
+- **Transmission:** existing-circuit reconductoring, new conventional circuits and new reinforced circuits, shown separately on maps, annual addition bars and cumulative comparisons for 2025 and 2050.
 - **Reservoirs:** monthly storage, plant-level water balances and cascade operation.
 - **Performance:** discounted costs, direct CO₂ emissions and energy not served (ENS).
-- **All figures:** the complete research figure collection, with original files for download.
+- **Pathway scores:** calculated economic, environmental and supply-adequacy contributions under Baseline and Adverse.
 
 ![Annual electricity supply](assets/figures/supply_annual_comparison.png)
 
