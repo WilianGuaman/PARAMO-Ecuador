@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 190" role="img" aria-labelledby="title desc">
+<title id="title">PARAMO symbol</title><desc id="desc">Geometric mountain, water pathway and power-network nodes.</desc>
+<g fill="none" stroke-linecap="square" stroke-linejoin="miter">
+  <path d="M22 92 L110 18 L198 92" stroke="#123A67" stroke-width="9"/>
+  <path d="M66 80 L110 43 L154 80" stroke="#92B9D3" stroke-width="5"/>
+  <path d="M110 44 L110 94 L92 116 L110 136" stroke="#109C9A" stroke-width="7"/>
+  <path d="M110 136 L72 158 M110 136 L148 158 L184 136" stroke="#123A67" stroke-width="6"/>
+  <circle cx="72" cy="158" r="8" fill="#FFFFFF" stroke="#123A67" stroke-width="5"/>
+  <circle cx="110" cy="136" r="8" fill="#FFFFFF" stroke="#123A67" stroke-width="5"/>
+  <circle cx="148" cy="158" r="8" fill="#FFFFFF" stroke="#123A67" stroke-width="5"/>
+  <circle cx="184" cy="136" r="8" fill="#FFFFFF" stroke="#123A67" stroke-width="5"/>
+</g></svg>

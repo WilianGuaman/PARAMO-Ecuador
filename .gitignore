@@ -1,0 +1,30 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local build/runtime files
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# PARAMO private / solver artifacts must never enter this public repository
+*.gms
+*.gdx
+*.lst
+*.lxi
+*.log
+*.xlsx
+*.xlsb
+*.g00
+*.g0?
+*.opt
+
+# Full public-result archives are distributed only through controlled access
+/downloads/
+
+# Generic private-work markers
+*private*

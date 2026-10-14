@@ -1,0 +1,7 @@
+zone,name,display_color,zone_convention,notes
+ZNO,Noroccidental,#F2C94C,CELEC_4ZONE_USER_CONFIRMED_2026,Hidroabanico/Abanico = ZSX; Colombia connects to ZNX; Peru connects to ZSO.
+ZNX,Nororiental,#8E44AD,CELEC_4ZONE_USER_CONFIRMED_2026,Hidroabanico/Abanico = ZSX; Colombia connects to ZNX; Peru connects to ZSO.
+ZSO,Suroccidental,#27AE60,CELEC_4ZONE_USER_CONFIRMED_2026,Hidroabanico/Abanico = ZSX; Colombia connects to ZNX; Peru connects to ZSO.
+ZSX,Suroriental,#2D9CDB,CELEC_4ZONE_USER_CONFIRMED_2026,Hidroabanico/Abanico = ZSX; Colombia connects to ZNX; Peru connects to ZSO.
+Col,Colombia / nodo externo,#7F8C8D,CELEC_4ZONE_USER_CONFIRMED_2026,Hidroabanico/Abanico = ZSX; Colombia connects to ZNX; Peru connects to ZSO.
+Per,Perú / nodo externo,#95A5A6,CELEC_4ZONE_USER_CONFIRMED_2026,Hidroabanico/Abanico = ZSX; Colombia connects to ZNX; Peru connects to ZSO.

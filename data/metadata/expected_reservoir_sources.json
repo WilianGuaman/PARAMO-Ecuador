@@ -1,0 +1,10 @@
+{
+  "reservoir_representative_by_plant": {
+    "rows": 9360,
+    "sha256_prefix": "2aa1ad75d3ab2f8fe7861ded90529136a102a40368983e04f04c0bc2ff17dc41"
+  },
+  "reservoir_storage_statistics_by_plant": {
+    "rows": 9360,
+    "sha256_prefix": "6fc53e79144e13cb47a16d2ef9306930868091da68c8ed31e259bef549d6d58f"
+  }
+}

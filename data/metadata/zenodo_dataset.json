@@ -1,0 +1,29 @@
+{
+  "title": "PARAMO Ecuador Public Visualization Data Layer",
+  "upload_type": "dataset",
+  "description": "Public chart-ready data and documentation for the PARAMO Ecuador Results Explorer.",
+  "creators": [
+    {
+      "name": "Guamán Cuenca, Wilian"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "version": "1.0.0",
+  "publication_date": "2026-08-31",
+  "keywords": [
+    "power system planning",
+    "hydropower",
+    "reliability",
+    "transmission expansion",
+    "Ecuador",
+    "PARAMO"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.1016/j.ecmx.2025.101297",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "sources": [
+    {
+      "case": "Baseline",
+      "policy": "REF",
+      "sha256": "da0486e384055ec7079caf0bc6fc921fc713fee1cb6328f82523c65db8f8743b",
+      "realizations": 100,
+      "selected": "w23",
+      "HoursMonth": 720.0,
+      "sbase": 100.0
+    },
+    {
+      "case": "Baseline",
+      "policy": "BRIDGE",
+      "sha256": "400f711c4eb30b2d08e4f4e0740720378468e5706bb4f26dea2c46767cc93767",
+      "realizations": 100,
+      "selected": "w17",
+      "HoursMonth": 720.0,
+      "sbase": 100.0
+    },
+    {
+      "case": "Baseline",
+      "policy": "NZT",
+      "sha256": "c75cdb50adec62665178e8a8e942b41ab4cc332cb7c7417d123cb4d1fad78678",
+      "realizations": 100,
+      "selected": "w22",
+      "HoursMonth": 720.0,
+      "sbase": 100.0
+    },
+    {
+      "case": "Adverse",
+      "policy": "REF",
+      "sha256": "9e63e29003b9e50471d2b69d53fb4e8dbb1ca9574e16c7d38c1f432110d0c187",
+      "realizations": 5,
+      "selected": "w5",
+      "HoursMonth": 720.0,
+      "sbase": 100.0
+    },
+    {
+      "case": "Adverse",
+      "policy": "BRIDGE",
+      "sha256": "dbd2d83da6d250b55592764d7968db122a452bf8720728357edb438b0cff2fc8",
+      "realizations": 5,
+      "selected": "w3",
+      "HoursMonth": 720.0,
+      "sbase": 100.0
+    },
+    {
+      "case": "Adverse",
+      "policy": "NZT",
+      "sha256": "9129ed1d3483e320725475705736edc66503be98b08a9f8672852de802ac41b6",
+      "realizations": 5,
+      "selected": "w3",
+      "HoursMonth": 720.0,
+      "sbase": 100.0
+    }
+  ],
+  "checks": [
+    {
+      "case": "Baseline",
+      "policy": "REF",
+      "mean_ENS_GWh": 39.86115429474237,
+      "selected_ENS_GWh": 30.747718324534787,
+      "mean_cost_MUSD": 33000.13688376509,
+      "mean_CO2_kt": 55183.85702920944
+    },
+    {
+      "case": "Baseline",
+      "policy": "BRIDGE",
+      "mean_ENS_GWh": 20.53403263975331,
+      "selected_ENS_GWh": 3.8818754613372697,
+      "mean_cost_MUSD": 28181.88704789483,
+      "mean_CO2_kt": 43360.12420399417
+    },
+    {
+      "case": "Baseline",
+      "policy": "NZT",
+      "mean_ENS_GWh": 26.260178152556904,
+      "selected_ENS_GWh": 10.858292803709467,
+      "mean_cost_MUSD": 31268.8725331346,
+      "mean_CO2_kt": 22021.432565759096
+    },
+    {
+      "case": "Adverse",
+      "policy": "REF",
+      "mean_ENS_GWh": 52.94803114035297,
+      "selected_ENS_GWh": 58.85285356957817,
+      "mean_cost_MUSD": 51937.48334409677,
+      "mean_CO2_kt": 184474.35242696205
+    },
+    {
+      "case": "Adverse",
+      "policy": "BRIDGE",
+      "mean_ENS_GWh": 34.508239507072794,
+      "selected_ENS_GWh": 82.45084510571718,
+      "mean_cost_MUSD": 42416.16977764598,
+      "mean_CO2_kt": 151803.6116661808
+    },
+    {
+      "case": "Adverse",
+      "policy": "NZT",
+      "mean_ENS_GWh": 270.0016489443019,
+      "selected_ENS_GWh": 311.4085034859476,
+      "mean_cost_MUSD": 52111.93183455649,
+      "mean_CO2_kt": 64455.19290618835
+    }
+  ],
+  "units": {
+    "energy": "GWh",
+    "capacity": "MW",
+    "emissions": "ktCO2",
+    "cost": "MUSD",
+    "storage": "hm3"
+  }
+}

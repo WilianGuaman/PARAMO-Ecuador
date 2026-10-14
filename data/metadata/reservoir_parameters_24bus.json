@@ -1,0 +1,57 @@
+[
+  {
+    "id": "E_HYD_Mazar_170MW",
+    "name": "Mazar",
+    "cascade": "Paute",
+    "capacity_MW": 170,
+    "vmin_hm3": 102.5,
+    "vmax_hm3": 410,
+    "qmax_hm3": 378.432,
+    "phi": 0.486,
+    "status": "Existing"
+  },
+  {
+    "id": "E_HYD_PauteMolino_Otros_1100MW",
+    "name": "Paute Molino",
+    "cascade": "Paute",
+    "capacity_MW": 1100,
+    "vmin_hm3": 30,
+    "vmax_hm3": 120,
+    "qmax_hm3": 513.962,
+    "phi": 2.159,
+    "status": "Existing"
+  },
+  {
+    "id": "N_HYD_Cardenillo_595MW",
+    "name": "Cardenillo",
+    "cascade": "Paute",
+    "capacity_MW": 595,
+    "vmin_hm3": 3.083,
+    "vmax_hm3": 12.33,
+    "qmax_hm3": 388.8,
+    "phi": 1.458,
+    "status": "Candidate"
+  },
+  {
+    "id": "E_HYD_Pucara_73MW",
+    "name": "Pucará",
+    "cascade": "Pastaza",
+    "capacity_MW": 73,
+    "vmin_hm3": 25,
+    "vmax_hm3": 100,
+    "qmax_hm3": 53.628,
+    "phi": 1.361,
+    "status": "Existing"
+  },
+  {
+    "id": "E_HYD_Agoyan_160MW",
+    "name": "Agoyán",
+    "cascade": "Pastaza",
+    "capacity_MW": 160,
+    "vmin_hm3": 4.25,
+    "vmax_hm3": 17,
+    "qmax_hm3": 311.04,
+    "phi": 0.502,
+    "status": "Existing"
+  }
+]

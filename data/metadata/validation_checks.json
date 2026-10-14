@@ -1,0 +1,48 @@
+{
+  "checks": [
+    {
+      "case": "Baseline",
+      "pathway": "REF",
+      "ENS_mean_GWh": 39.86115429474237,
+      "ENS_selected_GWh": 30.747718324534787,
+      "cost_component_residual_MUSD": 0.0
+    },
+    {
+      "case": "Baseline",
+      "pathway": "BRIDGE",
+      "ENS_mean_GWh": 20.53403263975331,
+      "ENS_selected_GWh": 3.8818754613372697,
+      "cost_component_residual_MUSD": -3.637978807091713e-12
+    },
+    {
+      "case": "Baseline",
+      "pathway": "NZT",
+      "ENS_mean_GWh": 26.260178152556904,
+      "ENS_selected_GWh": 10.858292803709467,
+      "cost_component_residual_MUSD": 0.0
+    },
+    {
+      "case": "Adverse",
+      "pathway": "REF",
+      "ENS_mean_GWh": 52.94803114035297,
+      "ENS_selected_GWh": 58.85285356957817,
+      "cost_component_residual_MUSD": 1.4551915228366852e-11
+    },
+    {
+      "case": "Adverse",
+      "pathway": "BRIDGE",
+      "ENS_mean_GWh": 34.508239507072794,
+      "ENS_selected_GWh": 82.45084510571718,
+      "cost_component_residual_MUSD": -7.275957614183426e-12
+    },
+    {
+      "case": "Adverse",
+      "pathway": "NZT",
+      "ENS_mean_GWh": 270.0016489443019,
+      "ENS_selected_GWh": 311.4085034859476,
+      "cost_component_residual_MUSD": 0.0
+    }
+  ],
+  "plant_balance_rows": 9360,
+  "maximum_water_balance_residual_hm3": 5.684341886080801e-13
+}
