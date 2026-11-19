@@ -1,0 +1,12 @@
+{
+  "source": "Lineas.geojson",
+  "source_crs": "EPSG:32717",
+  "public_crs": "EPSG:4326",
+  "feature_count": 146,
+  "voltage_counts": {
+    "500": 6,
+    "230": 53,
+    "138": 87
+  },
+  "scope": "Existing 138, 230 and 500 kV transmission lines"
+}

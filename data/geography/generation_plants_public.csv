@@ -1,0 +1,143 @@
+plant_id,plant_name,company_name,technology,energy_type,nominal_capacity_mw,effective_capacity_mw,longitude,latitude,planning_zone,province,canton,zone_confidence
+26,Selva Alegre,UNACEM,Térmica,No Renovable,29.28,24.3,-78.30952871750172,0.2414623785447867,ZNX,Imbabura,Otavalo,high
+29,Saymirín,Elecaustro,Hidráulica,Renovable,15.52,15.52,-79.00510703049974,-2.796591717841586,ZSX,Azuay,Cuenca,high
+30,Saucay,Elecaustro,Hidráulica,Renovable,24.0,24.0,-79.01069154355345,-2.75164171300842,ZSX,Azuay,Cuenca,high
+33,Santa Rosa,CELEC-Termopichincha,Térmica,No Renovable,71.1,51.0,-78.5362537103899,-0.3643342481545216,ZNX,Pichincha,Mejía,high
+36,San Miguel de Car,E.E. Norte,Hidráulica,Renovable,2.95,2.52,-77.8003300455868,0.8067019183119201,ZNX,Carchi,Tulcán,high
+41,San Carlos,San Carlos,Biomasa,Renovable,78.0,73.6,-79.4375558019941,-2.212121578174877,ZSO,Guayas,Coronel marcelino maridueña,medium
+105,La Playa,E.E. Norte,Hidráulica,Renovable,1.43,1.23,-77.70498968498332,0.8422901173530591,ZNX,Carchi,Tulcán,high
+431,Jaramijó,CELEC-Termomanabí,Térmica,No Renovable,149.22,128.88,-80.63567492061846,-0.9499477333646248,ZNO,Manabí,Jaramijó,high
+438,Jivino II,CELEC-Termopichincha,Térmica,No Renovable,11.0,10.0,-76.84553503617921,-0.1544987903376657,ZNX,Sucumbíos,Shushufindi,high
+440,Jivino I,CELEC-Termopichincha,Térmica,No Renovable,7.5,5.4,-76.8607182040813,-0.1220319571151676,ZNX,Sucumbíos,Shushufindi,high
+441,Celso Castellanos,CELEC-Termopichincha,Térmica,No Renovable,10.0,7.2,-76.88729598089745,0.0881108554868224,ZNX,Sucumbíos,Lago agrio,high
+442,Payamino,CELEC-Termopichincha,Térmica,No Renovable,2.5,1.8,-77.17684653871434,-0.5404509431696396,ZNX,Orellana,Francisco de orellana,high
+443,Villonaco,CELEC-Gensur,Eólica,Renovable,16.5,16.5,-79.25094768392411,-3.996966293691768,ZSX,Loja,Loja,high
+445,Buenos Aires,E.E. Norte,Hidráulica,Renovable,0.98,0.95,-78.3137967835289,0.620862688987004,ZNX,Imbabura,San miguel de urcuquí,high
+446,Paragachi,Valsolar,Solar,Renovable,1.0,1.0,-77.9621528862368,0.4291225306618866,ZNX,Imbabura,Pimampiro,high
+497,Gualaceo,Elecaustro,Hidráulica,Renovable,0.97,0.97,-78.74340709867552,-2.9022961639867115,ZSX,Azuay,Gualaceo,high
+498,Manduriacu,CELEC-Coca Codo Sinclair,Hidráulica,Renovable,63.36,65.0,-78.91100854949623,0.2169390557974051,ZNO,Imbabura,Cotacachi,medium
+499,Espejo,Municipio Cantón Espejo,Hidráulica,Renovable,0.44,0.4,-78.14804424950792,0.8086770930229641,ZNX,Carchi,Espejo,high
+500,Alazán,CELEC-Hidroazogues,Hidráulica,Renovable,6.23,6.23,-78.65763323119887,-2.574358372251449,ZSX,Cañar,Azogues,high
+501,Hidrosanbartolo,Hidrosanbartolo,Hidráulica,Renovable,49.98,49.95,-78.41214594219943,-2.750304333406365,ZSX,Morona Santiago,Santiago,high
+515,Baba,CELEC-Hidronación,Hidráulica,Renovable,42.2,42.0,-79.46839817965906,-0.6708087910271271,ZSO,Los Ríos,Buena fe,high
+120,Hidrocarolina,Hidroimbabura,Hidráulica,Renovable,0.92,0.88,-78.21845421440581,0.7250314096887404,ZNX,Imbabura,Ibarra,high
+121,Illuchi No.2,E.E. Cotopaxi,Hidráulica,Renovable,5.2,5.2,-78.54924471613357,-0.9356694522968044,ZNX,Cotopaxi,Latacunga,high
+122,Illuchi No.1,E.E. Cotopaxi,Hidráulica,Renovable,4.19,4.0,-78.53008847478219,-0.9184371072298642,ZNX,Cotopaxi,Latacunga,high
+123,Abanico,Hidroabanico,Hidráulica,Renovable,38.45,37.99,-78.19868422479225,-2.253992062218962,ZSX,Morona Santiago,Morona,medium
+127,Guangopolo,CELEC-Termopichincha,Térmica,No Renovable,22.5,21.8,-78.44858861485115,-0.2679850915912032,ZNX,Pichincha,Distrito metropolitano de quito,high
+560,Topo,Ecuagesa,Hidráulica,Renovable,29.2,27.0,-78.21252184422933,-1.3706041196037302,ZNX,Tungurahua,Baños de agua santa,high
+566,Sigchos,Hidrosigchos,Hidráulica,Renovable,18.6,18.39,-78.90946715424805,-0.6482498293225377,ZNX,Cotopaxi,Sigchos,high
+567,Due,Hidroalto,Hidráulica,Renovable,64.3,64.3,-77.39391660413308,0.0381634559173129,ZNX,Sucumbíos,Gonzalo pizarro,high
+581,Palmira-Nanegal,IPNEGAL,Hidráulica,Renovable,10.44,10.36,-78.69254929393801,0.1831344799269391,ZNO,Pichincha,Distrito metropolitano de quito,medium
+538,El Inga,Gasgreen,Biogas,Renovable,6.2,5.5,-78.35727056675226,-0.2927262668401879,ZNX,Pichincha,Distrito metropolitano de quito,high
+539,San José de Tambo,Hidrotambo,Hidráulica,Renovable,8.0,8.0,-79.1800460637392,-1.951609794563688,ZNX,Bolívar,Chillanes,medium
+541,Fábrica Imbabura,SERMAA EP,Hidráulica,Renovable,0.79,0.61,-78.23261156761491,0.3480842825133454,ZNX,Imbabura,Antonio ante,high
+542,Pichacay,EMAC-BGP,Biogas,Renovable,2.12,1.7,-78.92911805798941,-2.9663194906822072,ZSX,Azuay,Cuenca,high
+550,Sopladora,CELEC-Sur,Hidráulica,Renovable,487.0,486.9,-78.46331195547272,-2.5881745260800906,ZSX,Azuay,Sevilla de oro,high
+553,Coca Codo Sinclair,CELEC-Coca Codo Sinclair,Hidráulica,Renovable,1500.0,1476.0,-77.46019413616003,-0.1335500173839547,ZNX,Napo,El chaco,high
+554,Minas San Francisco,CELEC-Sur,Hidráulica,Renovable,270.0,270.0,-79.5975639135426,-3.310782184509516,ZSO,Azuay,Pucará,medium
+555,Victoria,Hidrovictoria,Hidráulica,Renovable,10.32,10.0,-78.02161914504511,-0.4133787722813109,ZNX,Napo,Quijos,high
+46,Río Blanco,E.E. Riobamba,Hidráulica,Renovable,3.03,2.95,-78.5376335983598,-1.65737857654404,ZNX,Chimborazo,Riobamba,high
+54,Recuperadora,EPMAPS,Hidráulica,Renovable,14.7,14.5,-78.28437726939761,-0.2641087996888309,ZNX,Pichincha,Distrito metropolitano de quito,high
+57,Pucará,CELEC-Hidroagoyán,Hidráulica,Renovable,73.0,70.6,-78.45266158612678,-1.0711271075606466,ZNX,Tungurahua,Santiago de píllaro,high
+63,Perlabí,Perlabí,Hidráulica,Renovable,2.7,2.46,-78.43248401373151,0.1844854067983544,ZNX,Pichincha,Distrito metropolitano de quito,high
+184,Agoyán,CELEC-Hidroagoyán,Hidráulica,Renovable,160.0,154.0,-78.36148229621499,-1.3971903128923322,ZNX,Tungurahua,Baños de agua santa,high
+187,San Francisco,CELEC-Hidroagoyán,Hidráulica,Renovable,230.0,212.0,-78.27052090733812,-1.4128908026475806,ZNX,Tungurahua,Baños de agua santa,high
+454,Loreto,CELEC-Termopichincha,Térmica,No Renovable,2.25,1.8,-77.33248522851206,-0.7103638015701168,ZNX,Orellana,Loreto,medium
+455,Dayuma,CELEC-Termopichincha,Térmica,No Renovable,2.25,1.8,-76.87389734884559,-0.6721245940902029,ZNX,Orellana,Francisco de orellana,high
+462,Electrisol,Electrisol,Solar,Renovable,1.0,1.0,-78.26715211653361,0.011078835808541,ZNX,Pichincha,Pedro moncayo,high
+463,Pastocalle,Epfotovoltaica,Solar,Renovable,1.0,1.0,-78.6357954473708,-0.759051539781181,ZNX,Cotopaxi,Latacunga,high
+464,Mulaló,Epfotovoltaica,Solar,Renovable,1.0,1.0,-78.60632436260396,-0.7959392190479915,ZNX,Cotopaxi,Latacunga,high
+465,Enersol,Enersol,Solar,Renovable,0.5,0.49,-80.65198660815975,-0.9653014298869546,ZNO,Manabí,Jaramijó,high
+466,Esmeraldas II,CELEC-Termoesmeraldas,Térmica,No Renovable,100.2,84.0,-79.68156957595546,0.9219776555103066,ZNO,Esmeraldas,Esmeraldas,high
+586,Delsitanisagua,CELEC-Gensur,Hidráulica,Renovable,180.0,180.0,-78.98138919527646,-4.042562306198497,ZSX,Zamora Chinchipe,Zamora,high
+587,Hidronormandía,Hidronormandía,Hidráulica,Renovable,49.58,49.58,-78.26867234585502,-2.228237537714579,ZSO,Morona Santiago,Morona,medium
+597,Pusuno,ElitEnergy,Hidráulica,Renovable,38.25,38.25,-77.61971059155702,-0.994508339428899,ZNX,Napo,Tena,high
+599,Rio Verde Chico,Hidrosierra,Hidráulica,Renovable,10.0,10.2,-78.40419887812588,-1.3703887879637024,ZNX,Tungurahua,Baños de agua santa,high
+604,San José de Minas,San José de Minas,Hidráulica,Renovable,6.75,5.95,-78.44886685992091,0.1297988292714089,ZNX,Pichincha,Distrito metropolitano de quito,high
+606,El Laurel,Cbsenergy,Hidráulica,Renovable,1.0,1.0,-78.19902152037842,0.7102452052512077,ZNX,Carchi,Mira,high
+613,Chalpi,EPMAPS,Hidráulica,Renovable,8.1,8.1,-78.0856144345532,-0.3664850744971227,ZNX,Napo,Quijos,high
+617,Sarapullo,CELEC-Hidrotoapi,Hidráulica,Renovable,48.45,48.45,-78.91303321675292,-0.3723524993111897,ZNO,Pichincha,Mejía,high
+618,Sabanilla,Fideicomiso Titularización PHS,Hidráulica,Renovable,36.0,30.6,-78.99499954620285,-4.037031748888666,ZSX,Zamora Chinchipe,Zamora,high
+620,Huascachaca,Elecaustro,Eólica,Renovable,49.98,49.98,-78.75976124772103,-3.4102013924217376,ZSX,Loja,Saraguro,high
+621,Ulba,Hidroulba,Hidráulica,Renovable,1.0,1.0,-78.40658417727062,-1.4091274565205287,ZNX,Tungurahua,Baños de agua santa,high
+88,Marcel Laniado,CELEC-Hidronación,Hidráulica,Renovable,213.0,213.0,-79.75334139222348,-0.9280957139642636,ZNO,Guayas,El empalme,high
+89,Termogas Machala I,CELEC-Termogas Machala,Térmica,No Renovable,138.56,130.6,-79.8919872292392,-3.1138861106536124,ZSO,El Oro,El guabo,high
+95,Los Chillos,E.E. Quito,Hidráulica,Renovable,1.76,1.76,-78.41444726405359,-0.3716893923380244,ZNX,Pichincha,Rumiñahui,high
+98,Loreto,Ecoluz,Hidráulica,Renovable,2.3,2.2,-78.14510433307784,-0.3242092191335439,ZNX,Napo,Quijos,high
+100,Lligua,E.E. Ambato,Térmica,No Renovable,5.0,3.6,-78.60524917274938,-1.2389145139042497,ZNX,Tungurahua,Ambato,high
+103,Geppert,Moderna Alimentos,Hidráulica,Renovable,1.65,1.65,-78.1576825562323,0.0101553362607721,ZNX,Pichincha,Cayambe,high
+167,Calope,Enermax,Hidráulica,Renovable,16.6,15.0,-79.23692623373674,-0.9905785508789772,ZNO,Cotopaxi,La maná,high
+171,Atuntaqui,SERMAA EP,Hidráulica,Renovable,0.4,0.32,-78.22892517784842,0.3213925868136529,ZNX,Imbabura,Antonio ante,high
+173,Aníbal Santos (Vapor),CNEL-Guayaquil,Térmica,No Renovable,34.5,20.0,-79.95192449502498,-2.196653594862284,ZSO,Guayas,Guayaquil,high
+175,Aníbal Santos (Gas),CNEL-Guayaquil,Térmica,No Renovable,113.27,97.0,-79.95192449502498,-2.196653594862284,ZSO,Guayas,Guayaquil,high
+178,Ambi,E.E. Norte,Hidráulica,Renovable,8.0,7.85,-78.16179433342967,0.3876720283557213,ZNX,Imbabura,Antonio ante,high
+181,Álvaro Tinajero,CNEL-Guayaquil,Térmica,No Renovable,94.8,64.0,-79.95181545852046,-2.1973476032351305,ZSO,Guayas,Guayaquil,high
+183,Alao,E.E. Riobamba,Hidráulica,Renovable,10.5,10.44,-78.59431047666375,-1.808005901182207,ZNX,Chimborazo,Riobamba,high
+296,La Propicia,CELEC-Termoesmeraldas,Térmica,No Renovable,10.5,8.5,-79.69288675252382,0.9255773498790566,ZNO,Esmeraldas,Esmeraldas,high
+297,Pedernales,CELEC-Termomanabí,Térmica,No Renovable,5.0,3.9,-80.05157271723553,0.0633224489610054,ZNO,Manabí,Pedernales,high
+298,Miraflores,CELEC-Termomanabí,Térmica,No Renovable,49.0,39.4,-80.7203118469796,-0.955676322980475,ZNO,Manabí,Manta,high
+299,Victoria II,Intervisa Trade,Térmica,No Renovable,115.0,102.0,-79.86110729397488,-2.2665918584810014,ZSO,Guayas,Guayaquil,high
+304,La Calera,I.M. Mejía,Hidráulica,Renovable,2.5,1.98,-78.55087400966327,-0.4637205596686241,ZNX,Pichincha,Mejía,high
+316,Uravia,Hidrosibimbe,Hidráulica,Renovable,0.99,0.98,-78.37171880447946,-0.0685240857453973,ZNX,Pichincha,Distrito metropolitano de quito,high
+3,Vindobona,Vicunha,Hidráulica,Renovable,6.09,5.86,-78.40568541075233,0.0075105716923692,ZNX,Pichincha,Distrito metropolitano de quito,high
+8,Trinitaria,CELEC-Electroguayas,Térmica,No Renovable,133.0,133.0,-79.91166422950869,-2.2493681467871305,ZSO,Guayas,Guayaquil,high
+11,Esmeraldas I,CELEC-Termoesmeraldas,Térmica,No Renovable,132.5,125.0,-79.68339016177417,0.9225799389834692,ZNO,Esmeraldas,Esmeraldas,high
+20,Sillunchi II,Agua y Gas de Sillunchi,Hidráulica,Renovable,0.3,0.3,-78.5417424176791,-0.4763787076357203,ZNX,Pichincha,Mejía,high
+21,Sillunchi I,Agua y Gas de Sillunchi,Hidráulica,Renovable,0.1,0.09,-78.5478453094117,-0.4581131529959442,ZNX,Pichincha,Mejía,high
+22,Sibimbe,Hidrosibimbe,Hidráulica,Renovable,15.37,14.2,-79.38608457517863,-1.434354735948908,ZSO,Los Ríos,Ventanas,high
+128,Guangopolo,E.E. Quito,Hidráulica,Renovable,20.92,20.92,-78.4517310064151,-0.2673079002414882,ZNX,Pichincha,Distrito metropolitano de quito,high
+129,Gonzalo Zevallos (Vapor),CELEC-Electroguayas,Térmica,No Renovable,146.0,140.0,-79.95279516746841,-2.192909237106949,ZSO,Guayas,Guayaquil,high
+130,Gonzalo Zevallos (Gas),CELEC-Electroguayas,Térmica,No Renovable,26.27,20.0,-79.95143770841318,-2.1937727361558337,ZSO,Guayas,Guayaquil,high
+131,Generoca,Generoca,Térmica,No Renovable,38.12,34.4,-80.01923850008926,-2.186736624097481,ZSO,Guayas,Guayaquil,high
+133,G. Hernández,E.E. Quito,Térmica,No Renovable,34.32,31.2,-78.44858842741958,-0.2688889198357574,ZNX,Pichincha,Distrito metropolitano de quito,high
+138,Enrique García,CELEC-Electroguayas,Térmica,No Renovable,102.0,96.0,-79.95424032995248,-2.043437036208967,ZSO,Guayas,Guayaquil,high
+141,El Descanso,Elecaustro,Térmica,No Renovable,19.2,17.2,-78.87420757829234,-2.8365132242053286,ZSX,Cañar,Azogues,high
+143,El Carmen,EPMAPS,Hidráulica,Renovable,8.4,8.2,-78.3656874974928,-0.453857777788594,ZNX,Pichincha,Distrito metropolitano de quito,high
+144,Ecudos A-G,Agroazucar,Biomasa,Renovable,29.8,27.6,-79.35168933770126,-2.440784867348843,ZSX,Cañar,La troncal,high
+360,Mazar,CELEC-Sur,Hidráulica,Renovable,170.0,170.0,-78.61685137664391,-2.6300895545214544,ZSX,Azuay,Sevilla de oro,high
+362,Tiliví,Consejo Provincial De Tungurahua,Hidráulica,Renovable,0.1,0.06,-78.73989688766748,-1.2399741396190225,ZNX,Tungurahua,Ambato,high
+364,Electrocórdova,Electrocordova,Hidráulica,Renovable,0.2,0.2,-78.28500238426463,0.2744959811227885,ZNX,Imbabura,Cotacachi,high
+366,Kohler,Moderna Alimentos,Térmica,No Renovable,,,-78.16301318490923,0.0107818480083269,ZNX,Pichincha,Cayambe,high
+367,Interconexión Colombia,Colombia,Interconexión,Interconexión,540.0,525.0,-77.2870860021804,1.1924381398652737,ZNX,Pichincha,Distrito metropolitano de quito,high
+368,Interconexión Perú,Perú,Interconexión,Interconexión,110.0,110.0,-80.49744666403205,-3.558765787120004,ZSO,El Oro,Machala,high
+385,Corazón,Hidrosibimbe,Hidráulica,Renovable,0.99,0.98,-78.75292223587618,-0.4610557124338022,ZNX,Pichincha,Mejía,high
+386,Manta II,CELEC-Termomanabí,Térmica,No Renovable,20.4,17.34,-80.682967190875,-0.9596194072349216,ZNO,Manabí,Manta,high
+387,Santa Elena II,CELEC-Electroguayas,Térmica,No Renovable,90.1,65.03,-80.84514879860107,-2.240348505114456,ZSO,Santa Elena,Santa elena,high
+389,Quevedo II,CELEC-Termopichincha,Térmica,No Renovable,47.6,40.5,-79.4863344007935,-1.0444156738453287,ZNO,Los Ríos,Quevedo,high
+146,Ecoelectric,Ecoelectric,Biomasa,Renovable,36.5,35.2,-79.59811510528621,-2.1244015942662644,ZSO,Guayas,Milagro,high
+148,Cumbayá,E.E. Quito,Hidráulica,Renovable,40.0,40.0,-78.41772559596804,-0.1834283325481681,ZNX,Pichincha,Distrito metropolitano de quito,high
+163,Catamayo,E.E. Sur,Térmica,No Renovable,19.74,17.17,-79.3733283396847,-3.9539862828196384,ZSX,Loja,Catamayo,high
+165,Carlos Mora,E.E. Sur,Hidráulica,Renovable,2.4,2.4,-79.06428222525643,-3.968202782009085,ZSX,Zamora Chinchipe,Zamora,high
+413,Ocaña,Elecaustro,Hidráulica,Renovable,26.1,26.1,-79.24517194879651,-2.498128947551207,ZSX,Cañar,Cañar,high
+415,Termogas Machala II,CELEC-Termogas Machala,Térmica,No Renovable,136.8,119.0,-79.89201189098146,-3.1139530714044,ZSO,El Oro,El guabo,high
+420,Jivino III,CELEC-Termopichincha,Térmica,No Renovable,44.0,42.0,-76.83074425082593,-0.1809617812946748,ZNX,Sucumbíos,Shushufindi,high
+424,Santa Elena III,CELEC-Electroguayas,Térmica,No Renovable,41.7,40.0,-80.8455265918511,-2.239733339568394,ZSO,Santa Elena,Santa elena,high
+472,Altgenotec ,Altgenotec,Solar,Renovable,0.99,0.99,-80.24953722109696,-2.3422529668759173,ZSO,Guayas,Guayaquil,high
+473,Genrenotec,Genrenotec,Solar,Renovable,0.99,0.99,-80.25044001930284,-2.3443821575840254,ZSO,Guayas,Guayaquil,high
+474,Tren Salinas,Gransolar,Solar,Renovable,1.0,1.0,-78.16839325987472,0.4829663447150874,ZNX,Imbabura,Ibarra,high
+475,Salinas,Gransolar,Solar,Renovable,2.0,2.0,-78.17399421522973,0.4831945990327517,ZNX,Imbabura,Ibarra,high
+476,Sansau,Sansau,Solar,Renovable,1.0,1.0,-79.71174684654743,-1.9096232093724328,ZSO,Guayas,Salitre,high
+477,Wildtecsa ,Wildtecsa,Solar,Renovable,1.0,1.0,-79.71087978001549,-1.9075000761592051,ZSO,Guayas,Salitre,high
+478,Sanersol,Sanersol,Solar,Renovable,1.0,1.0,-79.98214249941363,-3.46089904255684,ZNX,El Oro,Santa rosa,high
+479,Saracaysol,Saracaysol,Solar,Renovable,1.0,1.0,-79.98645736005574,-3.4541775982181453,ZNX,El Oro,Santa rosa,high
+480,Solchacras,Solchacras,Solar,Renovable,1.0,1.0,-80.02226035300902,-3.531157414081953,ZNX,El Oro,Santa rosa,high
+481,Solhuaqui,Solhuaqui,Solar,Renovable,1.0,1.0,-79.99558534761312,-3.454139161838495,ZNX,El Oro,Santa rosa,high
+482,Solsantonio,Solsantonio,Solar,Renovable,1.0,1.0,-80.010103298929,-3.526256241613244,ZNX,El Oro,Santa rosa,high
+483,Solsantros,Solsantros,Solar,Renovable,1.0,1.0,-79.9849572973274,-3.4564825315117758,ZNX,El Oro,Santa rosa,high
+484,Gonzanergy,Gonzanergy,Solar,Renovable,1.0,1.0,-79.46986536967732,-4.25318251410432,ZSX,Loja,Gonzanamá,high
+485,Lojaenergy,Lojaenergy,Solar,Renovable,1.0,0.7,-79.41676831165078,-3.91999603755834,ZSX,Loja,Catamayo,high
+486,Surenergy,Surenergy,Solar,Renovable,1.0,1.0,-79.30243857804008,-4.117651606797872,ZSX,Loja,Catamayo,high
+487,Renova Loja,Renova Loja,Solar,Renovable,1.0,0.7,-79.30164721403104,-4.11977538955467,ZSX,Loja,Catamayo,high
+488,Sabiango Solar,Sabiangosolar,Solar,Renovable,1.0,0.73,-79.81443444336621,-4.387862695536333,ZSX,Loja,Macará,high
+489,San Pedro,San Pedro,Solar,Renovable,1.0,1.0,-79.41831638754765,-3.9200905995603166,ZSX,Loja,Gonzanamá,high
+490,Brineforcorp,Brineforcorp,Solar,Renovable,1.0,1.0,-80.4251999250835,-0.5107015023326678,ZNO,Manabí,San vicente,high
+494,Guangopolo2,CELEC-Termopichincha,Térmica,No Renovable,52.2,48.0,-78.44230216503382,-0.2611931427222743,ZNX,Pichincha,Distrito metropolitano de quito,high
+524,Macas ,CELEC-Termopichincha,Térmica,No Renovable,4.5,4.0,-78.13218224343952,-2.3113937642550493,ZSX,Morona Santiago,Morona,high
+64,Península,E.E. Ambato,Hidráulica,Renovable,3.0,2.9,-78.6052218807989,-1.2389122644877544,ZNX,Tungurahua,Ambato,high
+67,Molino,CELEC-Sur,Hidráulica,Renovable,1075.0,1100.0,-78.50641310391826,-2.590692976649502,ZSX,Azuay,Sevilla de oro,high
+68,Pasochoa,E.E. Quito,Hidráulica,Renovable,4.5,4.5,-78.47817443526228,-0.42480907443798,ZNX,Pichincha,Mejía,high
+71,Papallacta,Ecoluz,Hidráulica,Renovable,6.63,6.2,-78.14504592080594,-0.3764651551060537,ZNX,Napo,Quijos,high
+76,Otavalo II,Hidrotavalo,Hidráulica,Renovable,0.4,0.4,-78.26481161131446,0.2752108658482306,ZNX,Imbabura,Otavalo,high
+79,Noroccidente,EPMAPS,Hidráulica,Renovable,0.3,0.3,-78.51548964956396,-0.1412515076375354,ZNX,Pichincha,Distrito metropolitano de quito,high
+81,Nayón,E.E. Quito,Hidráulica,Renovable,29.7,29.7,-78.41043199771786,-0.1604411116117186,ZNX,Pichincha,Distrito metropolitano de quito,high

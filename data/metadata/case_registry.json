@@ -1,0 +1,36 @@
+{
+  "ecuador_24bus": {
+    "pathways": [
+      "REF",
+      "BRIDGE",
+      "NZT"
+    ],
+    "hydrology": [
+      "Baseline",
+      "Adverse"
+    ],
+    "representatives": {
+      "Baseline": {
+        "REF": "w23",
+        "BRIDGE": "w17",
+        "NZT": "w22"
+      },
+      "Adverse": {
+        "REF": "w5",
+        "BRIDGE": "w3",
+        "NZT": "w3"
+      }
+    }
+  },
+  "ecuador_6bus": {
+    "pathways": [
+      "BAU",
+      "REN100"
+    ],
+    "hydrology": [
+      "Normal",
+      "Extreme"
+    ],
+    "scope": "Independent reduced model"
+  }
+}
